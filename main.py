@@ -26,7 +26,7 @@ def get_game_data():
 			stadium = c["venue"]["fullName"]
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
-			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")		
+			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")
 			
 			games_dict = defaultdict(list)
 			game = {
