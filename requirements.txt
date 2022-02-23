@@ -4,7 +4,8 @@ certifi==2021.10.8
 charset-normalizer==2.0.11
 defusedxml==0.7.1
 idna==3.3
+python-dateutil==2.8.2
 requests==2.27.1
+six==1.16.0
 soupsieve==2.3.1
-sports.py==2.0.10
 urllib3==1.26.8
