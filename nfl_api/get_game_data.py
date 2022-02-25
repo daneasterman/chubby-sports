@@ -20,8 +20,10 @@ def get_game_data():
 
 			home_team_name = home_team["team"]["displayName"]
 			home_team_score = home_team["score"]
+			home_team_logo = home_team["team"]["logo"]			
 			away_team_name = away_team["team"]["displayName"]
 			away_team_score = away_team["score"]
+			away_team_logo = away_team["team"]["logo"]
 			
 			stadium = c["venue"]["fullName"]
 			raw_unix_date = c["date"]
@@ -30,11 +32,18 @@ def get_game_data():
 			
 			games_dict = defaultdict(list)
 			game = {
-					"home_team": {"name": home_team_name, "score": home_team_score},
-					"away_team": {"name": away_team_name, "score": away_team_score},
+					"home_team": {
+						"name": home_team_name, 
+						"score": home_team_score,
+						"logo": home_team_logo
+						},
+					"away_team": {
+						"name": away_team_name, 
+						"score": away_team_score,
+						"logo": away_team_logo
+						},
 					"date": human_readable_date,
 					"stadium": stadium,
-				}
-			games_dict["games"].append({"game": game})
-			
+				}			
+			games_dict["games"].append({"game": game})			
 	return games_dict, home_team, away_team, leaders

@@ -5,10 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def indext():
-	games = get_game_leaders()
-	breakpoint()
-	return render_template("index.html", count=5)
-
+	games = get_game_leaders()	
+	return render_template("index.html", games=games)
 
 if __name__ == "__main__":
 	app.run()
