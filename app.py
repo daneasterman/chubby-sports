@@ -4,9 +4,9 @@ from nfl_api.get_game_leaders import get_game_leaders
 app = Flask(__name__)
 
 @app.route("/")
-def indext():
+def home():
 	games = get_game_leaders()	
-	return render_template("index.html", games=games)
+	return render_template("home.html", games=games)
 
 if __name__ == "__main__":
 	app.run()
