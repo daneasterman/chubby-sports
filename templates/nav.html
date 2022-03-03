@@ -1,31 +1,38 @@
-<style>   
-  .nav_wrapper {
+<style>  
+	.nav_wrapper {
     display: flex;
-    justify-content: center;       
+		flex-direction: row;
+		align-items: center;
+    justify-content: space-between;
     background-color: white;
-    padding-top: 1.25rem;    
-    padding-bottom: 0.5rem;    
-  }  
-  nav .logo_wrapper {
+		padding: 1rem 2.5rem 0.75rem 2.5rem;
+		border-bottom: 1px solid #e7e7e7;		
+  }	
+	.nav_wrapper .title {
+		font-size: 1.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+		top: -2px;
     position: relative;
-  }
-  nav .logo {
-    width: 3rem;
-    margin-right: 0.25rem;
-    position: relative;
-    top: -10px;
-  }
-   nav .title {
-    font-size: 1.75rem;
-    font-weight: 700;    
-    color: #242424
-  } 
+    margin-left: 10px;
+	}
+	.nav_wrapper .logo_wrapper i {
+		font-size: 2.25rem;
+	}
+	.nav_wrapper .contact_wrapper i {
+		font-size: 1.75rem;
+	}
 </style>
 <nav role="navigation">  
   <div class="nav_wrapper">
     <div class="logo_wrapper">
-      <!-- <img class="logo" src="" alt="WAGMI Logo" /> -->
-        <!-- <span class="title">Chubby Hooper Sports</span> -->
-    </div>    
+			<i class="fas fa-hippo"></i>
+			<span class="title">The Chubby Hooper</span>
+    </div>
+		<div class="contact_wrapper">
+			<a href="https://twitter.com/ChubbyHooper24">
+				<i class="fab fa-twitter"></i>
+			</a>
+    </div>   
   </div>
 </nav>

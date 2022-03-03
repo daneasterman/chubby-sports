@@ -1,6 +1,6 @@
 html {
 	background-color: #f8f8f8;
-	color: #fff;
+	color: #242424;
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -8,7 +8,7 @@ html {
   line-height: 1.5;	
   min-width: 300px;
   overflow-x: hidden;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);	
+  /* text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);	 */
 }
 body {
 	min-height: 100vh;
@@ -76,9 +76,8 @@ section {
 		margin-right: 5rem;
 	}
 }
-.icon_wrapper i {
-	font-size: 3rem;
-	margin-bottom: 0.75rem;    
+.hero_flex .icon_wrapper i {
+	font-size: 3rem;	 
 }
 .item_title {
 	font-weight: 600;
