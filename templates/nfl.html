@@ -1,21 +1,35 @@
 {% extends 'base.html' %}
 {% block content %}
-<style>
-
-
-</style>
-
 <section>
 	<div class="page_wrapper">
-		<h1 class="page_title">NFL Games</h1>
-		<div class="content_wrapper">
-							
+		<h1 class="page_title">🏈 NFL Games</h1>
+		<div class="game_wrapper">
+			<div class="game_flex">
+				<div class="team_row">
+					<div class="team_column">
+							<img class="team_logo" 
+									src="https://via.placeholder.com/500x500" 
+									alt="team logo" />
+							<p class="team_title">Team Name 1</p>
+						</div>
+						<p class="score">190</p>
+					</div>				
+				
+					<p class="game_vs_txt">vs</p>
+				
+					<div class="team_row">
+						<p class="score">90</p>
+						<div class="team_column">
+								<img class="team_logo" 
+										src="https://via.placeholder.com/500x500" 
+										alt="team logo" />
+								<p class="team_title">Team Name 2</p>
+							</div>
+						
+					</div>
+			</div>									
 		</div>
 	</div>
 
 </section>
-
-
-
-    
 {% endblock %}
