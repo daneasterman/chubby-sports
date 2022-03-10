@@ -59,12 +59,16 @@ h1.page_title {
 	}
 }
 .game_wrapper {
-	padding: 2rem;
+	padding: 1rem 2rem 0.5rem 2rem;
 	box-shadow: 2px 3px 2px rgb(0 0 0 / 5%);
 	background-color: white;
-	font-size: 1.25rem;
+	
 }
-.game_vs_txt {
+.home_away {
+	position: relative;
+	top: 10px;
+}
+.game_vs_txt, .home_away {
 	color: #777			
 }
 .score {
@@ -75,6 +79,7 @@ h1.page_title {
 	justify-content: space-between;	
 	flex-wrap: wrap;
 	align-items: center;
+	padding-bottom: 1rem;
 }
 
 .team_row {
@@ -103,3 +108,19 @@ h1.page_title {
 	top: -20px;
   left: 5px;
 }
+
+.dropdown_cta {
+	border-top: 2px solid #e7e7e7;
+	/* This offsets master wrapper padding */
+	margin-left: -2rem;
+	margin-right: -2rem;
+	padding-top: 0.5rem;
+}
+
+.dropdown_cta p {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-size: 0.9rem;
+	/* color: #777; */
+}	

@@ -4,11 +4,11 @@
 	<div class="page_wrapper">
 		<h1 class="page_title">🏈 NFL Games</h1>
 		<div class="game_wrapper">
-			<div class="game_flex">
-				
+			<div class="game_flex">				
 				{% for g in games %}
 					<div class="team_row">
 						<div class="team_column">
+								<p class="home_away">Home</p>
 								<img class="team_logo" 
 										src="{{ g.game.home_team.logo }}" 
 										alt="team logo" />
@@ -24,17 +24,19 @@
 					<div class="team_row">
 						<p class="score">{{ g.game.away_team.score }}</p>
 						<div class="team_column">
+								<p class="home_away">Away</p>
 								<img class="team_logo" 
 										src="{{ g.game.away_team.logo }}"
 										alt="team logo" />
 								<p class="team_title">{{ g.game.away_team.name }}</p>
 							</div>						
 					</div>
-					{% endfor %}
-					
-			</div>									
+					{% endfor %}					
+			</div>
+			<div class="dropdown_cta">
+				<p>View Stat Leaders &darr;</p>
+			</div>
 		</div>
 	</div>
-
 </section>
 {% endblock %}
