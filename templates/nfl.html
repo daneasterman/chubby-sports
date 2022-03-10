@@ -5,28 +5,33 @@
 		<h1 class="page_title">🏈 NFL Games</h1>
 		<div class="game_wrapper">
 			<div class="game_flex">
-				<div class="team_row">
-					<div class="team_column">
-							<img class="team_logo" 
-									src="https://via.placeholder.com/500x500" 
-									alt="team logo" />
-							<p class="team_title">Team Name 1</p>
+				
+				{% for g in games %}
+					<div class="team_row">
+						<div class="team_column">
+								<img class="team_logo" 
+										src="{{ g.game.home_team.logo }}" 
+										alt="team logo" />
+								<p class="team_title">{{ g.game.home_team.name }}</p>
+							</div>
+							<p class="score">{{ g.game.home_team.score }}</p>
 						</div>
-						<p class="score">190</p>
-					</div>				
+					{% endfor %}				
 				
 					<p class="game_vs_txt">vs</p>
 				
+					{% for g in games %}
 					<div class="team_row">
-						<p class="score">90</p>
+						<p class="score">{{ g.game.away_team.score }}</p>
 						<div class="team_column">
 								<img class="team_logo" 
-										src="https://via.placeholder.com/500x500" 
+										src="{{ g.game.away_team.logo }}"
 										alt="team logo" />
-								<p class="team_title">Team Name 2</p>
-							</div>
-						
+								<p class="team_title">{{ g.game.away_team.name }}</p>
+							</div>						
 					</div>
+					{% endfor %}
+					
 			</div>									
 		</div>
 	</div>
