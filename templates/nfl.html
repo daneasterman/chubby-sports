@@ -2,41 +2,81 @@
 {% block content %}
 <section>
 	<div class="page_wrapper">
-		<h1 class="page_title">🏈 NFL Games</h1>
-		<div class="game_wrapper">
-			<div class="game_flex">				
-				{% for g in games %}
-					<div class="team_row">
-						<div class="team_column">
-								<p class="home_away">Home</p>
-								<img class="team_logo" 
-										src="{{ g.game.home_team.logo }}" 
-										alt="team logo" />
-								<p class="team_title">{{ g.game.home_team.name }}</p>
-							</div>
-							<p class="score">{{ g.game.home_team.score }}</p>
-						</div>
-					{% endfor %}				
-				
-					<p class="game_vs_txt">vs</p>
-				
-					{% for g in games %}
-					<div class="team_row">
-						<p class="score">{{ g.game.away_team.score }}</p>
-						<div class="team_column">
-								<p class="home_away">Away</p>
-								<img class="team_logo" 
-										src="{{ g.game.away_team.logo }}"
-										alt="team logo" />
-								<p class="team_title">{{ g.game.away_team.name }}</p>
-							</div>						
-					</div>
-					{% endfor %}					
-			</div>
+		<div class="page_title_wrapper">
+			<div class="nfl_icon_wrapper"><i class="fas fa-football-ball"></i></div>
+			<h1 class="page_title">NFL Games</h1>
+		</div>
+		{% for g in games %}
+			<div class="game_wrapper">
+				<div class="game_flex">				
+						<div class="team_row">
+							<div class="team_column">
+									<p class="home_away">Home</p>
+									<img class="team_logo" 
+											src="{{ g.game.home_team.logo }}" 
+											alt="team logo" />
+									<p class="team_title">{{ g.game.home_team.name }}</p>
+								</div>
+								<p class="score">{{ g.game.home_team.score }}</p>
+							</div>								
+					
+						<p class="game_vs_txt">vs</p>			
+						
+				<div class="team_row">
+					<p class="score">{{ g.game.away_team.score }}</p>
+					<div class="team_column">
+							<p class="home_away">Away</p>
+							<img class="team_logo" 
+									src="{{ g.game.away_team.logo }}"
+									alt="team logo" />
+							<p class="team_title">{{ g.game.away_team.name }}</p>
+					</div>					
+				</div>
+							
+			</div>			
 			<div class="dropdown_cta">
 				<p>View Stat Leaders &darr;</p>
 			</div>
+			{% endfor %}
 		</div>
+		
+		<div class="game_wrapper">			
+			<div class="player_flex">
+				{% for g in games %}
+				<div class="player_column">
+					<h2 class="leader_title">Passing Leaders</h2>								
+						<img class="player_profile_img"
+							src="{{g.game.passing_leader.headshot}}"
+							alt="player profile image" />
+						<p class="player_info">
+							{{g.game.passing_leader.full_name}}, {{g.game.passing_leader.position}}
+						</p>
+				</div>
+
+				<div class="player_column">
+					<h2 class="leader_title">Receiving Leaders</h2>								
+						<img class="player_profile_img"
+							src="{{g.game.receiving_leader.headshot}}"
+							alt="player profile image" />
+						<p class="player_info">
+							{{g.game.receiving_leader.full_name}}, {{g.game.receiving_leader.position}}
+						</p>
+				</div>
+
+				<div class="player_column">
+					<h2 class="leader_title">Rushing Leaders</h2>								
+						<img class="player_profile_img"
+							src="{{g.game.rushing_leader.headshot}}"
+							alt="player profile image" />
+						<p class="player_info">
+							{{g.game.rushing_leader.full_name}}, {{g.game.rushing_leader.position}}
+						</p>
+				</div>
+			{% endfor %}
+		</div>			
+			
+		</div>
+		
 	</div>
 </section>
 {% endblock %}

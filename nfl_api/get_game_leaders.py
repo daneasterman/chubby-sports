@@ -6,7 +6,7 @@ from nfl_api.get_game_data import get_game_data
 def get_game_leaders():
 	games_dict, home_team, away_team, leaders = get_game_data()
 	if home_team.get("leaders"):
-		# To do: add code which extracts team-specific leader info here before game starts
+		# To do when season restarts: add code which extracts team-specific leader info here before game starts
 		pass
 	else:
 		passing_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "passingYards"]		
