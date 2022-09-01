@@ -82,7 +82,7 @@ h1.page_title {
 }
 .game_flex {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
 	padding-bottom: 1rem;

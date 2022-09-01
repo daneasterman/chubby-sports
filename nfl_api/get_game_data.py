@@ -15,8 +15,8 @@ def get_game_data():
 		competitions = e["competitions"]		
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]
-			leaders = c["leaders"]
+			away_team = c["competitors"][1]			
+			leaders = c.get("leaders")
 
 			home_team_name = home_team["team"]["displayName"]
 			home_team_score = home_team["score"]
@@ -29,7 +29,7 @@ def get_game_data():
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
 			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")
-			
+					
 			games_dict = defaultdict(list)
 			game = {
 					"home_team": {
@@ -44,6 +44,10 @@ def get_game_data():
 						},
 					"date": human_readable_date,
 					"stadium": stadium,
-				}			
-			games_dict["games"].append({"game": game})			
+				}
+			# breakpoint()
+			games_dict["games"].append({"game": game})
+	breakpoint()
 	return games_dict, home_team, away_team, leaders
+
+get_game_data()

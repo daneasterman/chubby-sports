@@ -5,13 +5,12 @@ from nfl_api.get_game_data import get_game_data
 
 def get_game_leaders():
 	games_dict, home_team, away_team, leaders = get_game_data()
-	if home_team.get("leaders"):
-		# To do when season restarts: add code which extracts team-specific leader info here before game starts
-		pass
+	if leaders is None:
+		pass		
 	else:
 		passing_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "passingYards"]		
 		rushing_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "rushingYards"]
-		receiving_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "receivingYards"]
+		receiving_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "receivingYards"]		
 		
 		for passer in passing_yards:
 			for p in passer["leaders"]:
