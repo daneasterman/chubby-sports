@@ -71,8 +71,7 @@ h1.page_title {
 	
 }
 .home_away {
-	position: relative;
-	top: 10px;
+	position: relative;	
 }
 .game_vs_txt, .home_away {
 	color: #777
@@ -102,7 +101,7 @@ h1.page_title {
 }
 
 .team_logo {
-	max-width: 150px;
+	max-width: 75px;
 	margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -110,8 +109,7 @@ h1.page_title {
 .team_title {
 	font-weight: 500;
 	font-size: 1.25rem;
-	position: relative;
-	top: -20px;
+	position: relative;	
   left: 5px;
 }
 

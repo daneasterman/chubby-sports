@@ -1,0 +1,36 @@
+<div style="padding-bottom: 2rem" class="game_wrapper">
+	<div class="player_flex">
+		{% for g in games %}
+		<div class="player_column">
+			<h2 class="leader_title">Passing Leaders</h2>								
+				<img class="player_profile_img"
+					src="{{g.game.passing_leader.headshot}}"
+					alt="player profile image" />
+				<p class="player_info">
+					{{g.game.passing_leader.full_name}}, {{g.game.passing_leader.position}}
+				</p>
+		</div>
+
+		<div class="player_column">
+			<h2 class="leader_title">Receiving Leaders</h2>								
+				<img class="player_profile_img"
+					src="{{g.game.receiving_leader.headshot}}"
+					alt="player profile image" />
+				<p class="player_info">
+					{{g.game.receiving_leader.full_name}}, {{g.game.receiving_leader.position}}
+				</p>
+		</div>
+
+		<div class="player_column">
+			<h2 class="leader_title">Rushing Leaders</h2>								
+				<img class="player_profile_img"
+					src="{{g.game.rushing_leader.headshot}}"
+					alt="player profile image" />
+				<p class="player_info">
+					{{g.game.rushing_leader.full_name}}, {{g.game.rushing_leader.position}}
+				</p>
+		</div>
+	{% endfor %}
+</div>			
+	
+</div>

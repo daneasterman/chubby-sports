@@ -10,7 +10,7 @@ LALIGA_URL = f"{BASE_ESPN}soccer/esp.1/scoreboard"
 def get_game_data():
 	nfl_data = requests.get(NFL_URL).json()
 	events = nfl_data['events']
-	
+	games_dict = defaultdict(list)	
 	for e in events:
 		competitions = e["competitions"]		
 		for c in competitions:
@@ -28,9 +28,8 @@ def get_game_data():
 			stadium = c["venue"]["fullName"]
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
-			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")
-					
-			games_dict = defaultdict(list)
+			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")					
+			
 			game = {
 					"home_team": {
 						"name": home_team_name, 
@@ -47,7 +46,8 @@ def get_game_data():
 				}
 			# breakpoint()
 			games_dict["games"].append({"game": game})
-	breakpoint()
-	return games_dict, home_team, away_team, leaders
+	
+	return games_dict
+	# pprint(games_dict)
 
-get_game_data()
+# get_game_data()

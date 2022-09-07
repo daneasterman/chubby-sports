@@ -6,8 +6,9 @@
 			<div class="nfl_icon_wrapper"><i class="fas fa-football-ball"></i></div>
 			<h1 class="page_title">NFL Games</h1>
 		</div>
-		{% for g in games %}
+		
 			<div class="game_wrapper">
+				{% for g in games %}
 				<div class="game_flex">				
 						<div class="team_row">
 							<div class="team_column">
@@ -20,7 +21,7 @@
 								<p class="score">{{ g.game.home_team.score }}</p>
 							</div>								
 					
-						<p class="game_vs_txt">vs</p>			
+						<p class="game_vs_txt">vs</p>
 						
 				<div class="team_row">
 					<p class="score">{{ g.game.away_team.score }}</p>
@@ -38,43 +39,6 @@
 				<p>View Stat Leaders &darr;</p>
 			</div>
 			{% endfor %}
-		</div>
-		
-		<div style="padding-bottom: 2rem" class="game_wrapper">
-			<div class="player_flex">
-				{% for g in games %}
-				<div class="player_column">
-					<h2 class="leader_title">Passing Leaders</h2>								
-						<img class="player_profile_img"
-							src="{{g.game.passing_leader.headshot}}"
-							alt="player profile image" />
-						<p class="player_info">
-							{{g.game.passing_leader.full_name}}, {{g.game.passing_leader.position}}
-						</p>
-				</div>
-
-				<div class="player_column">
-					<h2 class="leader_title">Receiving Leaders</h2>								
-						<img class="player_profile_img"
-							src="{{g.game.receiving_leader.headshot}}"
-							alt="player profile image" />
-						<p class="player_info">
-							{{g.game.receiving_leader.full_name}}, {{g.game.receiving_leader.position}}
-						</p>
-				</div>
-
-				<div class="player_column">
-					<h2 class="leader_title">Rushing Leaders</h2>								
-						<img class="player_profile_img"
-							src="{{g.game.rushing_leader.headshot}}"
-							alt="player profile image" />
-						<p class="player_info">
-							{{g.game.rushing_leader.full_name}}, {{g.game.rushing_leader.position}}
-						</p>
-				</div>
-			{% endfor %}
-		</div>			
-			
 		</div>
 		
 	</div>
