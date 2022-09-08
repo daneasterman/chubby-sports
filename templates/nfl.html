@@ -7,8 +7,9 @@
 			<h1 class="page_title">NFL Games</h1>
 		</div>
 		
+		{% for g in games %}
 			<div class="game_wrapper">
-				{% for g in games %}
+				
 				<div class="game_flex">				
 						<div class="team_row">
 							<div class="team_column">
@@ -19,9 +20,7 @@
 									<p class="team_title">{{ g.game.home_team.name }}</p>
 								</div>
 								<p class="score">{{ g.game.home_team.score }}</p>
-							</div>								
-					
-						<p class="game_vs_txt">vs</p>
+							</div>
 						
 				<div class="team_row">
 					<p class="score">{{ g.game.away_team.score }}</p>
@@ -32,14 +31,15 @@
 									alt="team logo" />
 							<p class="team_title">{{ g.game.away_team.name }}</p>
 					</div>					
-				</div>
-							
-			</div>			
-			<div class="dropdown_cta">
-				<p>View Stat Leaders &darr;</p>
+				</div>							
 			</div>
-			{% endfor %}
+			
+			<div class="dropdown_wrapper">
+				<button class="dropdown_cta">Stat Leaders</button>
+			</div>
+			
 		</div>
+		{% endfor %}
 		
 	</div>
 </section>

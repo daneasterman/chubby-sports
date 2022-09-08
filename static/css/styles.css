@@ -65,17 +65,21 @@ h1.page_title {
 
 /* GAME PANEL STYLES */
 .game_wrapper {
-	padding: 1rem 2rem 0.5rem 2rem;
+	padding: 0 2rem 0.5rem 2rem;
 	box-shadow: 2px 3px 2px rgb(0 0 0 / 5%);
 	background-color: white;
+	margin-bottom: 2.25rem;
 	
 }
 .home_away {
 	position: relative;	
 }
-.game_vs_txt, .home_away {
-	color: #777
+
+.home_away {
+	color: #777;
+	margin-bottom: 0.5rem;
 }
+
 .score {
 	font-size: 2.5rem
 }
@@ -83,8 +87,7 @@ h1.page_title {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: center;
-	padding-bottom: 1rem;
+	align-items: center;	
 }
 
 .team_row {
@@ -97,13 +100,14 @@ h1.page_title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
-	/* padding: 2rem 0.5rem 2rem 0.5rem; */
+	padding: 2rem 0.5rem 0 0.5rem;
 }
 
 .team_logo {
 	max-width: 75px;
 	margin-left: 1rem;
   margin-right: 1rem;
+	margin-bottom: 0.75rem;
 }
 
 .team_title {
@@ -113,23 +117,24 @@ h1.page_title {
   left: 5px;
 }
 
-.dropdown_cta {
-	border-top: 2px solid #e7e7e7;
-	border-bottom: 2px solid #e7e7e7;	
-	/* This offsets master wrapper padding */
-	margin-left: -2rem;
-	margin-right: -2rem;
+.dropdown_wrapper {
+	/* border-top: 2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;		 */
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.5rem;
 }
 
-.dropdown_cta p {
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;	
-	color: #777;
-	font-weight: 700;
+.dropdown_cta {	
+	font-size: 1.1rem;	
+	color: white;
+	font-weight: 600;
+	background-color: #00b1ce;	
+	text-transform: capitalize;
+	padding: 10px 3rem 10px 3rem;
+	border: 0
 }
 
 /* PLAYER PANEL STYLES */
