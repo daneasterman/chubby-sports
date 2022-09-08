@@ -28,7 +28,8 @@ def get_game_data():
 			stadium = c["venue"]["fullName"]
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
-			human_readable_date = python_date_obj.strftime("%A %B %d %Y at %I:%M%p")					
+			day_plain_lang = python_date_obj.strftime("%A")
+			date_plain_lang = python_date_obj.strftime("%B %d %Y")
 			
 			game = {
 					"home_team": {
@@ -41,7 +42,8 @@ def get_game_data():
 						"score": away_team_score,
 						"logo": away_team_logo
 						},
-					"date": human_readable_date,
+					"day": day_plain_lang,
+					"date": date_plain_lang,
 					"stadium": stadium,
 				}
 			# breakpoint()

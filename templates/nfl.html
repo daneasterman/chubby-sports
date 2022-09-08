@@ -21,21 +21,24 @@
 								</div>
 								<p class="score">{{ g.game.home_team.score }}</p>
 							</div>
+					
+						<div class="game_details">
+							<p style="font-weight: 600" class="game_date">{{ g.game.day }},</p>
+							<p style="margin-bottom: 3rem" class="game_date">{{ g.game.date }}</p>
+							<button class="dropdown_cta">Stat Leaders</button>
+						</div>
 						
-				<div class="team_row">
-					<p class="score">{{ g.game.away_team.score }}</p>
-					<div class="team_column">
-							<p class="home_away">Away</p>
-							<img class="team_logo" 
-									src="{{ g.game.away_team.logo }}"
-									alt="team logo" />
-							<p class="team_title">{{ g.game.away_team.name }}</p>
-					</div>					
-				</div>							
-			</div>
-			
-			<div class="dropdown_wrapper">
-				<button class="dropdown_cta">Stat Leaders</button>
+					<div class="team_row">
+						<p class="score">{{ g.game.away_team.score }}</p>
+						<div class="team_column">
+								<p class="home_away">Away</p>
+								<img class="team_logo" 
+										src="{{ g.game.away_team.logo }}"
+										alt="team logo" />
+								<p class="team_title">{{ g.game.away_team.name }}</p>
+						</div>					
+					</div>
+
 			</div>
 			
 		</div>
