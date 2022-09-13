@@ -15,8 +15,8 @@ def get_game_data():
 		competitions = e["competitions"]		
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]			
-			leaders = c.get("leaders")
+			away_team = c["competitors"][1]
+			leaders = c.get("leaders")			
 
 			home_team_name = home_team["team"]["displayName"]
 			home_team_score = home_team["score"]
@@ -46,10 +46,10 @@ def get_game_data():
 					"date": date_plain_lang,
 					"stadium": stadium,
 				}
-			# breakpoint()
+			
 			games_dict["games"].append({"game": game})
 	
 	return games_dict
 	# pprint(games_dict)
 
-# get_game_data()
+get_game_data()
