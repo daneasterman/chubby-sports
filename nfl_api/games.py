@@ -2,7 +2,7 @@ import requests
 import json
 from dateutil.parser import parse
 from collections import defaultdict
-from leaders import generate_leaders
+from nfl_api.leaders import generate_leaders
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
@@ -11,14 +11,14 @@ LALIGA_URL = f"{BASE_ESPN}soccer/esp.1/scoreboard"
 
 def get_games():
 	nfl_data = requests.get(NFL_URL).json()
-	events = nfl_data['events']
-	games_dict = defaultdict(list)	
+	events = nfl_data['events']	
 	
 	passers, rushers, receivers = generate_leaders()
 	passer_iterable = iter(passers)
 	rusher_iterable = iter(rushers)
-	receiver_iterable = iter(receivers)
+	receiver_iterable = iter(receivers)	
 	
+	games = []	
 	for e in events:
 		competitions = e["competitions"]
 		for c in competitions:
@@ -27,8 +27,8 @@ def get_games():
 			
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
-			day_plain_lang = python_date_obj.strftime("%A")
 			date_plain_lang = python_date_obj.strftime("%B %d %Y")				
+			day_plain_lang = python_date_obj.strftime("%A")
 			
 			game = {
 					"home_team": {
@@ -50,9 +50,10 @@ def get_games():
 						"receiving": next(receiver_iterable)
 						}
 			}
-			games_dict["games"].append( {"game": game} )
+			games.append(game)
 
-	with open('json/games_v4.json', 'w') as outfile:
-		json.dump(games_dict, outfile)
+	# with open('json/games_v5.json', 'w') as outfile:
+	# 	json.dump(games, outfile)
 
-	return games_dict
+	return games
+get_games()
