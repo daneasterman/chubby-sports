@@ -1,36 +1,33 @@
-<div style="padding-bottom: 2rem" class="game_wrapper">
-	<div class="player_flex">
-		{% for g in games %}
+<div style="padding-bottom: 2rem" class="game_wrapper">	
+	<div class="player_flex">					
 		<div class="player_column">
 			<h2 class="leader_title">Passing Leaders</h2>								
 				<img class="player_profile_img"
-					src="{{g.game.passing_leader.headshot}}"
+					src="{{ g.leaders.passing.headshot }}"
 					alt="player profile image" />
 				<p class="player_info">
-					{{g.game.passing_leader.full_name}}, {{g.game.passing_leader.position}}
+					{{g.leaders.passing.full_name}}, {{g.leaders.passing.position}}
 				</p>
 		</div>
 
 		<div class="player_column">
 			<h2 class="leader_title">Receiving Leaders</h2>								
 				<img class="player_profile_img"
-					src="{{g.game.receiving_leader.headshot}}"
+					src="{{ g.leaders.receiving.headshot }}"
 					alt="player profile image" />
 				<p class="player_info">
-					{{g.game.receiving_leader.full_name}}, {{g.game.receiving_leader.position}}
+					{{ g.leaders.receiving.full_name }}, {{ g.leaders.receiving.position }}
 				</p>
 		</div>
 
 		<div class="player_column">
 			<h2 class="leader_title">Rushing Leaders</h2>								
 				<img class="player_profile_img"
-					src="{{g.game.rushing_leader.headshot}}"
+					src="{{g.leaders.rushing.headshot}}"
 					alt="player profile image" />
 				<p class="player_info">
-					{{g.game.rushing_leader.full_name}}, {{g.game.rushing_leader.position}}
+					{{g.leaders.rushing.full_name}}, {{g.leaders.rushing.position}}
 				</p>
-		</div>
-	{% endfor %}
-</div>			
-	
+		</div>				
+	</div>
 </div>

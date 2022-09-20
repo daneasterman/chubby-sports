@@ -38,9 +38,12 @@
 								<p class="team_title">{{ g.away_team.name }}</p>
 						</div>					
 					</div>
-
 			</div>
-			
+
+			{% with g=g %}
+    		{% include "leaders.html" %}
+			{% endwith %}	
+
 		</div>
 		{% endfor %}
 		
