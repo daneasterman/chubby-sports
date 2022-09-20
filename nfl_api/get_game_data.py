@@ -14,9 +14,10 @@ def get_game_data():
 	events = nfl_data['events']
 	games_dict = defaultdict(list)	
 	
-	passers, rushers = generate_leaders()
+	passers, rushers, receivers = generate_leaders()
 	passer_iterable = iter(passers)
 	rusher_iterable = iter(rushers)
+	receiver_iterable = iter(receivers)
 	
 	for e in events:
 		competitions = e["competitions"]
@@ -33,7 +34,7 @@ def get_game_data():
 					"home_team": {
 						"name": home_team["team"]["displayName"],
 						"score": home_team["score"],
-						"logo": home_team["team"]["logo"]	
+						"logo": home_team["team"]["logo"]
 						},
 					"away_team": {
 						"name": away_team["team"]["displayName"],
@@ -43,17 +44,17 @@ def get_game_data():
 					"day": day_plain_lang,
 					"date": date_plain_lang,
 					"stadium": c["venue"]["fullName"],
-					"leaders": {"passers": next(passer_iterable), "rushers": next(rusher_iterable)}
+					"leaders": {
+						"passing": next(passer_iterable), 
+						"rushing": next(rusher_iterable),
+						"receiving": next(receiver_iterable)
+						}
 			}
 			games_dict["games"].append( {"game": game} )
 
-	with open('json/games_v3.json', 'w') as outfile:
+	with open('json/games_v4.json', 'w') as outfile:
 		json.dump(games_dict, outfile)
 
 	return games_dict
-
-	# "full_name": p["athlete"]["fullName"],
-	# "position": p["athlete"]["position"]["abbreviation"],
-	# "headshot": p["athlete"]["headshot"],
 
 get_game_data()
