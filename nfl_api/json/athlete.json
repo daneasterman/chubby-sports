@@ -1,0 +1,964 @@
+{
+	"leader_list": [
+			{
+					"id": "3139477",
+					"fullName": "Patrick Mahomes",
+					"displayName": "Patrick Mahomes",
+					"shortName": "P. Mahomes",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3139477/patrick-mahomes" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3139477/patrick-mahomes" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3139477.png",
+					"jersey": "15",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "12" },
+					"active": true
+			},
+			{
+					"id": "4361529",
+					"fullName": "Isiah Pacheco",
+					"displayName": "Isiah Pacheco",
+					"shortName": "I. Pacheco",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4361529/isiah-pacheco" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4361529/isiah-pacheco" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4361529.png",
+					"jersey": "10",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "12" },
+					"active": true
+			},
+			{
+					"id": "15847",
+					"fullName": "Travis Kelce",
+					"displayName": "Travis Kelce",
+					"shortName": "T. Kelce",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15847/travis-kelce" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/15847/travis-kelce" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/15847/travis-kelce" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/15847/travis-kelce" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/15847/travis-kelce" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/15847/travis-kelce" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15847/travis-kelce" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/15847.png",
+					"jersey": "87",
+					"position": { "abbreviation": "TE" },
+					"team": { "id": "12" },
+					"active": true
+			},
+			{
+					"id": "11252",
+					"fullName": "Joe Flacco",
+					"displayName": "Joe Flacco",
+					"shortName": "J. Flacco",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/11252/joe-flacco" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/11252/joe-flacco" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/11252/joe-flacco" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/11252/joe-flacco" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/11252/joe-flacco" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/11252/joe-flacco" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/11252/joe-flacco" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11252.png",
+					"jersey": "19",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "20" },
+					"active": true
+			},
+			{
+					"id": "3128720",
+					"fullName": "Nick Chubb",
+					"displayName": "Nick Chubb",
+					"shortName": "N. Chubb",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3128720/nick-chubb" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3128720/nick-chubb" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3128720/nick-chubb" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3128720/nick-chubb" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3128720/nick-chubb" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3128720/nick-chubb" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3128720/nick-chubb" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128720.png",
+					"jersey": "24",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "5" },
+					"active": true
+			},
+			{
+					"id": "3042778",
+					"fullName": "Corey Davis",
+					"displayName": "Corey Davis",
+					"shortName": "C. Davis",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3042778/corey-davis" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3042778/corey-davis" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3042778/corey-davis" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3042778/corey-davis" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3042778/corey-davis" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3042778/corey-davis" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3042778/corey-davis" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042778.png",
+					"jersey": "84",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "20" },
+					"active": true
+			},
+			{
+					"id": "2573079",
+					"fullName": "Carson Wentz",
+					"displayName": "Carson Wentz",
+					"shortName": "C. Wentz",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2573079/carson-wentz" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2573079/carson-wentz" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2573079/carson-wentz" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2573079/carson-wentz" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2573079/carson-wentz" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2573079/carson-wentz" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2573079/carson-wentz" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2573079.png",
+					"jersey": "11",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "28" },
+					"active": true
+			},
+			{
+					"id": "4259545",
+					"fullName": "D'Andre Swift",
+					"displayName": "D'Andre Swift",
+					"shortName": "D. Swift",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4259545/dandre-swift" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4259545/dandre-swift" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4259545/dandre-swift" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4259545/dandre-swift" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4259545/dandre-swift" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4259545/dandre-swift" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4259545/dandre-swift" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4259545.png",
+					"jersey": "32",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "8" },
+					"active": true
+			},
+			{
+					"id": "4360294",
+					"fullName": "Antonio Gibson",
+					"displayName": "Antonio Gibson",
+					"shortName": "A. Gibson",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4360294/antonio-gibson" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4360294/antonio-gibson" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4360294/antonio-gibson" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4360294/antonio-gibson" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4360294/antonio-gibson" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4360294/antonio-gibson" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4360294/antonio-gibson" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360294.png",
+					"jersey": "24",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "28" },
+					"active": true
+			},
+			{
+					"id": "2969939",
+					"fullName": "Jameis Winston",
+					"displayName": "Jameis Winston",
+					"shortName": "J. Winston",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2969939/jameis-winston" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2969939/jameis-winston" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2969939/jameis-winston" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2969939/jameis-winston" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2969939/jameis-winston" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2969939/jameis-winston" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2969939/jameis-winston" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2969939.png",
+					"jersey": "2",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "18" },
+					"active": true
+			},
+			{
+					"id": "3115364",
+					"fullName": "Leonard Fournette",
+					"displayName": "Leonard Fournette",
+					"shortName": "L. Fournette",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3115364/leonard-fournette" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3115364/leonard-fournette" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3115364/leonard-fournette" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3115364/leonard-fournette" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3115364/leonard-fournette" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3115364/leonard-fournette" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3115364/leonard-fournette" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3115364.png",
+					"jersey": "7",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "27" },
+					"active": true
+			},
+			{
+					"id": "16790",
+					"fullName": "Jarvis Landry",
+					"displayName": "Jarvis Landry",
+					"shortName": "J. Landry",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16790/jarvis-landry" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/16790/jarvis-landry" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/16790/jarvis-landry" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/16790/jarvis-landry" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/16790/jarvis-landry" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/16790/jarvis-landry" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16790/jarvis-landry" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16790.png",
+					"jersey": "80",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "18" },
+					"active": true
+			},
+			{
+					"id": "3052587",
+					"fullName": "Baker Mayfield",
+					"displayName": "Baker Mayfield",
+					"shortName": "B. Mayfield",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3052587/baker-mayfield" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3052587/baker-mayfield" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3052587/baker-mayfield" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3052587/baker-mayfield" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3052587/baker-mayfield" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3052587/baker-mayfield" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3052587/baker-mayfield" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3052587.png",
+					"jersey": "6",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "29" },
+					"active": true
+			},
+			{
+					"id": "3929630",
+					"fullName": "Saquon Barkley",
+					"displayName": "Saquon Barkley",
+					"shortName": "S. Barkley",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3929630/saquon-barkley" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3929630/saquon-barkley" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3929630/saquon-barkley" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3929630/saquon-barkley" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3929630/saquon-barkley" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3929630/saquon-barkley" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3929630/saquon-barkley" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3929630.png",
+					"jersey": "26",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "19" },
+					"active": true
+			},
+			{
+					"id": "2574808",
+					"fullName": "Robbie Anderson",
+					"displayName": "Robbie Anderson",
+					"shortName": "R. Anderson",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2574808/robbie-anderson" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2574808/robbie-anderson" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2574808/robbie-anderson" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2574808/robbie-anderson" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2574808/robbie-anderson" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2574808/robbie-anderson" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2574808/robbie-anderson" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2574808.png",
+					"jersey": "3",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "29" },
+					"active": true
+			},
+			{
+					"id": "4241464",
+					"fullName": "Mac Jones",
+					"displayName": "Mac Jones",
+					"shortName": "M. Jones",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241464/mac-jones" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4241464/mac-jones" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4241464/mac-jones" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4241464/mac-jones" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4241464/mac-jones" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4241464/mac-jones" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241464/mac-jones" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241464.png",
+					"jersey": "10",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "17" },
+					"active": true
+			},
+			{
+					"id": "3925347",
+					"fullName": "Damien Harris",
+					"displayName": "Damien Harris",
+					"shortName": "D. Harris",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3925347/damien-harris" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3925347/damien-harris" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3925347/damien-harris" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3925347/damien-harris" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3925347/damien-harris" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3925347/damien-harris" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3925347/damien-harris" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3925347.png",
+					"jersey": "37",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "17" },
+					"active": true
+			},
+			{
+					"id": "4361411",
+					"fullName": "Pat Freiermuth",
+					"displayName": "Pat Freiermuth",
+					"shortName": "P. Freiermuth",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4361411/pat-freiermuth" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4361411/pat-freiermuth" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4361411.png",
+					"jersey": "88",
+					"position": { "abbreviation": "TE" },
+					"team": { "id": "23" },
+					"active": true
+			},
+			{
+					"id": "11237",
+					"fullName": "Matt Ryan",
+					"displayName": "Matt Ryan",
+					"shortName": "M. Ryan",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/11237/matt-ryan" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/11237/matt-ryan" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/11237/matt-ryan" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/11237/matt-ryan" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/11237/matt-ryan" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/11237/matt-ryan" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/11237/matt-ryan" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11237.png",
+					"jersey": "2",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "11" },
+					"active": true
+			},
+			{
+					"id": "4242335",
+					"fullName": "Jonathan Taylor",
+					"displayName": "Jonathan Taylor",
+					"shortName": "J. Taylor",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4242335/jonathan-taylor" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4242335/jonathan-taylor" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242335.png",
+					"jersey": "28",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "11" },
+					"active": true
+			},
+			{
+					"id": "4035687",
+					"fullName": "Michael Pittman Jr.",
+					"displayName": "Michael Pittman Jr.",
+					"shortName": "M. Pittman Jr.",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4035687/michael-pittman-jr" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4035687/michael-pittman-jr" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035687.png",
+					"jersey": "11",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "11" },
+					"active": true
+			},
+			{
+					"id": "4241479",
+					"fullName": "Tua Tagovailoa",
+					"displayName": "Tua Tagovailoa",
+					"shortName": "T. Tagovailoa",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4241479/tua-tagovailoa" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241479/tua-tagovailoa" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
+					"jersey": "1",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "15" },
+					"active": true
+			},
+			{
+					"id": "2979843",
+					"fullName": "Kenyan Drake",
+					"displayName": "Kenyan Drake",
+					"shortName": "K. Drake",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2979843/kenyan-drake" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2979843/kenyan-drake" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2979843/kenyan-drake" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2979843/kenyan-drake" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2979843/kenyan-drake" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2979843/kenyan-drake" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2979843/kenyan-drake" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2979843.png",
+					"jersey": "17",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "33" },
+					"active": true
+			},
+			{
+					"id": "3116406",
+					"fullName": "Tyreek Hill",
+					"displayName": "Tyreek Hill",
+					"shortName": "T. Hill",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3116406/tyreek-hill" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3116406/tyreek-hill" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3116406/tyreek-hill" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3116406/tyreek-hill" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3116406/tyreek-hill" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3116406/tyreek-hill" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3116406/tyreek-hill" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3116406.png",
+					"jersey": "10",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "15" },
+					"active": true
+			},
+			{
+					"id": "12483",
+					"fullName": "Matthew Stafford",
+					"displayName": "Matthew Stafford",
+					"shortName": "M. Stafford",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/12483/matthew-stafford" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/12483/matthew-stafford" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/12483/matthew-stafford" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/12483/matthew-stafford" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/12483/matthew-stafford" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/12483/matthew-stafford" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/12483/matthew-stafford" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/12483.png",
+					"jersey": "9",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "14" },
+					"active": true
+			},
+			{
+					"id": "15807",
+					"fullName": "Cordarrelle Patterson",
+					"displayName": "Cordarrelle Patterson",
+					"shortName": "C. Patterson",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/15807/cordarrelle-patterson" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15807/cordarrelle-patterson" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/15807.png",
+					"jersey": "84",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "1" },
+					"active": true
+			},
+			{
+					"id": "2977187",
+					"fullName": "Cooper Kupp",
+					"displayName": "Cooper Kupp",
+					"shortName": "C. Kupp",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2977187/cooper-kupp" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2977187/cooper-kupp" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2977187/cooper-kupp" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2977187/cooper-kupp" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2977187/cooper-kupp" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2977187/cooper-kupp" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2977187/cooper-kupp" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2977187.png",
+					"jersey": "10",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "14" },
+					"active": true
+			},
+			{
+					"id": "15864",
+					"fullName": "Geno Smith",
+					"displayName": "Geno Smith",
+					"shortName": "G. Smith",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15864/geno-smith" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/15864/geno-smith" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/15864/geno-smith" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/15864/geno-smith" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/15864/geno-smith" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/15864/geno-smith" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/15864/geno-smith" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/15864.png",
+					"jersey": "7",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "26" },
+					"active": true
+			},
+			{
+					"id": "3139925",
+					"fullName": "Rashaad Penny",
+					"displayName": "Rashaad Penny",
+					"shortName": "R. Penny",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3139925/rashaad-penny" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3139925/rashaad-penny" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3139925/rashaad-penny" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3139925/rashaad-penny" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3139925/rashaad-penny" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3139925/rashaad-penny" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3139925/rashaad-penny" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3139925.png",
+					"jersey": "20",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "26" },
+					"active": true
+			},
+			{
+					"id": "3886598",
+					"fullName": "Jauan Jennings",
+					"displayName": "Jauan Jennings",
+					"shortName": "J. Jennings",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3886598/jauan-jennings" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3886598/jauan-jennings" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3886598/jauan-jennings" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3886598/jauan-jennings" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3886598/jauan-jennings" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3886598/jauan-jennings" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3886598/jauan-jennings" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3886598.png",
+					"jersey": "15",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "25" },
+					"active": true
+			},
+			{
+					"id": "3915511",
+					"fullName": "Joe Burrow",
+					"displayName": "Joe Burrow",
+					"shortName": "J. Burrow",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3915511/joe-burrow" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3915511/joe-burrow" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3915511/joe-burrow" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3915511/joe-burrow" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3915511/joe-burrow" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3915511/joe-burrow" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3915511/joe-burrow" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3915511.png",
+					"jersey": "9",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "4" },
+					"active": true
+			},
+			{
+					"id": "3116385",
+					"fullName": "Joe Mixon",
+					"displayName": "Joe Mixon",
+					"shortName": "J. Mixon",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3116385/joe-mixon" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3116385/joe-mixon" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3116385/joe-mixon" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3116385/joe-mixon" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3116385/joe-mixon" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3116385/joe-mixon" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3116385/joe-mixon" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3116385.png",
+					"jersey": "28",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "4" },
+					"active": true
+			},
+			{
+					"id": "4362628",
+					"fullName": "Ja'Marr Chase",
+					"displayName": "Ja'Marr Chase",
+					"shortName": "J. Chase",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4362628/jamarr-chase" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4362628/jamarr-chase" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4362628/jamarr-chase" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4362628/jamarr-chase" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4362628/jamarr-chase" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4362628/jamarr-chase" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4362628/jamarr-chase" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4362628.png",
+					"jersey": "1",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "4" },
+					"active": true
+			},
+			{
+					"id": "14881",
+					"fullName": "Russell Wilson",
+					"displayName": "Russell Wilson",
+					"shortName": "R. Wilson",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14881/russell-wilson" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/14881/russell-wilson" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/14881/russell-wilson" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/14881/russell-wilson" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/14881/russell-wilson" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/14881/russell-wilson" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14881/russell-wilson" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/14881.png",
+					"jersey": "3",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "7" },
+					"active": true
+			},
+			{
+					"id": "2576434",
+					"fullName": "Melvin Gordon III",
+					"displayName": "Melvin Gordon III",
+					"shortName": "M. Gordon III",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2576434/melvin-gordon-iii" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2576434/melvin-gordon-iii" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2576434.png",
+					"jersey": "25",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "7" },
+					"active": true
+			},
+			{
+					"id": "4241463",
+					"fullName": "Jerry Jeudy",
+					"displayName": "Jerry Jeudy",
+					"shortName": "J. Jeudy",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4241463/jerry-jeudy" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4241463/jerry-jeudy" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241463.png",
+					"jersey": "10",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "7" },
+					"active": true
+			},
+			{
+					"id": "16757",
+					"fullName": "Derek Carr",
+					"displayName": "Derek Carr",
+					"shortName": "D. Carr",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16757/derek-carr" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/16757/derek-carr" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/16757/derek-carr" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/16757/derek-carr" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/16757/derek-carr" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/16757/derek-carr" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16757/derek-carr" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16757.png",
+					"jersey": "4",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "13" },
+					"active": true
+			},
+			{
+					"id": "4047365",
+					"fullName": "Josh Jacobs",
+					"displayName": "Josh Jacobs",
+					"shortName": "J. Jacobs",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4047365/josh-jacobs" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4047365/josh-jacobs" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4047365/josh-jacobs" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4047365/josh-jacobs" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4047365/josh-jacobs" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4047365/josh-jacobs" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4047365/josh-jacobs" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
+					"jersey": "28",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "13" },
+					"active": true
+			},
+			{
+					"id": "16800",
+					"fullName": "Davante Adams",
+					"displayName": "Davante Adams",
+					"shortName": "D. Adams",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16800/davante-adams" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/16800/davante-adams" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/16800/davante-adams" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/16800/davante-adams" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/16800/davante-adams" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/16800/davante-adams" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/16800/davante-adams" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16800.png",
+					"jersey": "17",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "13" },
+					"active": true
+			},
+			{
+					"id": "8439",
+					"fullName": "Aaron Rodgers",
+					"displayName": "Aaron Rodgers",
+					"shortName": "A. Rodgers",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/8439/aaron-rodgers" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/8439/aaron-rodgers" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/8439/aaron-rodgers" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/8439/aaron-rodgers" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/8439/aaron-rodgers" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/8439/aaron-rodgers" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/8439/aaron-rodgers" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png",
+					"jersey": "12",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "9" },
+					"active": true
+			},
+			{
+					"id": "3042519",
+					"fullName": "Aaron Jones",
+					"displayName": "Aaron Jones",
+					"shortName": "A. Jones",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3042519/aaron-jones" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3042519/aaron-jones" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3042519/aaron-jones" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3042519/aaron-jones" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3042519/aaron-jones" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3042519/aaron-jones" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3042519/aaron-jones" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042519.png",
+					"jersey": "33",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "9" },
+					"active": true
+			},
+			{
+					"id": "3127306",
+					"fullName": "Dante Pettis",
+					"displayName": "Dante Pettis",
+					"shortName": "D. Pettis",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3127306/dante-pettis" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3127306/dante-pettis" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3127306/dante-pettis" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3127306/dante-pettis" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3127306/dante-pettis" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3127306/dante-pettis" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3127306/dante-pettis" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3127306.png",
+					"jersey": "18",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "3" },
+					"active": true
+			},
+			{
+					"id": "3918298",
+					"fullName": "Josh Allen",
+					"displayName": "Josh Allen",
+					"shortName": "J. Allen",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3918298/josh-allen" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3918298/josh-allen" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3918298/josh-allen" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3918298/josh-allen" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3918298/josh-allen" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3918298/josh-allen" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3918298/josh-allen" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3918298.png",
+					"jersey": "17",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "2" },
+					"active": true
+			},
+			{
+					"id": "3043078",
+					"fullName": "Derrick Henry",
+					"displayName": "Derrick Henry",
+					"shortName": "D. Henry",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3043078/derrick-henry" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/3043078/derrick-henry" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/3043078/derrick-henry" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/3043078/derrick-henry" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/3043078/derrick-henry" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/3043078/derrick-henry" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/3043078/derrick-henry" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3043078.png",
+					"jersey": "22",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "10" },
+					"active": true
+			},
+			{
+					"id": "2976212",
+					"fullName": "Stefon Diggs",
+					"displayName": "Stefon Diggs",
+					"shortName": "S. Diggs",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2976212/stefon-diggs" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/2976212/stefon-diggs" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/2976212/stefon-diggs" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/2976212/stefon-diggs" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/2976212/stefon-diggs" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/2976212/stefon-diggs" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/2976212/stefon-diggs" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png",
+					"jersey": "14",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "2" },
+					"active": true
+			},
+			{
+					"id": "14880",
+					"fullName": "Kirk Cousins",
+					"displayName": "Kirk Cousins",
+					"shortName": "K. Cousins",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14880/kirk-cousins" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/14880/kirk-cousins" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/14880/kirk-cousins" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/14880/kirk-cousins" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/14880/kirk-cousins" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/14880/kirk-cousins" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14880/kirk-cousins" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/14880.png",
+					"jersey": "8",
+					"position": { "abbreviation": "QB" },
+					"team": { "id": "16" },
+					"active": true
+			},
+			{
+					"id": "4045163",
+					"fullName": "Miles Sanders",
+					"displayName": "Miles Sanders",
+					"shortName": "M. Sanders",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4045163/miles-sanders" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4045163/miles-sanders" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4045163/miles-sanders" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4045163/miles-sanders" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4045163/miles-sanders" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4045163/miles-sanders" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4045163/miles-sanders" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4045163.png",
+					"jersey": "26",
+					"position": { "abbreviation": "RB" },
+					"team": { "id": "21" },
+					"active": true
+			},
+			{
+					"id": "4262921",
+					"fullName": "Justin Jefferson",
+					"displayName": "Justin Jefferson",
+					"shortName": "J. Jefferson",
+					"links": [
+							{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4262921/justin-jefferson" },
+							{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4262921/justin-jefferson" },
+							{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4262921/justin-jefferson" },
+							{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4262921/justin-jefferson" },
+							{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4262921/justin-jefferson" },
+							{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4262921/justin-jefferson" },
+							{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4262921/justin-jefferson" }
+					],
+					"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4262921.png",
+					"jersey": "18",
+					"position": { "abbreviation": "WR" },
+					"team": { "id": "16" },
+					"active": true
+			}
+	]
+}

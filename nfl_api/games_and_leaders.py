@@ -1,12 +1,10 @@
 from pprint import pprint
 from nfl_api.get_game_data import get_game_data
-# For debugging:
-# from get_game_data import get_game_data
 
-def get_game_leaders():
-	games_dict, home_team, away_team, leaders = get_game_data()
+def get_games_and_leaders():
+	games_dict, leaders = get_game_data()
 	if leaders is None:
-		pass		
+		pass
 	else:
 		passing_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "passingYards"]		
 		rushing_yards = [pl_dict for pl_dict in leaders if pl_dict["name"] == "rushingYards"]
@@ -41,13 +39,11 @@ def get_game_leaders():
 				}				
 				for g in games_dict["games"]:
 					g["game"].update({"receiving_leader": receiving_leader})
-
-	# breakpoint()
 	games = games_dict["games"]
-	# breakpoint()
-	return games
+	breakpoint()
+	return games_dict["games"]
 
-# get_game_leaders()
+get_games_and_leaders()
 
 
 # example usage in Python interpreter:

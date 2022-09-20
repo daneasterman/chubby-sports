@@ -1,6 +1,8 @@
 import requests
+import json
 from dateutil.parser import parse
 from collections import defaultdict
+from clean_leaders import generate_leaders
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
@@ -11,45 +13,47 @@ def get_game_data():
 	nfl_data = requests.get(NFL_URL).json()
 	events = nfl_data['events']
 	games_dict = defaultdict(list)	
+	
+	passers, rushers = generate_leaders()
+	passer_iterable = iter(passers)
+	rusher_iterable = iter(rushers)
+	
 	for e in events:
-		competitions = e["competitions"]		
+		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
-			leaders = c.get("leaders")			
-
-			home_team_name = home_team["team"]["displayName"]
-			home_team_score = home_team["score"]
-			home_team_logo = home_team["team"]["logo"]			
-			away_team_name = away_team["team"]["displayName"]
-			away_team_score = away_team["score"]
-			away_team_logo = away_team["team"]["logo"]
 			
-			stadium = c["venue"]["fullName"]
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
 			day_plain_lang = python_date_obj.strftime("%A")
-			date_plain_lang = python_date_obj.strftime("%B %d %Y")
+			date_plain_lang = python_date_obj.strftime("%B %d %Y")				
 			
 			game = {
 					"home_team": {
-						"name": home_team_name, 
-						"score": home_team_score,
-						"logo": home_team_logo
+						"name": home_team["team"]["displayName"],
+						"score": home_team["score"],
+						"logo": home_team["team"]["logo"]	
 						},
 					"away_team": {
-						"name": away_team_name, 
-						"score": away_team_score,
-						"logo": away_team_logo
+						"name": away_team["team"]["displayName"],
+						"score": away_team["score"],
+						"logo":  away_team["team"]["logo"]
 						},
 					"day": day_plain_lang,
 					"date": date_plain_lang,
-					"stadium": stadium,
-				}
-			
-			games_dict["games"].append({"game": game})
-	
+					"stadium": c["venue"]["fullName"],
+					"leaders": {"passers": next(passer_iterable), "rushers": next(rusher_iterable)}
+			}
+			games_dict["games"].append( {"game": game} )
+
+	with open('json/games_v3.json', 'w') as outfile:
+		json.dump(games_dict, outfile)
+
 	return games_dict
-	# pprint(games_dict)
+
+	# "full_name": p["athlete"]["fullName"],
+	# "position": p["athlete"]["position"]["abbreviation"],
+	# "headshot": p["athlete"]["headshot"],
 
 get_game_data()

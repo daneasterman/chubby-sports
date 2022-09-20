@@ -1,12 +1,15 @@
+from pprint import pprint
 from flask import Flask, render_template
-from nfl_api.get_game_data import get_game_data
+from nfl_api.games_and_leaders import get_games_and_leaders
+from pprint import pprint
+
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-	games_dict = get_game_data()
-	return render_template("nfl.html", games=games_dict["games"])
+	games = get_games_and_leaders()		
+	return render_template("nfl.html", games=games)
 
 if __name__ == "__main__":
 	app.run()

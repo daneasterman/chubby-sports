@@ -1,0 +1,164 @@
+{
+	"games": [
+			{
+					"game": {
+							"home_team": { "name": "Kansas City Chiefs", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png" },
+							"away_team": { "name": "Los Angeles Chargers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png" },
+							"day": "Friday",
+							"date": "September 16 2022",
+							"stadium": "GEHA Field at Arrowhead Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Cleveland Browns", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png" },
+							"away_team": { "name": "New York Jets", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "FirstEnergy Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Detroit Lions", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png" },
+							"away_team": { "name": "Washington Commanders", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Ford Field",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "New Orleans Saints", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png" },
+							"away_team": { "name": "Tampa Bay Buccaneers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Caesars Superdome",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "New York Giants", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png" },
+							"away_team": { "name": "Carolina Panthers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "MetLife Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Pittsburgh Steelers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png" },
+							"away_team": { "name": "New England Patriots", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Acrisure Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Jacksonville Jaguars", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png" },
+							"away_team": { "name": "Indianapolis Colts", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "TIAA Bank Field",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Baltimore Ravens", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png" },
+							"away_team": { "name": "Miami Dolphins", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "M&T Bank Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Los Angeles Rams", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png" },
+							"away_team": { "name": "Atlanta Falcons", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "SoFi Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "San Francisco 49ers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png" },
+							"away_team": { "name": "Seattle Seahawks", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Levi's Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Dallas Cowboys", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png" },
+							"away_team": { "name": "Cincinnati Bengals", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "AT&T Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Denver Broncos", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png" },
+							"away_team": { "name": "Houston Texans", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Empower Field at Mile High",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Las Vegas Raiders", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png" },
+							"away_team": { "name": "Arizona Cardinals", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png" },
+							"day": "Sunday",
+							"date": "September 18 2022",
+							"stadium": "Allegiant Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Green Bay Packers", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png" },
+							"away_team": { "name": "Chicago Bears", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png" },
+							"day": "Monday",
+							"date": "September 19 2022",
+							"stadium": "Lambeau Field",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Buffalo Bills", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png" },
+							"away_team": { "name": "Tennessee Titans", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png" },
+							"day": "Monday",
+							"date": "September 19 2022",
+							"stadium": "Highmark Stadium",
+							"leader": "Justin Jefferson"
+					}
+			},
+			{
+					"game": {
+							"home_team": { "name": "Philadelphia Eagles", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png" },
+							"away_team": { "name": "Minnesota Vikings", "score": "0", "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png" },
+							"day": "Tuesday",
+							"date": "September 20 2022",
+							"stadium": "Lincoln Financial Field",
+							"leader": "Justin Jefferson"
+					}
+			}
+	]
+}

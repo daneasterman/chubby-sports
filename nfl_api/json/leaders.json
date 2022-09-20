@@ -1,0 +1,101 @@
+[
+	{
+			"name": "passingYards",
+			"displayName": "Passing Leader",
+			"shortDisplayName": "PASS",
+			"abbreviation": "PYDS",
+			"leaders": [
+					{
+							"displayValue": "23-32, 277 YDS, 2 TD",
+							"value": 277.0,
+							"athlete": {
+									"id": "14880",
+									"fullName": "Kirk Cousins",
+									"displayName": "Kirk Cousins",
+									"shortName": "K. Cousins",
+									"links": [
+											{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14880/kirk-cousins" },
+											{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/14880/kirk-cousins" },
+											{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/14880/kirk-cousins" },
+											{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/14880/kirk-cousins" },
+											{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/14880/kirk-cousins" },
+											{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/14880/kirk-cousins" },
+											{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/14880/kirk-cousins" }
+									],
+									"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/14880.png",
+									"jersey": "8",
+									"position": { "abbreviation": "QB" },
+									"team": { "id": "16" },
+									"active": true
+							},
+							"team": { "id": "16" }
+					}
+			]
+	},
+	{
+			"name": "rushingYards",
+			"displayName": "Rushing Leader",
+			"shortDisplayName": "RUSH",
+			"abbreviation": "RYDS",
+			"leaders": [
+					{
+							"displayValue": "13 CAR, 96 YDS, 1 TD",
+							"value": 96.0,
+							"athlete": {
+									"id": "4045163",
+									"fullName": "Miles Sanders",
+									"displayName": "Miles Sanders",
+									"shortName": "M. Sanders",
+									"links": [
+											{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4045163/miles-sanders" },
+											{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4045163/miles-sanders" },
+											{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4045163/miles-sanders" },
+											{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4045163/miles-sanders" },
+											{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4045163/miles-sanders" },
+											{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4045163/miles-sanders" },
+											{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4045163/miles-sanders" }
+									],
+									"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4045163.png",
+									"jersey": "26",
+									"position": { "abbreviation": "RB" },
+									"team": { "id": "21" },
+									"active": true
+							},
+							"team": { "id": "21" }
+					}
+			]
+	},
+	{
+			"name": "receivingYards",
+			"displayName": "Receiving Leader",
+			"shortDisplayName": "REC",
+			"abbreviation": "RECYDS",
+			"leaders": [
+					{
+							"displayValue": "9 REC, 184 YDS, 2 TD",
+							"value": 184.0,
+							"athlete": {
+									"id": "4262921",
+									"fullName": "Justin Jefferson",
+									"displayName": "Justin Jefferson",
+									"shortName": "J. Jefferson",
+									"links": [
+											{ "rel": ["playercard", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4262921/justin-jefferson" },
+											{ "rel": ["stats", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/stats/_/id/4262921/justin-jefferson" },
+											{ "rel": ["splits", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/splits/_/id/4262921/justin-jefferson" },
+											{ "rel": ["gamelog", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/gamelog/_/id/4262921/justin-jefferson" },
+											{ "rel": ["news", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/news/_/id/4262921/justin-jefferson" },
+											{ "rel": ["bio", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/bio/_/id/4262921/justin-jefferson" },
+											{ "rel": ["overview", "desktop", "athlete"], "href": "http://www.espn.com/nfl/player/_/id/4262921/justin-jefferson" }
+									],
+									"headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4262921.png",
+									"jersey": "18",
+									"position": { "abbreviation": "WR" },
+									"team": { "id": "16" },
+									"active": true
+							},
+							"team": { "id": "16" }
+					}
+			]
+	}
+]
