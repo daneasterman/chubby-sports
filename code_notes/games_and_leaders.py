@@ -1,5 +1,5 @@
 from pprint import pprint
-from nfl_api.get_game_data import get_game_data
+from nfl_api.games import get_game_data
 
 def get_games_and_leaders():
 	games_dict, leaders = get_game_data()
