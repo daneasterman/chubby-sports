@@ -2,14 +2,14 @@ import requests
 import json
 from dateutil.parser import parse
 from collections import defaultdict
-from clean_leaders import generate_leaders
+from leaders import generate_leaders
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
 NFL_URL = f"{BASE_ESPN}football/nfl/scoreboard"
 LALIGA_URL = f"{BASE_ESPN}soccer/esp.1/scoreboard"
 
-def get_game_data():
+def get_games():
 	nfl_data = requests.get(NFL_URL).json()
 	events = nfl_data['events']
 	games_dict = defaultdict(list)	
@@ -56,5 +56,3 @@ def get_game_data():
 		json.dump(games_dict, outfile)
 
 	return games_dict
-
-get_game_data()
