@@ -63,14 +63,14 @@ h1.page_title {
 /* @media screen and (min-width: 768px) {	
 } */
 
-/* GAME PANEL STYLES */
+/****** GAME PANEL STYLES ******/
 .game_wrapper {
-	padding: 1rem 2rem 2rem 2rem;
+	padding: 0 2rem 2rem 2rem;
 	box-shadow: 2px 3px 2px rgb(0 0 0 / 5%);
 	background-color: white;
-	margin-bottom: 2.25rem;
-	
+	margin-bottom: 2.25rem;	
 }
+
 .home_away {
 	position: relative;	
 }
@@ -138,13 +138,15 @@ h1.page_title {
 	background-color: #1ACBE8;
 }
 
-/* PLAYER PANEL STYLES */
+/***** PLAYER PANEL STYLES *****/
 
-.player_flex {
+.player_flex_wrapper {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 2rem 1rem 1rem 1rem;	
+	background-color: white;	
 }
 
 h2.leader_title {
