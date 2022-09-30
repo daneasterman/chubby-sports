@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-	games = get_games()
-	return render_template("nfl.html", games=games)
+	nfl = get_games()	
+	return render_template("nfl.html", nfl=nfl)
 
 if __name__ == "__main__":
 	app.run()

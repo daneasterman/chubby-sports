@@ -1,0 +1,517 @@
+{
+  "week": 4,
+  "games": [
+    {
+      "home_team": {
+        "name": "Cincinnati Bengals",
+        "score": "27",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png"
+      },
+      "away_team": {
+        "name": "Miami Dolphins",
+        "score": "15",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+      },
+      "day": "Friday",
+      "date": "September 30 2022",
+      "stadium": "Paycor Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Joe Burrow",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3915511.png"
+        },
+        "rushing": {
+          "full_name": "Raheem Mostert",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2576414.png"
+        },
+        "receiving": {
+          "full_name": "Tyreek Hill",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3116406.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "New Orleans Saints",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+      },
+      "away_team": {
+        "name": "Minnesota Vikings",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Tottenham Hotspur Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Jameis Winston",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2969939.png"
+        },
+        "rushing": {
+          "full_name": "Dalvin Cook",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3116593.png"
+        },
+        "receiving": {
+          "full_name": "Chris Olave",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4361370.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Atlanta Falcons",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
+      },
+      "away_team": {
+        "name": "Cleveland Browns",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Mercedes-Benz Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Marcus Mariota",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2576980.png"
+        },
+        "rushing": {
+          "full_name": "Nick Chubb",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128720.png"
+        },
+        "receiving": {
+          "full_name": "Amari Cooper",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2976499.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Dallas Cowboys",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+      },
+      "away_team": {
+        "name": "Washington Commanders",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "AT&T Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Carson Wentz",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2573079.png"
+        },
+        "rushing": {
+          "full_name": "Ezekiel Elliott",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3051392.png"
+        },
+        "receiving": {
+          "full_name": "Terry McLaurin",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3121422.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Detroit Lions",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+      },
+      "away_team": {
+        "name": "Seattle Seahawks",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Ford Field",
+      "leaders": {
+        "passing": {
+          "full_name": "Jared Goff",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3046779.png"
+        },
+        "rushing": {
+          "full_name": "D'Andre Swift",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4259545.png"
+        },
+        "receiving": {
+          "full_name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4374302.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Indianapolis Colts",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+      },
+      "away_team": {
+        "name": "Tennessee Titans",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Lucas Oil Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Matt Ryan",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11237.png"
+        },
+        "rushing": {
+          "full_name": "Jonathan Taylor",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242335.png"
+        },
+        "receiving": {
+          "full_name": "Michael Pittman Jr.",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035687.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "New York Giants",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+      },
+      "away_team": {
+        "name": "Chicago Bears",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "MetLife Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Daniel Jones",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3917792.png"
+        },
+        "rushing": {
+          "full_name": "Saquon Barkley",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3929630.png"
+        },
+        "receiving": {
+          "full_name": "Richie James",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3122899.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Philadelphia Eagles",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+      },
+      "away_team": {
+        "name": "Jacksonville Jaguars",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Lincoln Financial Field",
+      "leaders": {
+        "passing": {
+          "full_name": "Jalen Hurts",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4040715.png"
+        },
+        "rushing": {
+          "full_name": "James Robinson",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4052042.png"
+        },
+        "receiving": {
+          "full_name": "A.J. Brown",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Pittsburgh Steelers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png"
+      },
+      "away_team": {
+        "name": "New York Jets",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Acrisure Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Joe Flacco",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11252.png"
+        },
+        "rushing": {
+          "full_name": "Najee Harris",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241457.png"
+        },
+        "receiving": {
+          "full_name": "Garrett Wilson",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569618.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Baltimore Ravens",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
+      },
+      "away_team": {
+        "name": "Buffalo Bills",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "M&T Bank Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Josh Allen",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3918298.png"
+        },
+        "rushing": {
+          "full_name": "Lamar Jackson",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3916387.png"
+        },
+        "receiving": {
+          "full_name": "Stefon Diggs",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Houston Texans",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+      },
+      "away_team": {
+        "name": "Los Angeles Chargers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lac.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "NRG Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Justin Herbert",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4038941.png"
+        },
+        "rushing": {
+          "full_name": "Dameon Pierce",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360238.png"
+        },
+        "receiving": {
+          "full_name": "Brandin Cooks",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16731.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Carolina Panthers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "away_team": {
+        "name": "Arizona Cardinals",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Bank of America Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Kyler Murray",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3917315.png"
+        },
+        "rushing": {
+          "full_name": "Christian McCaffrey",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3117251.png"
+        },
+        "receiving": {
+          "full_name": "Marquise Brown",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241372.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Green Bay Packers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png"
+      },
+      "away_team": {
+        "name": "New England Patriots",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Lambeau Field",
+      "leaders": {
+        "passing": {
+          "full_name": "Aaron Rodgers",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png"
+        },
+        "rushing": {
+          "full_name": "Aaron Jones",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042519.png"
+        },
+        "receiving": {
+          "full_name": "Nelson Agholor",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2971618.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Las Vegas Raiders",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png"
+      },
+      "away_team": {
+        "name": "Denver Broncos",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+      },
+      "day": "Sunday",
+      "date": "October 02 2022",
+      "stadium": "Allegiant Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Derek Carr",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/16757.png"
+        },
+        "rushing": {
+          "full_name": "Josh Jacobs",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png"
+        },
+        "receiving": {
+          "full_name": "Courtland Sutton",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "Tampa Bay Buccaneers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "away_team": {
+        "name": "Kansas City Chiefs",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+      },
+      "day": "Monday",
+      "date": "October 03 2022",
+      "stadium": "Raymond James Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Patrick Mahomes",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3139477.png"
+        },
+        "rushing": {
+          "full_name": "Leonard Fournette",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3115364.png"
+        },
+        "receiving": {
+          "full_name": "Travis Kelce",
+          "position": "TE",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/15847.png"
+        }
+      }
+    },
+    {
+      "home_team": {
+        "name": "San Francisco 49ers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png"
+      },
+      "away_team": {
+        "name": "Los Angeles Rams",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+      },
+      "day": "Tuesday",
+      "date": "October 04 2022",
+      "stadium": "Levi's Stadium",
+      "leaders": {
+        "passing": {
+          "full_name": "Matthew Stafford",
+          "position": "QB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/12483.png"
+        },
+        "rushing": {
+          "full_name": "Jeff Wilson Jr.",
+          "position": "RB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3122976.png"
+        },
+        "receiving": {
+          "full_name": "Cooper Kupp",
+          "position": "WR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2977187.png"
+        }
+      }
+    }
+  ]
+}

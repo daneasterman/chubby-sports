@@ -3,6 +3,7 @@ import json
 from dateutil.parser import parse
 from collections import defaultdict
 from nfl_api.leaders import generate_leaders
+# from leaders import generate_leaders
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
@@ -10,15 +11,17 @@ NFL_URL = f"{BASE_ESPN}football/nfl/scoreboard"
 LALIGA_URL = f"{BASE_ESPN}soccer/esp.1/scoreboard"
 
 def get_games():
-	nfl_data = requests.get(NFL_URL).json()
-	events = nfl_data['events']	
+	nfl_raw = requests.get(NFL_URL).json()
+	events = nfl_raw['events']
+	week = nfl_raw["week"]["number"]
+	nfl_clean = {"week": week}
 	
 	passers, rushers, receivers = generate_leaders()
 	passer_iterable = iter(passers)
 	rusher_iterable = iter(rushers)
-	receiver_iterable = iter(receivers)	
+	receiver_iterable = iter(receivers)		
 	
-	games = []	
+	nfl_clean['games'] = []	
 	for e in events:
 		competitions = e["competitions"]
 		for c in competitions:
@@ -50,10 +53,11 @@ def get_games():
 						"receiving": next(receiver_iterable)
 						}
 			}
-			games.append(game)
+			nfl_clean['games'].append(game)
 
-	# with open('json/games_v5.json', 'w') as outfile:
-	# 	json.dump(games, outfile)
+	# with open('json/games_v7.json', 'w') as outfile:
+	# 	json.dump(nfl_clean, outfile, indent=2)
 
-	return games
-get_games()
+	return nfl_clean
+
+# get_games()

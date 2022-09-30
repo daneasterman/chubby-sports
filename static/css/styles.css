@@ -40,11 +40,21 @@ div.page_wrapper {
 	margin: 0 auto;	
 }
 
-.page_title_wrapper {
+.title_elements_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+
+
+.title_wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+	
 }
 .nfl_icon_wrapper i {
 	font-size: 2.25rem;
@@ -90,10 +100,11 @@ h1.page_title {
 	font-size: 2.5rem
 }
 .game_flex {
-	display: flex;
+	display: flex;	
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;	
+	flex-direction: row;
 }
 
 .team_row {
@@ -124,7 +135,7 @@ h1.page_title {
   text-align: center;
 }
 
-.dropdown_cta {	
+.reveal_game_leaders, .reveal_all {	
 	font-size: 1.1rem;	
 	color: white;
 	font-weight: 600;
@@ -133,7 +144,8 @@ h1.page_title {
 	padding: 10px 3rem 10px 3rem;
 	border: 0;	
 }
-.dropdown_cta:hover {
+.reveal_game_leaders:hover, 
+.reveal_all:hover {
 	cursor: pointer;
 	background-color: #1ACBE8;
 }
