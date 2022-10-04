@@ -38,7 +38,7 @@ section {
 
 /***** PAGE TEMPLATE STYLES ******/
 
-div.page_wrapper {
+div.listings_wrapper {
 	max-width: 1000px;
 	margin: 0 auto;	
 }
@@ -80,13 +80,11 @@ h2.section_subtitle {
 	text-align: center;
 }
 
-.reveal_all {
-	margin-bottom: 3rem;
-}
+.reveal_all { margin-bottom: 3rem; }
 
-.reveal_all, .reveal_game_leaders {	
+.reveal_all, .reveal_specific {	
 	background-color: #762FBE;
-	font-size: 1.1rem;	
+	font-size: 1.1rem;
 	color: white;
 	font-weight: 500;	
 	text-transform: capitalize;
@@ -95,7 +93,7 @@ h2.section_subtitle {
 	border: 0;
 }
 
-.reveal_all:hover, .reveal_game_leaders:hover {
+.reveal_all:hover, .reveal_specific:hover {
 	background-color: #9049D8;
 	cursor: pointer;
 }
@@ -117,6 +115,7 @@ h2.section_subtitle {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 1.1rem;
 }
 
 .home_away {	
