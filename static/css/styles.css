@@ -1,6 +1,8 @@
+/***** GLOBAL STYLES ******/
+
 html {
 	background-color: #f8f8f8;
-	color: #242424;
+	color: #242424;	
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -29,49 +31,77 @@ section {
 }
 /* Desktop */
 @media screen and (min-width: 768px) {
-  section {
-    padding-top: 4rem;
-		padding-bottom: 6rem;
+  section {    
+		padding-bottom: 1rem 5rem;
   }
 }
+
 /***** PAGE TEMPLATE STYLES ******/
+
 div.page_wrapper {
 	max-width: 1000px;
 	margin: 0 auto;	
 }
 
-.title_elements_wrapper {
+.hero_flex {
+	display: flex;
+	justify-content: center;	
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.hero_item {	
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-bottom: 4rem;
+	align-items: center;		 
+	border-radius: 12px;	
+	/* flex: 0 1 600px; */
+	/* border: 2px solid #762FBE;    */
 }
 
-.title_wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 2rem;
-	
-}
-.nfl_icon_wrapper i {
-	font-size: 2.25rem;
-	margin-right: 1rem;
-}
-
-h1.page_title {
-	font-size: 2.5rem;
+h1.section_title {
+	font-size: 2.65rem;
 	font-weight: 500;
 	text-align: center;
 	line-height: 1.25;
-	/* max-width: 60rem; */	
+	margin-bottom: 2.5rem;
+	color: #2F1D58;
+	border-bottom: 2px solid;
+	padding-bottom: 1.5rem;
 }
 
-/* Desktop */
-/* @media screen and (min-width: 768px) {	
-} */
+h2.section_subtitle {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+	color: #2F1D58;
+	border-bottom: 2px solid;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+
+.reveal_all {
+	margin-bottom: 3rem;
+}
+
+.reveal_all, .reveal_game_leaders {	
+	background-color: #762FBE;
+	font-size: 1.1rem;	
+	color: white;
+	font-weight: 500;	
+	text-transform: capitalize;
+	padding: 10px 1.5rem 10px 1.5rem;
+	border-radius: 4px;
+	border: 0;
+}
+
+.reveal_all:hover, .reveal_game_leaders:hover {
+	background-color: #9049D8;
+	cursor: pointer;
+}
 
 /****** GAME PANEL STYLES ******/
+
 .game_wrapper {
 	padding: 0 2rem 2rem 2rem;
 	box-shadow: 2px 3px 2px rgb(0 0 0 / 5%);
@@ -88,9 +118,6 @@ h1.page_title {
 	flex-direction: column;
 	align-items: center;
 }
-
-/* .game_date {	
-} */
 
 .home_away {	
 	margin-bottom: 0.5rem;
@@ -135,21 +162,7 @@ h1.page_title {
   text-align: center;
 }
 
-.reveal_all, .reveal_game_leaders {	
-	background-color: #762FBE;
-	font-size: 1.1rem;	
-	color: white;
-	font-weight: 500;	
-	text-transform: capitalize;
-	padding: 10px 1.5rem 10px 1.5rem;
-	border-radius: 4px;
-	border: 0;
-}
 
-.reveal_all:hover, .reveal_game_leaders:hover {
-	background-color: #9049D8;
-	cursor: pointer;
-}
 
 /***** PLAYER PANEL STYLES *****/
 
