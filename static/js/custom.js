@@ -1,6 +1,6 @@
 $(".reveal_all").click(function (ev) {
 	const allPlayerFlex = $('.player_flex_wrapper');	
-	 // If any player divs are hidden:
+	 // If any player/leader divs are hidden:
 	if ( allPlayerFlex.is(":hidden") ) {	
 			smoothScrollDown(ev)
 			allPlayerFlex.slideDown("fast", function() {});
