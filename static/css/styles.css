@@ -158,8 +158,6 @@ h2.section_subtitle {
   text-align: center;
 }
 
-
-
 /***** PLAYER PANEL STYLES *****/
 
 .player_flex_wrapper {
@@ -171,6 +169,24 @@ h2.section_subtitle {
 	background-color: white;	
 }
 
+.player_column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem;
+	border: 1.25px solid #e7e7e7;	
+	box-shadow: 0 5px 5px 0 rgb(0 0 0 / 5%);
+	border-radius: 12px;
+	margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.player_column { margin-bottom: 0; }
+}
+
+.player_column:hover { border: 1.5px solid #762FBE; }
+.player_column:hover > .leader_title { border-color: #762FBE; }
+
 h2.leader_title {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
@@ -180,13 +196,8 @@ h2.leader_title {
 	padding-bottom: 1rem;
 }
 
-.player_column {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .player_profile_img {
 	max-width: 175px;
 	margin-bottom: 1rem;	
 }
+
