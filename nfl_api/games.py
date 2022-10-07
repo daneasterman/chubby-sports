@@ -19,7 +19,7 @@ def get_games():
 	passers, rushers, receivers = generate_leaders()
 	passer_iterable = iter(passers)
 	rusher_iterable = iter(rushers)
-	receiver_iterable = iter(receivers)		
+	receiver_iterable = iter(receivers)
 	
 	nfl_clean['games'] = []	
 	for e in events:
@@ -31,7 +31,7 @@ def get_games():
 			raw_unix_date = c["date"]
 			python_date_obj = parse(raw_unix_date)
 			date_plain_lang = python_date_obj.strftime("%B %d %Y")				
-			day_plain_lang = python_date_obj.strftime("%A")
+			day_plain_lang = python_date_obj.strftime("%A")			
 			
 			game = {
 					"home_team": {

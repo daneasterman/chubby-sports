@@ -91,7 +91,8 @@ h2.section_subtitle {
 	border: 0;
 }
 
-.reveal_all:hover, .reveal_specific:hover {
+.reveal_all:hover, .reveal_all:active,
+.reveal_specific:hover, .reveal_specific:active {
 	background-color: #9049D8;
 	cursor: pointer;
 }
@@ -184,8 +185,12 @@ h2.section_subtitle {
 	.player_column { margin-bottom: 0; }
 }
 
-.player_column:hover { border: 1.5px solid #762FBE; }
-.player_column:hover > .leader_title { border-color: #762FBE; }
+.player_column:hover, .player_column:active { border: 1.5px solid #762FBE; }
+
+.player_column:hover > .leader_title, 
+.player_column:active > .leader_title { 
+	border-color: #762FBE; 
+}
 
 h2.leader_title {
 	font-size: 1.5rem;
