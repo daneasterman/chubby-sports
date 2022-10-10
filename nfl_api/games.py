@@ -1,7 +1,5 @@
 import requests
-import json
-from dateutil.parser import parse
-from collections import defaultdict
+from dateutil import parser, tz
 from nfl_api.leaders import generate_leaders
 # from leaders import generate_leaders
 from pprint import pprint
@@ -28,10 +26,13 @@ def get_games():
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
 			
-			raw_unix_date = c["date"]
-			python_date_obj = parse(raw_unix_date)
-			date_plain_lang = python_date_obj.strftime("%B %d %Y")				
-			day_plain_lang = python_date_obj.strftime("%A")			
+			raw_datestring = c["date"]			
+			utc_obj = parser.parse(raw_datestring)
+			local_zone = tz.tzlocal()
+			tz_aware_obj = utc_obj.astimezone(local_zone)
+			time_pretty = tz_aware_obj.strftime("%H:%M")
+			day_pretty = tz_aware_obj.strftime("%A")
+			date_pretty = tz_aware_obj.strftime("%B %d %Y")
 			
 			game = {
 					"home_team": {
@@ -44,8 +45,9 @@ def get_games():
 						"score": away_team["score"],
 						"logo":  away_team["team"]["logo"]
 						},
-					"day": day_plain_lang,
-					"date": date_plain_lang,
+					"time": time_pretty,
+					"day": day_pretty,
+					"date": date_pretty,
 					"stadium": c["venue"]["fullName"],
 					"leaders": {
 						"passing": next(passer_iterable), 

@@ -1,7 +1,4 @@
 import requests
-import json
-from dateutil.parser import parse
-from collections import defaultdict
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
