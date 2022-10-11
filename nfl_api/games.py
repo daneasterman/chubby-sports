@@ -1,7 +1,6 @@
 import requests
 from dateutil import parser, tz
 from nfl_api.leaders import generate_leaders
-# from leaders import generate_leaders
 from pprint import pprint
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
