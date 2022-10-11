@@ -26,13 +26,12 @@ def get_games():
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
 			
-			raw_datestring = c["date"]			
-			utc_obj = parser.parse(raw_datestring)
-			local_zone = tz.tzlocal()
-			tz_aware_obj = utc_obj.astimezone(local_zone)
-			time_pretty = tz_aware_obj.strftime("%H:%M")
-			day_pretty = tz_aware_obj.strftime("%A")
-			date_pretty = tz_aware_obj.strftime("%B %d %Y")
+			raw_datestring = c["date"]		
+			utc_obj = parser.parse(raw_datestring)			
+			usa_eastern_timezone = tz.gettz('America/New_York')
+			usa_eastern_datetime = utc_obj.astimezone(usa_eastern_timezone)
+			day_pretty = usa_eastern_datetime.strftime("%A")
+			date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
 			
 			game = {
 					"home_team": {
@@ -44,8 +43,7 @@ def get_games():
 						"name": away_team["team"]["displayName"],
 						"score": away_team["score"],
 						"logo":  away_team["team"]["logo"]
-						},
-					"time": time_pretty,
+						},					
 					"day": day_pretty,
 					"date": date_pretty,
 					"stadium": c["venue"]["fullName"],
