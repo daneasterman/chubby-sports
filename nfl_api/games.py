@@ -26,7 +26,7 @@ def get_games():
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
 			
-			raw_datestring = c["date"]		
+			raw_datestring = c["date"]
 			utc_obj = parser.parse(raw_datestring)			
 			usa_eastern_timezone = tz.gettz('America/New_York')
 			usa_eastern_datetime = utc_obj.astimezone(usa_eastern_timezone)
