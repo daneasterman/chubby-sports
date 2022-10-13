@@ -20,18 +20,29 @@
 		margin-right: 0.5rem;
 		font-size: 1rem;		
 	}
-	.copyright_wrapper a:hover {text-decoration: underline; }
-	.copyright_wrapper .icon_wrapper i { font-size: 1.5rem }
+	/* NB: all styles down from contact_wrapper inherited from nav */
 	
 </style>
 <footer>
 	<div class="footer_wrapper">
 		<div class="copyright_wrapper">
-			<a target="_blank" href="https://twitter.com/ChubbyHooper24">Made by the Chubby Hooper:</a>	
-			<a target="_blank" class="icon_wrapper" href="https://twitter.com/ChubbyHooper24">
-				<i class="fab fa-twitter"></i>
-			</a>	
+			<div class="contact_wrapper">
+				<div class="twitter_wrapper"> 
+					<a style="margin-right: 0.75rem;" class="twitter_link" 
+						target="_blank" href="https://twitter.com/ChubbyHooper24">By the Chubby Hooper:</a>
+					<a style="margin-right: 2rem;" target="_blank" 
+						target="_blank" href="https://twitter.com/ChubbyHooper24">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<a class="buy_coffee_button" 
+					href="https://www.buymeacoffee.com/chubbyhooper" target="_blank">				
+					<img class="buy_coffee_icon" 
+							src="{{url_for('static', filename='img/white_bmc.svg')}}"/>
+					Buy me a coffee
+				</a>
+    	</div>
+			
 		</div>			
-		</div>		
-</div>
+	</div>
 </footer>
