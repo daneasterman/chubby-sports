@@ -204,10 +204,12 @@ h2.section_subtitle {
 	.player_column { margin-bottom: 0; }
 }
 
-.player_column:hover, .player_column:active { border: 1.5px solid #762FBE; }
+.player_column:hover, .player_column:active { 
+	border: 1.5px solid #762FBE;
+}
 
 .player_column:hover > .leader_title, 
-.player_column:active > .leader_title { 
+.player_column:active > .leader_title {
 	border-color: #762FBE; 
 }
 
