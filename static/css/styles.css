@@ -78,23 +78,32 @@ h2.section_subtitle {
 	text-align: center;
 }
 
-.reveal_all { margin-bottom: 3rem; }
-
-.reveal_all, .reveal_specific {	
+.reveal_all, .reveal_specific, .buy_coffee_button {	
 	background-color: #762FBE;
 	font-size: 1.1rem;
 	color: white;
 	font-weight: 500;	
-	text-transform: capitalize;
 	padding: 10px 1.5rem 10px 1.5rem;
 	border-radius: 4px;
 	border: 0;
 }
+.reveal_all { margin-bottom: 3rem; }
+.buy_coffee_button { 
+	font-size: 1rem;
+	padding-left: 14px;
+	padding-right: 14px;
+}
 
 .reveal_all:hover, .reveal_all:active,
-.reveal_specific:hover, .reveal_specific:active {
+.reveal_specific:hover, .reveal_specific:active,
+.buy_coffee_button:hover, buy_coffee_button:active {
 	background-color: #9049D8;
 	cursor: pointer;
+}
+
+.buy_coffee_icon {
+	width: 18px;
+	margin-right: 8px;	
 }
 
 /****** GAME PANEL STYLES ******/
@@ -205,4 +214,3 @@ h2.leader_title {
 	max-width: 175px;
 	margin-bottom: 1rem;	
 }
-

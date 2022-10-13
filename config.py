@@ -1,11 +1,12 @@
 class Config:
 	DEBUG = False
 	DEVELOPMENT = False
-	CSRF_ENABLED = True	
+	CSRF_ENABLED = True
 
 class ProductionConfig(Config):
 	pass
 
 class DevelopmentConfig(Config):
-  DEBUG = True
-  DEVELOPMENT = True
+	DEBUG = True
+	DEVELOPMENT = True
+	TEMPLATES_AUTO_RELOAD = True
