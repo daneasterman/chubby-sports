@@ -52,7 +52,8 @@ div.listings_wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;		 
-	border-radius: 12px;	
+	border-radius: 12px;
+	max-width: 750px;
 	/* flex: 0 1 600px; */
 	/* border: 2px solid #762FBE;    */
 }
@@ -62,11 +63,20 @@ h1.section_title {
 	font-weight: 500;
 	text-align: center;
 	line-height: 1.25;
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.5rem;
 	color: #2F1D58;
 	border-bottom: 2px solid;
 	padding-bottom: 1.5rem;
 }
+
+p.explainer_text {
+	color: #2F1D58;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+  font-weight: 400;
+	text-align: center;	
+}
+.explainer_text span { font-weight: 600;}	
 
 h2.section_subtitle {
 	font-size: 2rem;
