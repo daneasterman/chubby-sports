@@ -1,7 +1,9 @@
 import requests
 from dateutil import parser, tz
 from nfl_api.leaders import generate_leaders
+# from leaders import generate_leaders
 from pprint import pprint
+import json
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
 NFL_URL = f"{BASE_ESPN}football/nfl/scoreboard"
@@ -36,12 +38,14 @@ def get_games():
 					"home_team": {
 						"name": home_team["team"]["displayName"],
 						"score": home_team["score"],
-						"logo": home_team["team"]["logo"]
+						"logo": home_team["team"]["logo"],
+						"record": home_team["records"][0]["summary"]
 						},
 					"away_team": {
 						"name": away_team["team"]["displayName"],
 						"score": away_team["score"],
-						"logo":  away_team["team"]["logo"]
+						"logo":  away_team["team"]["logo"],
+						"record": away_team["records"][0]["summary"]
 						},					
 					"day": day_pretty,
 					"date": date_pretty,
@@ -51,12 +55,11 @@ def get_games():
 						"rushing": next(rusher_iterable),
 						"receiving": next(receiver_iterable)
 						}
-			}
+			}			
 			nfl_clean['games'].append(game)
 
-	# with open('json/games_v7.json', 'w') as outfile:
+	# with open('json/games_v8.json', 'w') as outfile:
 	# 	json.dump(nfl_clean, outfile, indent=2)
-
 	return nfl_clean
 
 # get_games()
