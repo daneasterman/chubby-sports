@@ -176,6 +176,8 @@ h2.section_subtitle {
 	font-size: 1.1rem;
 	position: relative;	
   text-align: center;
+	line-height: 1.25;
+	margin-bottom: 0.25rem;
 }
 
 /***** PLAYER PANEL STYLES *****/
@@ -227,4 +229,4 @@ h2.leader_title {
 	margin-bottom: 1rem;	
 }
 
-.team_info { color: #762FBE }
+.purple_trim { color: #762FBE }
