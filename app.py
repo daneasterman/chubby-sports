@@ -1,7 +1,7 @@
 import os
 from pprint import pprint
 from flask import Flask, render_template
-from nfl_api.games import get_games
+from espn_api.games import get_games
 from pprint import pprint
 
 app = Flask(__name__)
@@ -12,6 +12,9 @@ app.config.from_object(env_config)
 def home():
 	nfl = get_games()	
 	return render_template("nfl.html", nfl=nfl)
+
+# insert generic sport here.
+# instantiate the sport class
 
 if __name__ == "__main__":
 	app.run()
