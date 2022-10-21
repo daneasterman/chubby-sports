@@ -1,6 +1,6 @@
 import requests
 from dateutil import parser, tz
-from espn_api.leaders import generate_leaders
+from espn_api.nfl_leaders import generate_leaders
 # from leaders import generate_leaders
 from pprint import pprint
 import json

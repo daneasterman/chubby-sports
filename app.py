@@ -1,7 +1,7 @@
 import os
 from pprint import pprint
 from flask import Flask, render_template
-from espn_api.games import get_games
+from espn_api.nfl_games import get_games
 from pprint import pprint
 
 app = Flask(__name__)

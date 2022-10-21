@@ -15,11 +15,6 @@ def get_games():
 	week = nfl_raw["week"]["number"]
 	nfl_clean = {"week": week}
 	
-	passers, rushers, receivers = generate_leaders()
-	passer_iterable = iter(passers)
-	rusher_iterable = iter(rushers)
-	receiver_iterable = iter(receivers)
-	
 	nfl_clean['games'] = []	
 	for e in events:
 		competitions = e["competitions"]
@@ -49,12 +44,7 @@ def get_games():
 						},					
 					"day": day_pretty,
 					"date": date_pretty,
-					"stadium": c["venue"]["fullName"],
-					"leaders": {
-						"passing": next(passer_iterable), 
-						"rushing": next(rusher_iterable),
-						"receiving": next(receiver_iterable)
-						}
+					"stadium": c["venue"]["fullName"],					
 			}			
 			nfl_clean['games'].append(game)
 
