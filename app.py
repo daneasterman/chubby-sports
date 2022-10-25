@@ -10,8 +10,8 @@ app.config.from_object(env_config)
 
 @app.route("/")
 def nfl():
-	nfl = get_nfl_games()	
-	return render_template("nfl.html", nfl=nfl)
+	data = get_nfl_games()	
+	return render_template("games.html", data=data)
 
 # @app.route("/nba")
 # def nba():
