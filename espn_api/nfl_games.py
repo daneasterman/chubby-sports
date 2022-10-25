@@ -7,8 +7,16 @@ import json
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports"
 NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"
+EST_TZ = tz.gettz('America/New_York')
 
-def get_games():
+def get_pretty_est(raw_datestring):
+	utc_obj = parser.parse(raw_datestring)			
+	usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
+	day_pretty = usa_eastern_datetime.strftime("%A")
+	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
+	return day_pretty, date_pretty
+
+def get_nfl_games():
 	nfl_raw = requests.get(NFL_URL).json()
 	events = nfl_raw['events']
 	week = nfl_raw["week"]["number"]
@@ -24,14 +32,8 @@ def get_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]
-			
-			raw_datestring = c["date"]
-			utc_obj = parser.parse(raw_datestring)
-			usa_eastern_timezone = tz.gettz('America/New_York')
-			usa_eastern_datetime = utc_obj.astimezone(usa_eastern_timezone)
-			day_pretty = usa_eastern_datetime.strftime("%A")
-			date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
+			away_team = c["competitors"][1]			
+			day_pretty, date_pretty = get_pretty_est(c["date"])
 			
 			game = {
 					"home_team": {
@@ -57,8 +59,6 @@ def get_games():
 			}			
 			nfl_clean['games'].append(game)
 
-	with open('json/nfl_v1.json', 'w') as outfile:
-		json.dump(nfl_clean, outfile, indent=2)
+	# with open('json/nfl_v1.json', 'w') as outfile:
+	# 	json.dump(nfl_clean, outfile, indent=2)
 	return nfl_clean
-
-get_games()

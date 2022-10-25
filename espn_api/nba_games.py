@@ -23,7 +23,7 @@ def get_pretty_est(raw_datestring):
 	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
 	return day_pretty, date_pretty
 
-def get_games():
+def get_nba_games():
 	est_now = get_current_est_datetime()
 	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={est_now}"
 	nba_raw = requests.get(NBA_URL).json()
