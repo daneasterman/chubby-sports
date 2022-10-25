@@ -5,9 +5,8 @@ from espn_api.nfl_leaders import generate_leaders
 from pprint import pprint
 import json
 
-BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
-NFL_URL = f"{BASE_ESPN}football/nfl/scoreboard"
-LALIGA_URL = f"{BASE_ESPN}soccer/esp.1/scoreboard"
+BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports"
+NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"
 
 def get_games():
 	nfl_raw = requests.get(NFL_URL).json()
@@ -58,8 +57,8 @@ def get_games():
 			}			
 			nfl_clean['games'].append(game)
 
-	# with open('json/games_v8.json', 'w') as outfile:
-	# 	json.dump(nfl_clean, outfile, indent=2)
+	with open('json/nfl_v1.json', 'w') as outfile:
+		json.dump(nfl_clean, outfile, indent=2)
 	return nfl_clean
 
-# get_games()
+get_games()
