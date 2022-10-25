@@ -16,10 +16,16 @@ def get_current_est_datetime():
 	est_now_str = est_now.strftime("%Y%m%d")	
 	return est_now_str
 
+def get_pretty_est(raw_datestring):
+	utc_obj = parser.parse(raw_datestring)			
+	usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
+	day_pretty = usa_eastern_datetime.strftime("%A")
+	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
+	return day_pretty, date_pretty
+
 def get_games():
 	est_now = get_current_est_datetime()
 	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={est_now}"
-
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
@@ -29,13 +35,8 @@ def get_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]
-			
-			raw_datestring = c["date"]
-			utc_obj = parser.parse(raw_datestring)			
-			usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
-			day_pretty = usa_eastern_datetime.strftime("%A")
-			date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
+			away_team = c["competitors"][1]			
+			day_pretty, date_pretty = get_pretty_est(c["date"])
 			
 			game = {
 					"home_team": {
@@ -56,7 +57,7 @@ def get_games():
 			}			
 			nba_clean['games'].append(game)
 
-	with open('json/nba_v3.json', 'w') as outfile:
+	with open('json/nba_v4.json', 'w') as outfile:
 		json.dump(nba_clean, outfile, indent=2)
 	# breakpoint()
 	return nba_clean

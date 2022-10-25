@@ -1,0 +1,72 @@
+{
+  "games": [
+    {
+      "home_team": {
+        "name": "Washington Wizards",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "record": "2-1"
+      },
+      "away_team": {
+        "name": "Detroit Pistons",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "record": "1-2"
+      },
+      "day": "Tuesday",
+      "date": "October 25 2022",
+      "stadium": "Capital One Arena"
+    },
+    {
+      "home_team": {
+        "name": "New Orleans Pelicans",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "record": "2-1"
+      },
+      "away_team": {
+        "name": "Dallas Mavericks",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "record": "1-1"
+      },
+      "day": "Tuesday",
+      "date": "October 25 2022",
+      "stadium": "Smoothie King Center"
+    },
+    {
+      "home_team": {
+        "name": "Oklahoma City Thunder",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "record": "0-3"
+      },
+      "away_team": {
+        "name": "LA Clippers",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "record": "2-1"
+      },
+      "day": "Tuesday",
+      "date": "October 25 2022",
+      "stadium": "Paycom Center"
+    },
+    {
+      "home_team": {
+        "name": "Phoenix Suns",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "record": "2-1"
+      },
+      "away_team": {
+        "name": "Golden State Warriors",
+        "score": "0",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "record": "2-1"
+      },
+      "day": "Tuesday",
+      "date": "October 25 2022",
+      "stadium": "Footprint Center"
+    }
+  ]
+}
