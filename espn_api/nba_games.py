@@ -57,9 +57,9 @@ def get_nba_games():
 			}			
 			nba_clean['games'].append(game)
 
-	with open('json/nba_v4.json', 'w') as outfile:
-		json.dump(nba_clean, outfile, indent=2)
+	# with open('json/nba_v4.json', 'w') as outfile:
+	# 	json.dump(nba_clean, outfile, indent=2)
 	# breakpoint()
 	return nba_clean
 
-get_games()
+# get_games()
