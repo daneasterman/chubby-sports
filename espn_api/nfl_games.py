@@ -1,22 +1,13 @@
 import requests
-from dateutil import parser, tz
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est
+# from custom_utils import BASE_ESPN, get_pretty_est
 from espn_api.nfl_leaders import generate_leaders
 # from leaders import generate_leaders
 from pprint import pprint
 import json
 
-BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports"
-NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"
-EST_TZ = tz.gettz('America/New_York')
-
-def get_pretty_est(raw_datestring):
-	utc_obj = parser.parse(raw_datestring)			
-	usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
-	day_pretty = usa_eastern_datetime.strftime("%A")
-	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
-	return day_pretty, date_pretty
-
 def get_nfl_games():
+	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"
 	nfl_raw = requests.get(NFL_URL).json()
 	events = nfl_raw['events']
 	week = nfl_raw["week"]["number"]
