@@ -2,17 +2,14 @@ import requests
 from dateutil import parser, tz
 from datetime import datetime, timezone
 from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime
-# from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime
-
-# from espn_api.leaders import generate_leaders
-# from leaders import generate_leaders
+from espn_api.nba_leaders import generate_leaders
 
 from pprint import pprint
 import json
 
 def get_nba_games():
 	est_now = get_current_est_datetime()
-	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={est_now}"
+	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={est_now}"	
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
@@ -48,5 +45,3 @@ def get_nba_games():
 	# 	json.dump(nba_clean, outfile, indent=2)
 	# breakpoint()
 	return nba_clean
-
-# get_games()

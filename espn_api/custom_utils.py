@@ -1,3 +1,4 @@
+import requests
 from dateutil import parser, tz
 from datetime import datetime, timezone
 
@@ -16,3 +17,18 @@ def get_pretty_est(raw_datestring):
 	day_pretty = usa_eastern_datetime.strftime("%A")
 	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
 	return day_pretty, date_pretty
+
+
+def make_wiki_link(player_name):
+	BASE = "https://en.wikipedia.org/wiki/"
+	subpath = player_name.replace(" ", "_")
+	return BASE + subpath
+
+def get_team_name(uri, team_id):	
+	data = requests.get(uri).json()
+	teams = data["sports"][0]["leagues"][0]["teams"]
+	for t in teams:
+		team_dict = t["team"]
+		if team_id in team_dict.values():
+			return team_dict["displayName"]
+

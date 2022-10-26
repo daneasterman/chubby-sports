@@ -1,0 +1,142 @@
+[
+  {
+    "full_name": "Donovan Mitchell",
+    "position": "SG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png",
+    "wiki": "https://en.wikipedia.org/wiki/Donovan_Mitchell",
+    "team": "Cleveland Cavaliers"
+  },
+  {
+    "full_name": "Paolo Banchero",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+    "wiki": "https://en.wikipedia.org/wiki/Paolo_Banchero",
+    "team": "Orlando Magic"
+  },
+  {
+    "full_name": "Bojan Bogdanovic",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3593.png",
+    "wiki": "https://en.wikipedia.org/wiki/Bojan_Bogdanovic",
+    "team": "Detroit Pistons"
+  },
+  {
+    "full_name": "Trae Young",
+    "position": "PG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277905.png",
+    "wiki": "https://en.wikipedia.org/wiki/Trae_Young",
+    "team": "Atlanta Hawks"
+  },
+  {
+    "full_name": "Julius Randle",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png",
+    "wiki": "https://en.wikipedia.org/wiki/Julius_Randle",
+    "team": "New York Knicks"
+  },
+  {
+    "full_name": "Gordon Hayward",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4249.png",
+    "wiki": "https://en.wikipedia.org/wiki/Gordon_Hayward",
+    "team": "Charlotte Hornets"
+  },
+  {
+    "full_name": "Pascal Siakam",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png",
+    "wiki": "https://en.wikipedia.org/wiki/Pascal_Siakam",
+    "team": "Toronto Raptors"
+  },
+  {
+    "full_name": "James Harden",
+    "position": "SG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png",
+    "wiki": "https://en.wikipedia.org/wiki/James_Harden",
+    "team": "Philadelphia 76ers"
+  },
+  {
+    "full_name": "Giannis Antetokounmpo",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032977.png",
+    "wiki": "https://en.wikipedia.org/wiki/Giannis_Antetokounmpo",
+    "team": "Milwaukee Bucks"
+  },
+  {
+    "full_name": "Kevin Durant",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png",
+    "wiki": "https://en.wikipedia.org/wiki/Kevin_Durant",
+    "team": "Brooklyn Nets"
+  },
+  {
+    "full_name": "DeMar DeRozan",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png",
+    "wiki": "https://en.wikipedia.org/wiki/DeMar_DeRozan",
+    "team": "Chicago Bulls"
+  },
+  {
+    "full_name": "Tyrese Haliburton",
+    "position": "PG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396993.png",
+    "wiki": "https://en.wikipedia.org/wiki/Tyrese_Haliburton",
+    "team": "Indiana Pacers"
+  },
+  {
+    "full_name": "Karl-Anthony Towns",
+    "position": "C",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png",
+    "wiki": "https://en.wikipedia.org/wiki/Karl-Anthony_Towns",
+    "team": "Minnesota Timberwolves"
+  },
+  {
+    "full_name": "Keldon Johnson",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395723.png",
+    "wiki": "https://en.wikipedia.org/wiki/Keldon_Johnson",
+    "team": "San Antonio Spurs"
+  },
+  {
+    "full_name": "Lauri Markkanen",
+    "position": "PF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png",
+    "wiki": "https://en.wikipedia.org/wiki/Lauri_Markkanen",
+    "team": "Utah Jazz"
+  },
+  {
+    "full_name": "Jalen Green",
+    "position": "SG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4437244.png",
+    "wiki": "https://en.wikipedia.org/wiki/Jalen_Green",
+    "team": "Houston Rockets"
+  },
+  {
+    "full_name": "Nikola Jokic",
+    "position": "C",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png",
+    "wiki": "https://en.wikipedia.org/wiki/Nikola_Jokic",
+    "team": "Denver Nuggets"
+  },
+  {
+    "full_name": "LeBron James",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
+    "wiki": "https://en.wikipedia.org/wiki/LeBron_James",
+    "team": "Los Angeles Lakers"
+  },
+  {
+    "full_name": "Damian Lillard",
+    "position": "PG",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6606.png",
+    "wiki": "https://en.wikipedia.org/wiki/Damian_Lillard",
+    "team": "Portland Trail Blazers"
+  },
+  {
+    "full_name": "Jimmy Butler",
+    "position": "SF",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6430.png",
+    "wiki": "https://en.wikipedia.org/wiki/Jimmy_Butler",
+    "team": "Miami Heat"
+  }
+]

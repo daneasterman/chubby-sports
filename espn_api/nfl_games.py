@@ -2,7 +2,6 @@ import requests
 from espn_api.custom_utils import BASE_ESPN, get_pretty_est
 # from custom_utils import BASE_ESPN, get_pretty_est
 from espn_api.nfl_leaders import generate_leaders
-# from leaders import generate_leaders
 from pprint import pprint
 import json
 
