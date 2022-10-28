@@ -18,7 +18,6 @@ def get_pretty_est(raw_datestring):
 	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
 	return day_pretty, date_pretty
 
-
 def make_wiki_link(player_name):
 	BASE = "https://en.wikipedia.org/wiki/"
 	subpath = player_name.replace(" ", "_")

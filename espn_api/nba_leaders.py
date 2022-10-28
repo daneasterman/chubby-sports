@@ -18,7 +18,7 @@ def generate_leaders():
 		competitions = e["competitions"]
 		for c in competitions:			
 			competitors = c.get("competitors")
-			for c in competitors:		
+			for c in competitors:
 				leaders = c.get("leaders")
 				for l in leaders:
 					if l["name"] == "pointsPerGame":
@@ -53,4 +53,4 @@ def generate_leaders():
 	# 	json.dump(points, outfile, indent=2)		
 	return points, rebounds, assists
 
-generate_leaders()
+# generate_leaders()
