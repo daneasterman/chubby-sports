@@ -1,0 +1,16 @@
+<div style="display: none" class="player_flex_wrapper">
+
+	{% for l in leaders %}	
+	<a class="player_column" href="{{ l.points.wiki }}" target="_blank">
+		<h2 class="leader_title">Points Leader</h2>								
+			<img class="player_profile_img"
+				src="{{ l.points.headshot }}"
+				alt="player profile image" />
+			<p class="player_info">
+				{{l.points.full_name}}, {{l.points.position}}
+			</p>
+			<p class="purple_trim">{{l.team}}</p>
+	</a>	
+	{% endfor %}
+
+</div>

@@ -45,7 +45,11 @@
 					</div>
 			</div>
 
-			<!-- insert leaders here later once have data -->
+		{% if request.path == "/" %}
+				{% with data=data %}{% include "leaders/nfl.html"%}{% endwith %}
+			{% elif request.path == "/nba" %}
+				{% with leaders=leaders %}{% include "leaders/nba.html"%}{% endwith %}
+		{% endif %}				
 
 		</div>
 		{% endfor %}
