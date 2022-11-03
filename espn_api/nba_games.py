@@ -2,10 +2,7 @@ import requests
 from dateutil import parser, tz
 from datetime import datetime, timezone
 # from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime
-from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime
-from nba_leaders import get_nba_leaders
-# from espn_api.nba_leaders import get_nba_leaders
-
+from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime, make_wiki_link
 from pprint import pprint
 import json
 
@@ -21,13 +18,19 @@ def get_nba_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]			
+			away_team = c["competitors"][1]	
 			day_pretty, date_pretty = get_pretty_est(c["date"])
 
-			home_leaders = home_team.get("leaders")
-			pl_parent = [l for l in home_leaders if l["name"] == 'pointsPerGame']
-			points_leader = pl_parent[0]["leaders"][0]["athlete"]
+			home_leaders = home_team["leaders"]
+			away_leaders = away_team["leaders"]
 			
+			home_points_leader = [h for h in home_leaders if h["name"] == 'pointsPerGame']			
+			home_assists_leader = [h for h in home_leaders if h["name"] == 'assistsPerGame']
+			home_rebounds_leader = [h for h in home_leaders if h["name"] == 'reboundsPerGame']			
+
+			away_points_leader = [a for a in away_leaders if a["name"] == 'pointsPerGame']			
+			away_assists_leader = [a for a in away_leaders if a["name"] == 'assistsPerGame']
+			away_rebounds_leader = [a for a in away_leaders if a["name"] == 'reboundsPerGame']
 
 			game = {
 					"home_team": {
@@ -37,7 +40,16 @@ def get_nba_games():
 						"record": home_team["records"][0]["summary"],						
 						"leaders": {
 							"points": {
-							"name": points_leader["fullName"]
+								"data": home_points_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(home_points_leader[0]["leaders"][0]["athlete"]["displayName"])
+							},
+							"assists": {
+								"data": home_assists_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(home_assists_leader[0]["leaders"][0]["athlete"]["displayName"])
+							},
+							"rebounds": {
+								"data": home_rebounds_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(home_rebounds_leader[0]["leaders"][0]["athlete"]["displayName"])
 							}
 						},
 					},					
@@ -45,17 +57,31 @@ def get_nba_games():
 						"name": away_team["team"]["displayName"],
 						"score": away_team["score"],
 						"logo":  away_team["team"]["logo"],
-						"record": away_team["records"][0]["summary"]
-						},					
+						"record": away_team["records"][0]["summary"],
+						"leaders": {
+							"points": {
+								"data": away_points_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(away_points_leader[0]["leaders"][0]["athlete"]["displayName"])
+							},
+							"assists": {
+								"data": away_assists_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(away_assists_leader[0]["leaders"][0]["athlete"]["displayName"])
+							},
+							"rebounds": {
+								"data": away_rebounds_leader[0]["leaders"][0]["athlete"],
+								"wiki": make_wiki_link(away_rebounds_leader[0]["leaders"][0]["athlete"]["displayName"])
+							}
+						},
+						},
 					"day": day_pretty,
 					"date": date_pretty,
 					"stadium": c["venue"]["fullName"],
 			}
 			nba_clean['games'].append(game)
 
-	with open('json/nba_games/nba_v6.json', 'w') as outfile:
-		json.dump(nba_clean, outfile, indent=2)
+	# with open('json/nba_games/all_leaders_v2.json', 'w') as outfile:
+	# 	json.dump(nba_clean, outfile)
 	# breakpoint()
-	# return nba_clean
+	return nba_clean
 
-get_nba_games()
+# get_nba_games()
