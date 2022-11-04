@@ -46,9 +46,9 @@
 			</div>
 
 		{% if request.path == "/" %}
-				{% with data=data %}{% include "leaders/nfl.html"%}{% endwith %}
+				{% with g=g %}{% include "leaders/nfl.html"%}{% endwith %}
 			{% elif request.path == "/nba" %}
-				{% with leaders=leaders %}{% include "leaders/nba.html"%}{% endwith %}
+				{% with g=g %}{% include "leaders/nba.html"%}{% endwith %}
 		{% endif %}				
 
 		</div>

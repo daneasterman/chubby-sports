@@ -3,7 +3,6 @@ from pprint import pprint
 from flask import Flask, render_template
 from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
-from espn_api.nba_leaders import get_nba_leaders
 
 from pprint import pprint
 
@@ -18,9 +17,8 @@ def nfl():
 
 @app.route("/nba")
 def nba():
-	data = get_nba_games()
-	leaders = get_nba_leaders()
-	return render_template("games.html", data=data, leaders=leaders)
+	data = get_nba_games()	
+	return render_template("games.html", data=data)
 
 if __name__ == "__main__":
 	app.run()
