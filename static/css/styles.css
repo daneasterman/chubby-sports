@@ -51,11 +51,9 @@ div.listings_wrapper {
 .hero_item {	
 	display: flex;
 	flex-direction: column;
-	align-items: center;		 
-	border-radius: 12px;
+	align-items: center;		 	
 	max-width: 750px;
-	/* flex: 0 1 600px; */
-	/* border: 2px solid #762FBE;    */
+	/* flex: 0 1 600px; */	
 }
 
 h1.section_title {
@@ -199,6 +197,11 @@ h2.section_subtitle {
 	box-shadow: 0 5px 5px 0 rgb(0 0 0 / 5%);
 	border-radius: 12px;
 	margin-bottom: 2rem;
+	flex: 0 1 250px;
+}
+
+.player_info {
+	text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -229,10 +232,11 @@ h2.leader_title {
 }
 
 .purple_trim { color: #762FBE }
-
+	
 .player_row {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 /***** NBA-SPECIFIC PLAYER PANEL STYLES *****/
