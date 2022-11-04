@@ -228,11 +228,11 @@ h2.leader_title {
 
 .player_profile_img {
 	max-width: 150px;
-	margin-bottom: 1rem;	
+	margin-bottom: 1rem;
 }
 
 .purple_trim { color: #762FBE }
-	
+
 .player_row {
 	display: flex;
 	flex-direction: row;
