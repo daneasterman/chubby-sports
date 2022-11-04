@@ -1,5 +1,5 @@
 $(".reveal_all").click(function (ev) {
-	const allPlayerFlex = $('.player_flex_wrapper');	
+	const allPlayerFlex = $('.player_wrapper');	
 	 // If any player/leader divs are hidden:
 	if ( allPlayerFlex.is(":hidden") ) {	
 			smoothScrollDown(ev)
@@ -13,7 +13,7 @@ $(".reveal_all").click(function (ev) {
 $(".reveal_specific").click(function () {
 	const leaderButton = $(this);
 	const gameFlex = $(this).parents(".game_flex");
-	const specificPlayerFlex = $(gameFlex).next(".player_flex_wrapper");
+	const specificPlayerFlex = $(gameFlex).next(".player_wrapper");
 
 	if ( specificPlayerFlex.is(":hidden") ) {
 		specificPlayerFlex.slideDown("fast", function() {});

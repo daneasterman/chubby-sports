@@ -180,7 +180,7 @@ h2.section_subtitle {
 
 /***** PLAYER PANEL STYLES *****/
 
-.player_flex_wrapper {
+.nfl_player_wrapper {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
