@@ -1,14 +1,75 @@
-<div style="display: none" class="player_flex_wrapper">
+<div class="nba_player_wrapper">
+<!-- style="display: none" -->
 
-	<a class="player_column" href="{{ l.points.wiki }}" target="_blank">
-		<h2 class="leader_title">Points Leader</h2>								
-			<img class="player_profile_img"
-				src="{{ l.points.headshot }}"
-				alt="player profile image" />
-			<p class="player_info">
-				{{l.points.full_name}}, {{l.points.position}}
-			</p>
-			<p class="purple_trim">{{l.team}}</p>
-	</a>
+<h2 class="team_subtitle">{{ g.home_team.name }}</h2>
+	<div style="margin-bottom: 2.5rem" class="player_row">
+			<a class="player_column" href="{{ g.home_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Points Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.home_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.home_team.leaders.points.data.displayName }},
+						{{ g.home_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
 
+			<a class="player_column" href="{{ g.away_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Assists Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.away_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.away_team.leaders.points.data.displayName }},
+						{{ g.away_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
+
+			<a class="player_column" href="{{ g.away_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Rebounds Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.away_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.away_team.leaders.points.data.displayName }},
+						{{ g.away_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
+	</div>
+
+	<h2 class="team_subtitle">{{ g.away_team.name }}</h2>
+	<div class="player_row">		
+			<a class="player_column" href="{{ g.away_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Points Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.away_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.away_team.leaders.points.data.displayName }},
+						{{ g.away_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
+
+			<a class="player_column" href="{{ g.away_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Points Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.away_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.away_team.leaders.points.data.displayName }},
+						{{ g.away_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
+
+			<a class="player_column" href="{{ g.away_team.leaders.points.wiki }}" target="_blank">
+				<h2 class="leader_title">Points Leader</h2>								
+					<img class="player_profile_img"
+						src="{{ g.away_team.leaders.points.data.headshot }}"
+						alt="player profile image" />
+					<p class="player_info">
+						{{ g.away_team.leaders.points.data.displayName }},
+						{{ g.away_team.leaders.points.data.position.abbreviation }}
+					</p>
+			</a>
+	</div>
 </div>

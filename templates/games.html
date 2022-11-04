@@ -4,13 +4,13 @@
 <section>
 
 	{% if request.path == "/" %}
-		{% with data=data %}{% include "heroes/nfl.html" %}{% endwith %}
+		{% with info=info %}{% include "heroes/nfl.html" %}{% endwith %}
 		{% elif request.path == "/nba" %}
 		{% include "heroes/nba.html" %}
 	{% endif %}	
 
 	<div id="listings" class="listings_wrapper">		
-		{% for g in data.games %}
+		{% for g in info.games %}
 			<div class="game_wrapper">
 				
 				<div class="game_flex">
@@ -47,7 +47,7 @@
 
 		{% if request.path == "/" %}
 				{% with g=g %}{% include "leaders/nfl.html"%}{% endwith %}
-			{% elif request.path == "/nba" %}
+		{% elif request.path == "/nba" %}
 				{% with g=g %}{% include "leaders/nba.html"%}{% endwith %}
 		{% endif %}				
 

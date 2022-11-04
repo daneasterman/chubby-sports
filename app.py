@@ -12,13 +12,13 @@ app.config.from_object(env_config)
 
 @app.route("/")
 def nfl():
-	data = get_nfl_games()
-	return render_template("games.html", data=data)
+	info = get_nfl_games()
+	return render_template("games.html", info=info)
 
 @app.route("/nba")
 def nba():
-	data = get_nba_games()	
-	return render_template("games.html", data=data)
+	info = get_nba_games()	
+	return render_template("games.html", info=info)
 
 if __name__ == "__main__":
 	app.run()
