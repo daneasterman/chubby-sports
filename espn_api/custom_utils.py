@@ -8,16 +8,17 @@ EST_TZ = tz.gettz('America/New_York')
 def get_current_est_datetime(): 	
 	utc_now = datetime.now(tz=timezone.utc)
 	est_now = utc_now.astimezone(EST_TZ)
-	full_est_now_ = str(utc_now.astimezone(EST_TZ))
+	full_est_now = str(utc_now.astimezone(EST_TZ))
 	trunc_est_now = est_now.strftime("%Y%m%d")	
-	return full_est_now_, trunc_est_now
+	return full_est_now, trunc_est_now
 
 def get_pretty_est(raw_datestring):
 	utc_obj = parser.parse(raw_datestring)			
 	usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
+	time_pretty = usa_eastern_datetime.strftime("%-H:%M")
 	day_pretty = usa_eastern_datetime.strftime("%A")
 	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
-	return day_pretty, date_pretty
+	return time_pretty, day_pretty, date_pretty
 
 def make_wiki_link(player_name):
 	BASE = "https://en.wikipedia.org/wiki/"

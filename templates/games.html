@@ -26,11 +26,22 @@
 								<p class="score">{{ g.home_team.score }}</p>
 							</div>
 					
+					{% if request.path == "/" %}
 						<div class="game_details">
-							<p class="game_date" style="font-weight: 600" >{{ g.day }},</p>
-							<p class="game_date" style="margin-bottom: 3rem" >{{ g.date }}</p>
+							<p style="font-weight: 600">{{ g.day }},</p>
+							<p>{{ g.date }}</p>
+							<p style="margin-bottom: 2rem; font-weight: 600;" 
+									class="purple_trim">{{ g.stadium }}</p>
 							<a class="reveal_specific">Show Leaders &darr;</a>
 						</div>
+					{% elif request.path == "/nba" %}
+						<div class="game_details">
+							<p style="font-weight: 600;" >{{ g.time }} EST</p>
+							<p style="margin-bottom: 2rem; font-weight: 600" 
+								class="purple_trim">{{ g.stadium }}</p>
+							<a class="reveal_specific">Show Leaders &darr;</a>
+						</div>
+					{% endif %}
 						
 					<div class="team_row">
 						<p class="score">{{ g.away_team.score }}</p>

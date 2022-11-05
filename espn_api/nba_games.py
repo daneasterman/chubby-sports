@@ -7,12 +7,12 @@ from pprint import pprint
 import json
 
 def get_nba_games():
-	full_est_now_, trunc_est_now = get_current_est_datetime()	
+	full_est_now, trunc_est_now = get_current_est_datetime()	
 	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={trunc_est_now}"	
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
-	day_pretty, date_pretty = get_pretty_est(full_est_now_)		
+	time_pretty, day_pretty, date_pretty = get_pretty_est(full_est_now)		
 	nba_clean = {"day": day_pretty, "date": date_pretty }
 	
 	nba_clean['games'] = []
@@ -20,14 +20,15 @@ def get_nba_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]				
+			away_team = c["competitors"][1]
+			time_pretty, day_pretty, date_pretty = get_pretty_est(c["date"])		
 
 			home_leaders = home_team["leaders"]
 			away_leaders = away_team["leaders"]
 			
 			home_points_leader = [h for h in home_leaders if h["name"] == 'pointsPerGame']			
 			home_assists_leader = [h for h in home_leaders if h["name"] == 'assistsPerGame']
-			home_rebounds_leader = [h for h in home_leaders if h["name"] == 'reboundsPerGame']			
+			home_rebounds_leader = [h for h in home_leaders if h["name"] == 'reboundsPerGame']	
 
 			away_points_leader = [a for a in away_leaders if a["name"] == 'pointsPerGame']			
 			away_assists_leader = [a for a in away_leaders if a["name"] == 'assistsPerGame']
@@ -73,7 +74,8 @@ def get_nba_games():
 								"wiki": make_wiki_link(away_rebounds_leader[0]["leaders"][0]["athlete"]["displayName"])
 							}
 						},
-						},					
+						},
+					"time": time_pretty,
 					"stadium": c["venue"]["fullName"],
 			}
 			nba_clean['games'].append(game)

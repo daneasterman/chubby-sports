@@ -22,8 +22,8 @@ def get_nfl_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]			
-			day_pretty, date_pretty = get_pretty_est(c["date"])
+			away_team = c["competitors"][1]
+			time_pretty, day_pretty, date_pretty = get_pretty_est(c["date"])
 			
 			game = {
 					"home_team": {
@@ -37,10 +37,11 @@ def get_nfl_games():
 						"score": away_team["score"],
 						"logo":  away_team["team"]["logo"],
 						"record": away_team["records"][0]["summary"]
-						},					
+						},
+					"time": time_pretty,			
 					"day": day_pretty,
-					"date": date_pretty,
-					"stadium": c["venue"]["fullName"],
+					"date": date_pretty,					
+					"stadium": c["venue"]["fullName"],					
 					"leaders": {
 						"passing": next(passer_iterable), 
 						"rushing": next(rusher_iterable),
