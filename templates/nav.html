@@ -8,19 +8,36 @@
 		align-items: center;
 		color: #2F1D58;
 		background-color: white;
-		padding: 1rem 2rem 0.75rem 2rem;
+		padding: 1rem 2rem 1.5rem 2rem;
 	}
 	.logo_wrapper { display: flex; align-items: center; margin-bottom: 1rem; }
 	
-	.contact_wrapper { 
+	.contact_wrapper {
 		display: flex; 
 		flex-direction: column; 
 		align-items: center; 
 	}
-	.twitter_wrapper { display: flex; align-items: center; margin-bottom: 1rem;}
+	.twitter_wrapper { display: flex; align-items: center; margin-bottom: 1rem; }
+
+	.sport_button {
+		margin-bottom: 1rem;
+		background-color: white;	
+		border-radius: 4px;	
+		/* One shade darker than purple trim: */
+		color: #5D16A5;	
+		border: 3px solid;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+	.sport_button i { margin-right: 0.25rem; }
+	.sport_button:hover, .sport_button:active {
+		background-color: #5D16A5;
+		color: white
+	}
 
 	@media screen and (min-width: 768px) {
-		.nav_wrapper { 
+		.sport_button { margin-bottom: 0 }
+		.nav_wrapper {
 			flex-direction: row;  
 			justify-content: space-between; 
 			padding: 1rem 7rem 0.75rem 7rem;
@@ -29,6 +46,7 @@
 		.contact_wrapper { flex-direction: row; }
 		.twitter_wrapper { margin-bottom: 0;}
 	}
+	
 	.nav_wrapper .nav_title {
 		font-size: 1.75rem;
 		font-weight: 800;
@@ -38,7 +56,7 @@
 	}
 
 	.logo_wrapper i { font-size: 2.25rem; }
-	.contact_wrapper i { font-size: 1.75rem; }	
+	.twitter_wrapper i { font-size: 1.75rem; }
 	.contact_wrapper .twitter_link:hover { text-decoration: underline; }	
 </style>
 
@@ -57,10 +75,23 @@
 						<i class="fab fa-twitter"></i>
 					</a>
 				</div>
+				
+				{% if request.path == "/" %}
+					<a style="margin-right: 1rem" class="sport_button" href="/nba">
+						<i class="fas fa-basketball-ball"></i>
+						NBA
+					</a>
+				{% elif request.path == "/nba" %}
+					<a style="margin-right: 1rem" class="sport_button" href="/nba">
+						<i class="fas fa-football-ball"></i>
+						NFL
+					</a>
+				{% endif %}	
+
 			<a class="buy_coffee_button" 
 					href="https://www.buymeacoffee.com/chubbyhooper" target="_blank">				
 				<img class="buy_coffee_icon" 
-							src="{{url_for('static', filename='img/white_bmc.svg')}}"/>
+						src="{{url_for('static', filename='img/white_bmc.svg')}}"/>
 				Buy me a coffee
 			</a>
     </div>

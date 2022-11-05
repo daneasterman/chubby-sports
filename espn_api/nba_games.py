@@ -74,7 +74,7 @@ def get_nba_games():
 						},
 						},
 					"day": day_pretty,
-					"date": date_pretty,
+					"date": date_pretty,					
 					"stadium": c["venue"]["fullName"],
 			}
 			nba_clean['games'].append(game)
