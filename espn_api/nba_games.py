@@ -7,19 +7,20 @@ from pprint import pprint
 import json
 
 def get_nba_games():
-	est_now = get_current_est_datetime()
-	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={est_now}"	
+	full_est_now_, trunc_est_now = get_current_est_datetime()	
+	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={trunc_est_now}"	
 	nba_raw = requests.get(NBA_URL).json()
-	events = nba_raw['events']		
-		
-	nba_clean = {}
+	events = nba_raw['events']
+	
+	day_pretty, date_pretty = get_pretty_est(full_est_now_)		
+	nba_clean = {"day": day_pretty, "date": date_pretty }
+	
 	nba_clean['games'] = []
 	for e in events:
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]	
-			day_pretty, date_pretty = get_pretty_est(c["date"])
+			away_team = c["competitors"][1]				
 
 			home_leaders = home_team["leaders"]
 			away_leaders = away_team["leaders"]
@@ -72,9 +73,7 @@ def get_nba_games():
 								"wiki": make_wiki_link(away_rebounds_leader[0]["leaders"][0]["athlete"]["displayName"])
 							}
 						},
-						},
-					"day": day_pretty,
-					"date": date_pretty,					
+						},					
 					"stadium": c["venue"]["fullName"],
 			}
 			nba_clean['games'].append(game)

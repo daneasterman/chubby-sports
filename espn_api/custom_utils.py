@@ -7,9 +7,10 @@ EST_TZ = tz.gettz('America/New_York')
 
 def get_current_est_datetime(): 	
 	utc_now = datetime.now(tz=timezone.utc)
-	est_now = utc_now.astimezone(EST_TZ)		
-	est_now_str = est_now.strftime("%Y%m%d")	
-	return est_now_str
+	est_now = utc_now.astimezone(EST_TZ)
+	full_est_now_ = str(utc_now.astimezone(EST_TZ))
+	trunc_est_now = est_now.strftime("%Y%m%d")	
+	return full_est_now_, trunc_est_now
 
 def get_pretty_est(raw_datestring):
 	utc_obj = parser.parse(raw_datestring)			
