@@ -40,8 +40,9 @@ def get_nfl_games():
 						},
 					"time": time_pretty,			
 					"day": day_pretty,
-					"date": date_pretty,					
-					"stadium": c["venue"]["fullName"],					
+					"date": date_pretty,
+					"stadium": c["venue"]["fullName"],
+					"city": c["venue"]["address"]["city"],
 					"leaders": {
 						"passing": next(passer_iterable), 
 						"rushing": next(rusher_iterable),
