@@ -3,10 +3,10 @@
 	<a class="player_column" href="{{ g.leaders.passing.wiki }}" target="_blank">
 		<h2 class="leader_title">Passing Leader</h2>								
 			<img class="player_profile_img"
-				src="{{ g.leaders.passing.headshot }}"
+				src="{{ g.leaders.passing.data.headshot }}"
 				alt="player profile image" />
 			<p class="player_info">
-				{{g.leaders.passing.full_name}}, {{g.leaders.passing.position}}
+				{{g.leaders.passing.data.displayName}}, {{g.leaders.passing.data.position.abbreviation}}
 			</p>
 			<p class="purple_trim">{{g.leaders.passing.team}}</p>
 	</a>
@@ -14,10 +14,10 @@
 	<a class="player_column" href="{{ g.leaders.receiving.wiki }}" target="_blank">
 		<h2 class="leader_title">Receiving Leader</h2>								
 			<img class="player_profile_img"
-				src="{{ g.leaders.receiving.headshot }}"
+				src="{{ g.leaders.receiving.data.headshot }}"
 				alt="player profile image" />
 			<p class="player_info">
-				{{ g.leaders.receiving.full_name }}, {{ g.leaders.receiving.position }}
+				{{g.leaders.receiving.data.displayName}}, {{g.leaders.receiving.data.position.abbreviation}}
 			</p>
 			<p class="purple_trim">{{g.leaders.receiving.team}}</p>
 	</a>
@@ -25,10 +25,10 @@
 	<a class="player_column" href="{{ g.leaders.rushing.wiki }}" target="_blank">
 		<h2 class="leader_title">Rushing Leader</h2>
 			<img class="player_profile_img"
-				src="{{g.leaders.rushing.headshot}}"
+				src="{{g.leaders.rushing.data.headshot}}"
 				alt="player profile image" />
 			<p>
-				{{g.leaders.rushing.full_name}}, {{g.leaders.rushing.position}}
+				{{g.leaders.rushing.data.displayName}}, {{g.leaders.rushing.data.position.abbreviation}}
 			</p>
 			<p class="purple_trim">{{g.leaders.rushing.team}}</p>
 	</a>
