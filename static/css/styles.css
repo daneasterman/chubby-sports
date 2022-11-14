@@ -136,14 +136,17 @@ h2.section_subtitle, .nba_subtitle {
 
 .game_flex {
 	display: flex;	
-	justify-content: center;
-	flex-wrap: wrap;
+	justify-content: center;	
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-	.game_flex { justify-content: space-between; }
+	.game_flex { 
+		justify-content: space-between;
+		flex-direction: row;
+
+	}
 }
 
 .team_row {
