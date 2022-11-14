@@ -25,11 +25,11 @@ def make_wiki_link(player_name):
 	subpath = player_name.replace(" ", "_")
 	return BASE + subpath
 
-def get_team_name(uri, team_id):	
-	data = requests.get(uri).json()
-	teams = data["sports"][0]["leagues"][0]["teams"]
-	for t in teams:
-		team_dict = t["team"]
-		if team_id in team_dict.values():
-			return team_dict["displayName"]
+def get_team_name(home_team, away_team, player_data):
+	if player_data["team"]["id"] == home_team["team"]["id"]:
+		return home_team["team"]["displayName"]
+	elif player_data["team"]["id"] == away_team["team"]["id"]:
+		return away_team["team"]["displayName"]
+	else:
+		return ""
 
