@@ -1,5 +1,5 @@
 import requests
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_team_name
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link
 # from custom_utils import BASE_ESPN, get_pretty_est
 # from espn_api.nfl_leaders import generate_leaders
 from pprint import pprint
@@ -24,8 +24,7 @@ def get_nfl_games():
 			leaders = c.get("leaders")
 			passing_leader = [l for l in leaders if l["name"] == 'passingYards']
 			receiving_leader = [l for l in leaders if l["name"] == 'receivingYards']
-			rushing_leader = [l for l in leaders if l["name"] == 'rushingYards']					
-			
+			rushing_leader = [l for l in leaders if l["name"] == 'rushingYards']
 			
 			game = {
 					"home_team": {
