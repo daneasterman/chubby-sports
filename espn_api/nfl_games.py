@@ -6,8 +6,8 @@ from pprint import pprint
 import json
 
 def get_nfl_games():
-	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"
-	NFL_TEAMS_URL = f"{BASE_ESPN}/football/nfl/teams"
+	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"	
+	
 	nfl_raw = requests.get(NFL_URL).json()
 	events = nfl_raw['events']
 	week = nfl_raw["week"]["number"]
@@ -24,11 +24,8 @@ def get_nfl_games():
 			leaders = c.get("leaders")
 			passing_leader = [l for l in leaders if l["name"] == 'passingYards']
 			receiving_leader = [l for l in leaders if l["name"] == 'receivingYards']
-			rushing_leader = [l for l in leaders if l["name"] == 'rushingYards']			
+			rushing_leader = [l for l in leaders if l["name"] == 'rushingYards']					
 			
-			passing_team = passing_leader[0]["leaders"][0]["athlete"]["team"]["id"]
-			receiving_team = receiving_leader[0]["leaders"][0]["athlete"]["team"]["id"]	
-			rushing_team = rushing_leader[0]["leaders"][0]["athlete"]["team"]["id"]	
 			
 			game = {
 					"home_team": {
@@ -51,18 +48,15 @@ def get_nfl_games():
 					"leaders": {
 						"passing": {
 							"data": passing_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(passing_leader[0]["leaders"][0]["athlete"]["displayName"]),
-							# "team": get_team_name(NFL_TEAMS_URL, passing_team)
+							"wiki": make_wiki_link(passing_leader[0]["leaders"][0]["athlete"]["displayName"]),							
 						},
 						"receiving": {
 							"data": receiving_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(receiving_leader[0]["leaders"][0]["athlete"]["displayName"]),
-							# "team": get_team_name(NFL_TEAMS_URL, receiving_team)						
+							"wiki": make_wiki_link(receiving_leader[0]["leaders"][0]["athlete"]["displayName"]),												
 						},
 						"rushing": {
 							"data": rushing_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(rushing_leader[0]["leaders"][0]["athlete"]["displayName"]),
-							# "team": get_team_name(NFL_TEAMS_URL, rushing_team)
+							"wiki": make_wiki_link(rushing_leader[0]["leaders"][0]["athlete"]["displayName"]),							
 						}
 					}
 			}			
