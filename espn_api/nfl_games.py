@@ -5,6 +5,14 @@ from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link
 from pprint import pprint
 import json
 
+def get_team_name(home_team, away_team, player_team_id):
+	if player_team_id == home_team["team"]["id"]:
+		return home_team["team"]["displayName"]
+	elif player_team_id == away_team["team"]["id"]:
+		return away_team["team"]["displayName"]
+	else:
+		return ""
+
 def get_nfl_games():
 	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"	
 	
@@ -19,12 +27,17 @@ def get_nfl_games():
 		for c in competitions:
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
+			
 			time_pretty, day_pretty, date_pretty = get_pretty_est(c["date"])
 			
 			leaders = c.get("leaders")
 			passing_leader = [l for l in leaders if l["name"] == 'passingYards']
 			receiving_leader = [l for l in leaders if l["name"] == 'receivingYards']
 			rushing_leader = [l for l in leaders if l["name"] == 'rushingYards']
+
+			passing_data = passing_leader[0]["leaders"][0]["athlete"]
+			receiving_data = receiving_leader[0]["leaders"][0]["athlete"]
+			rushing_data = rushing_leader[0]["leaders"][0]["athlete"]
 			
 			game = {
 					"home_team": {
@@ -46,16 +59,19 @@ def get_nfl_games():
 					"city": c["venue"]["address"]["city"],
 					"leaders": {
 						"passing": {
-							"data": passing_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(passing_leader[0]["leaders"][0]["athlete"]["displayName"]),							
+							"data": passing_data,
+							"wiki": make_wiki_link(passing_data["displayName"]),
+							"team": get_team_name(home_team, away_team, passing_data.get("team")["id"])
 						},
 						"receiving": {
-							"data": receiving_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(receiving_leader[0]["leaders"][0]["athlete"]["displayName"]),												
+							"data": receiving_data,
+							"wiki": make_wiki_link(receiving_data["displayName"]),
+							"team": get_team_name(home_team, away_team, receiving_data.get("team")["id"])									
 						},
 						"rushing": {
-							"data": rushing_leader[0]["leaders"][0]["athlete"],
-							"wiki": make_wiki_link(rushing_leader[0]["leaders"][0]["athlete"]["displayName"]),							
+							"data": rushing_data,
+							"wiki": make_wiki_link(rushing_data["displayName"]),
+							"team": get_team_name(home_team, away_team, rushing_data.get("team")["id"])
 						}
 					}
 			}			
