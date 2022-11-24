@@ -9,6 +9,7 @@ import json
 def get_nba_games():
 	full_est_now, trunc_est_now = get_current_est_datetime()	
 	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={trunc_est_now}"	
+	# NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates=20221125"
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	

@@ -9,7 +9,8 @@ def get_current_est_datetime():
 	utc_now = datetime.now(tz=timezone.utc)
 	est_now = utc_now.astimezone(EST_TZ)
 	full_est_now = str(utc_now.astimezone(EST_TZ))
-	trunc_est_now = est_now.strftime("%Y%m%d")	
+	trunc_est_now = est_now.strftime("%Y%m%d")
+	# breakpoint()	
 	return full_est_now, trunc_est_now
 
 def get_pretty_est(raw_datestring):
@@ -25,7 +26,7 @@ def make_wiki_link(player_name):
 	subpath = player_name.replace(" ", "_")
 	return BASE + subpath
 
-def get_team_name(home_team, away_team, player_data):
+def get_nfl_team_name(home_team, away_team, player_data):
 	if player_data["team"]["id"] == home_team["team"]["id"]:
 		return home_team["team"]["displayName"]
 	elif player_data["team"]["id"] == away_team["team"]["id"]:
@@ -33,3 +34,19 @@ def get_team_name(home_team, away_team, player_data):
 	else:
 		return ""
 
+def get_soccer_scorers(details):
+	for deet in details:
+		if "goal" in deet["type"]["text"].casefold():
+			# print(f"{deet['type']['text']} - {deet['athletesInvolved'][0]['displayName']}")
+			pass
+			# return {
+			# 	"name": asdf
+			# 	"position": asdf
+			# 	"goal_type": 
+			# }			
+		elif "penalty" in deet["type"]["text"].casefold():
+			pass
+		else:
+			pass
+			
+	

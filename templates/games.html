@@ -7,12 +7,24 @@
 		{% with info=info %}{% include "heroes/nfl_hero.html" %}{% endwith %}
 		{% elif request.path == "/nba" %}
 		{% include "heroes/nba_hero.html" %}
-	{% endif %}	
+	{% endif %}
 
-	<div id="listings" class="listings_wrapper">		
+	{% if info.games == [] %}
+		<div class="no_data_wrapper"> 
+			<p class="explainer_text" >
+				<span style="font-weight: 500">No games found.</span><br>
+				Contact 
+				<a target="_blank" href="https://twitter.com/ChubbyHooper24">
+					me on Twitter
+				</a> 
+				if you think this might be an error.
+			</p>
+		</div>	
+	{% endif %}
+
+	<div class="listings_wrapper" id="listings">
 		{% for g in info.games %}
-			<div class="game_wrapper">
-				
+			<div class="game_wrapper">				
 				<div class="game_flex">
 						<div class="team_row">
 							<div class="team_column">

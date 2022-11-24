@@ -1,9 +1,6 @@
 import requests
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_team_name
-# from custom_utils import BASE_ESPN, get_pretty_est
-# from espn_api.nfl_leaders import generate_leaders
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_nfl_team_name
 from pprint import pprint
-import json
 
 def get_nfl_games():
 	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"	
@@ -13,13 +10,12 @@ def get_nfl_games():
 	week = nfl_raw["week"]["number"]
 	nfl_clean = {"week": week}
 	
-	nfl_clean['games'] = []	
+	nfl_clean['games'] = []
 	for e in events:
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]
-			
+			away_team = c["competitors"][1]			
 			time_pretty, day_pretty, date_pretty = get_pretty_est(c["date"])
 			
 			leaders = c.get("leaders")
@@ -53,17 +49,17 @@ def get_nfl_games():
 						"passing": {
 							"data": passing_data,
 							"wiki": make_wiki_link(passing_data["displayName"]),
-							"team": get_team_name(home_team, away_team, passing_data)
+							"team": get_nfl_team_name(home_team, away_team, passing_data)
 						},
 						"receiving": {
 							"data": receiving_data,
 							"wiki": make_wiki_link(receiving_data["displayName"]),
-							"team": get_team_name(home_team, away_team, receiving_data)
+							"team": get_nfl_team_name(home_team, away_team, receiving_data)
 						},
 						"rushing": {
 							"data": rushing_data,
 							"wiki": make_wiki_link(rushing_data["displayName"]),
-							"team": get_team_name(home_team, away_team, rushing_data)
+							"team": get_nfl_team_name(home_team, away_team, rushing_data)
 						}
 					}
 			}			
