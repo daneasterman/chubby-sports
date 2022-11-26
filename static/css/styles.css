@@ -83,7 +83,7 @@ p.explainer_text {
 }
 .explainer_text span { font-weight: 600;}	
 
-h2.section_subtitle, .nba_subtitle {
+h2.section_subtitle, .small_subtitle {
 	font-size: 2rem;
 	font-weight: 500;
 	margin-bottom: 1.5rem;	
@@ -91,7 +91,7 @@ h2.section_subtitle, .nba_subtitle {
 	padding-bottom: 0.5rem;
 	text-align: center;
 }
-.nba_subtitle { font-size: 1.5rem; }
+.small_subtitle { font-size: 1.5rem; }
 
 .reveal_all, .reveal_specific, 
 .buy_coffee_button, .sport_button {	
@@ -143,7 +143,7 @@ h2.section_subtitle, .nba_subtitle {
 
 .score { font-size: 2.5rem }
 
-.game_flex {
+.game_flex, .soccer_flex {
 	display: flex;	
 	justify-content: center;	
 	align-items: center;
@@ -151,7 +151,7 @@ h2.section_subtitle, .nba_subtitle {
 }
 
 @media screen and (min-width: 768px) {
-	.game_flex { 
+	.game_flex, .soccer_flex { 
 		justify-content: space-between;
 		flex-direction: row;
 	}

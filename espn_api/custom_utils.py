@@ -9,8 +9,7 @@ def get_current_est_datetime():
 	utc_now = datetime.now(tz=timezone.utc)
 	est_now = utc_now.astimezone(EST_TZ)
 	full_est_now = str(utc_now.astimezone(EST_TZ))
-	trunc_est_now = est_now.strftime("%Y%m%d")
-	# breakpoint()	
+	trunc_est_now = est_now.strftime("%Y%m%d")	
 	return full_est_now, trunc_est_now
 
 def get_pretty_est(raw_datestring):

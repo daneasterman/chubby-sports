@@ -1,17 +1,19 @@
 import requests
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers, get_current_est_datetime
 # from custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_soccer_scorers
 from pprint import pprint
 import json
 
 def get_soccer_games(LEAGUE_CODE):
-	LEAGUE_ENDPOINT = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates=20221124"	
+	full_est_now, trunc_est_now = get_current_est_datetime()	
+	LEAGUE_ENDPOINT = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates=20221125"	
 	soccer_raw = requests.get(LEAGUE_ENDPOINT).json()
 	events = soccer_raw['events']
 	
-	soccer_clean = {}
-	soccer_clean['games'] = []
+	time_pretty, day_pretty, date_pretty = get_pretty_est(full_est_now)
+	soccer_clean = {"day": day_pretty, "date": date_pretty}
 	
+	soccer_clean['games'] = []	
 	for e in events: 
 		competitions = e["competitions"]		
 		for comp in competitions:

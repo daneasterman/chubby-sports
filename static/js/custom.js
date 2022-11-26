@@ -9,20 +9,6 @@ $(".reveal_all").click(function (ev) {
 			smoothScrollDown(ev)
 		 }
 });
-	
-$(".reveal_specific").click(function () {
-	const leaderButton = $(this);
-	const gameFlex = $(this).parents(".game_flex");
-	const specificPlayerFlex = $(gameFlex).next(".player_wrapper");
-
-	if ( specificPlayerFlex.is(":hidden") ) {
-		specificPlayerFlex.slideDown("fast", function() {});
-		leaderButton.html("Hide Leaders &uarr;")
-	} else {
-		specificPlayerFlex.slideUp("fast", function() {});
-		leaderButton.html("Show Leaders &darr;")		
-	}
-});
 
 function smoothScrollDown(ev) {
 	ev.preventDefault();
@@ -30,3 +16,32 @@ function smoothScrollDown(ev) {
 	$("html, body").animate({scrollTop: $(hash).offset().top,},
 		1000, );
 }
+	
+$(".reveal_specific").click(function () {
+	const leaderButton = $(this);
+	const gameFlex = $(this).parents(".game_flex");
+	const specificPlayerFlex = $(gameFlex).next(".player_wrapper");
+
+	if ( specificPlayerFlex.is(":hidden") ) {
+		specificPlayerFlex.slideDown("fast", function() {});				
+		leaderButton.html("Hide Leaders &uarr;")
+	} else {
+		specificPlayerFlex.slideUp("fast", function() {});
+		leaderButton.html("Show Leaders &darr;")
+	}
+});
+
+// Soccer version for "Show Scorers" instead of "Show Leaders" button:
+$(".reveal_specific").click(function () {
+	const leaderButton = $(this);
+	const gameFlex = $(this).parents(".soccer_flex");
+	const specificPlayerFlex = $(gameFlex).next(".player_wrapper");
+
+	if ( specificPlayerFlex.is(":hidden") ) {
+		specificPlayerFlex.slideDown("fast", function() {});				
+		leaderButton.html("Hide Scorers &uarr;")
+	} else {
+		specificPlayerFlex.slideUp("fast", function() {});
+		leaderButton.html("Show Scorers &darr;")
+	}
+});

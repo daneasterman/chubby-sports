@@ -3,6 +3,8 @@
 
 <section>
 
+{% with info=info %}{% include "heroes/worldcup_hero.html" %}{% endwith %}
+
 {% if info.games == [] %}
 		<div class="no_data_wrapper"> 
 			<p class="explainer_text" >
@@ -19,7 +21,7 @@
 	<div class="listings_wrapper" id="listings">
 		{% for g in info.games %}
 			<div class="game_wrapper">				
-				<div class="game_flex">
+				<div class="soccer_flex">
 						<div class="team_row">
 							<div class="team_column">
 									<p class="home_away">Home</p>

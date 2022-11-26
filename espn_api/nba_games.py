@@ -14,7 +14,7 @@ def get_nba_games():
 	events = nba_raw['events']
 	
 	time_pretty, day_pretty, date_pretty = get_pretty_est(full_est_now)		
-	nba_clean = {"day": day_pretty, "date": date_pretty }
+	nba_clean = {"day": day_pretty, "date": date_pretty}
 	
 	nba_clean['games'] = []
 	for e in events:
