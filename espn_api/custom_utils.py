@@ -35,18 +35,23 @@ def get_nfl_team_name(home_team, away_team, player_data):
 		return ""
 
 def get_soccer_scorers(details):
-	for deet in details:
+	goal_scorers = []
+	penalty_scorers = []
+	for deet in details:		
 		if "goal" in deet["type"]["text"].casefold():
-			# print(f"{deet['type']['text']} - {deet['athletesInvolved'][0]['displayName']}")
-			pass
-			# return {
-			# 	"name": asdf
-			# 	"position": asdf
-			# 	"goal_type": 
-			# }			
+			player_name = deet["athletesInvolved"][0]["displayName"]
+			goal_scorers.append({
+				"name": player_name,
+				"position": deet["athletesInvolved"][0]["position"],
+				"goal_type": deet["type"]["text"],
+				"wiki_link": make_wiki_link(player_name)
+			})			
 		elif "penalty" in deet["type"]["text"].casefold():
-			pass
-		else:
-			pass
-			
-	
+			player_name = deet["athletesInvolved"][0]["displayName"]
+			penalty_scorers.append({
+				"name": player_name,
+				"position": deet["athletesInvolved"][0]["position"],
+				"goal_type": deet["type"]["text"],
+				"wiki_link": make_wiki_link(player_name)
+			})
+	return goal_scorers, penalty_scorers			

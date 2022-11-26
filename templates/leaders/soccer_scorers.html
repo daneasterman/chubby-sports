@@ -1,0 +1,23 @@
+<div style="display: none" class="player_wrapper nfl_player_wrapper" >
+	{% if g.scorers.goals == [] and g.scorers.penalties == []  %}
+		<p>Looks like there were no goal scorers for this game.</p>
+	{% endif %}
+
+	{% if g.scorers.goals %}
+		{% for s in g.scorers.goals %}
+		<a class="player_column soccer_column"
+				href="{{ s.wiki_link }}" target="_blank">
+			<h2 class="leader_title" 
+					style="font-size: 1.2rem;">
+					{{ s.goal_type }}
+			</h2>
+				<p class="player_info" 
+					style="color: #762FBE; 
+					font-size: 1.2rem;">
+					{{ s.name }}, {{ s.position }}
+				</p>
+			</a>
+			{% endfor %}
+	{% endif %}
+
+</div>

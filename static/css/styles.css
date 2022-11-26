@@ -215,6 +215,7 @@ h2.section_subtitle, .nba_subtitle {
 
 @media screen and (min-width: 768px) {
 	.player_column { margin-bottom: 0; }
+	.player_wrapper .soccer_column { margin-bottom: 1.5rem; }
 }
 
 .player_column:hover, .player_column:active { 
@@ -224,6 +225,11 @@ h2.section_subtitle, .nba_subtitle {
 .player_column:hover > .leader_title, 
 .player_column:active > .leader_title {
 	border-color: #762FBE; 
+}
+
+.soccer_column:hover > .player_info, 
+.soccer_column:active > .player_info {
+	text-decoration: underline;
 }
 
 h2.leader_title {

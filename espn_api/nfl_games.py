@@ -1,6 +1,6 @@
 import requests
 from espn_api.custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_nfl_team_name
-from pprint import pprint
+from pprint import pprint	
 
 def get_nfl_games():
 	NFL_URL = f"{BASE_ESPN}/football/nfl/scoreboard"	
@@ -40,11 +40,6 @@ def get_nfl_games():
 						"logo":  away_team["team"]["logo"],
 						"record": away_team["records"][0]["summary"]
 						},
-					"time": time_pretty,
-					"day": day_pretty,
-					"date": date_pretty,
-					"stadium": c["venue"]["fullName"],
-					"city": c["venue"]["address"]["city"],
 					"leaders": {
 						"passing": {
 							"data": passing_data,
@@ -61,7 +56,12 @@ def get_nfl_games():
 							"wiki": make_wiki_link(rushing_data["displayName"]),
 							"team": get_nfl_team_name(home_team, away_team, rushing_data)
 						}
-					}
+					},
+					"time": time_pretty,
+					"day": day_pretty,
+					"date": date_pretty,
+					"stadium": c["venue"]["fullName"],
+					"city": c["venue"]["address"]["city"],					
 			}			
 			nfl_clean['games'].append(game)
 

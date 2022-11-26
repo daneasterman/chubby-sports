@@ -3,13 +3,7 @@
 
 <section>
 
-	{% if request.path == "/" %}
-		{% with info=info %}{% include "heroes/nfl_hero.html" %}{% endwith %}
-		{% elif request.path == "/nba" %}
-		{% include "heroes/nba_hero.html" %}
-	{% endif %}
-
-	{% if info.games == [] %}
+{% if info.games == [] %}
 		<div class="no_data_wrapper"> 
 			<p class="explainer_text" >
 				<span style="font-weight: 500">No games found.</span><br>
@@ -36,31 +30,16 @@
 									<p class="team_title purple_trim">{{ g.home_team.record }}</p>
 								</div>
 								<p class="score">{{ g.home_team.score }}</p>
-							</div>
+							</div>					
 					
-					{% if request.path == "/" %}
-						<div class="game_details">
-							<p style="font-weight: 600">{{ g.day }},</p>
-							<p>{{ g.date }}</p>
-							<p class="purple_trim">{{ g.stadium }},</p>
-							<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
-							<a class="reveal_specific">Show Leaders &darr;</a>
-						</div>
-					{% elif request.path == "/nba"
-						or request.path == "/worldcup" %}
 						<div class="game_details">
 							<p style="font-weight: 600;" >{{ g.time }} EST</p>
 							<p class="purple_trim">{{ g.stadium }},</p>
 							<p class="purple_trim" style="margin-bottom: 2rem">
 								{{ g.city }}
-							</p>
-							{% if request.path == "/nba" %}
-								<a class="reveal_specific">Show Leaders &darr;</a>
-							{% else %}
-							<a class="reveal_specific">Show Scorers &darr;</a>
-							{% endif %}
-						</div>
-					{% endif %}
+							</p>						
+							<a class="reveal_specific">Show Scorers &darr;</a>							
+						</div>				
 						
 					<div class="team_row">
 						<p class="score">{{ g.away_team.score }}</p>
@@ -74,12 +53,10 @@
 						</div>					
 					</div>
 			</div>
-
-		{% if request.path == "/" %}
-				{% with g=g %}{% include "leaders/nfl_leaders.html"%}{% endwith %}
-		{% elif request.path == "/nba" %}
-				{% with g=g %}{% include "leaders/nba_leaders.html"%}{% endwith %}
-		{% endif %}				
+		
+		{% with g=g %}
+			{% include "leaders/soccer_scorers.html"%}
+		{% endwith %}		
 
 		</div>
 		{% endfor %}

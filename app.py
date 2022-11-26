@@ -3,6 +3,7 @@ from pprint import pprint
 from flask import Flask, render_template
 from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
+from espn_api.soccer_games import get_soccer_games
 
 from pprint import pprint
 
@@ -19,6 +20,12 @@ def nfl():
 def nba():
 	info = get_nba_games()	
 	return render_template("games.html", info=info)
+
+@app.route("/worldcup")
+def worldcup():
+	WORLDCUP_CODE = "fifa.world"
+	info = get_soccer_games(WORLDCUP_CODE)
+	return render_template("soccer_games.html", info=info)
 
 if __name__ == "__main__":
 	app.run()
