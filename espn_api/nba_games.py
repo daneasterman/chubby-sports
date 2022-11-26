@@ -9,7 +9,7 @@ import json
 def get_nba_games():
 	full_est_now, trunc_est_now = get_current_est_datetime()	
 	# NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={trunc_est_now}"
-	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates=20221125"
+	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates=20221126"
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
@@ -33,7 +33,7 @@ def get_nba_games():
 
 			away_points_leader = [a for a in away_leaders if a["name"] == 'pointsPerGame']			
 			away_assists_leader = [a for a in away_leaders if a["name"] == 'assistsPerGame']
-			away_rebounds_leader = [a for a in away_leaders if a["name"] == 'reboundsPerGame']
+			away_rebounds_leader = [a for a in away_leaders if a["name"] == 'reboundsPerGame']			
 
 			game = {
 					"home_team": {

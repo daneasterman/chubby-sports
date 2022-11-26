@@ -46,19 +46,14 @@
 							<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
 							<a class="reveal_specific">Show Leaders &darr;</a>
 						</div>
-					{% elif request.path == "/nba"
-						or request.path == "/worldcup" %}
+					{% elif request.path == "/nba" %}
 						<div class="game_details">
 							<p style="font-weight: 600;" >{{ g.time }} EST</p>
 							<p class="purple_trim">{{ g.stadium }},</p>
 							<p class="purple_trim" style="margin-bottom: 2rem">
 								{{ g.city }}
-							</p>
-							{% if request.path == "/nba" %}
-								<a class="reveal_specific">Show Leaders &darr;</a>
-							{% else %}
-							<a class="reveal_specific">Show Scorers &darr;</a>
-							{% endif %}
+							</p>							
+							<a class="reveal_specific">Show Leaders &darr;</a>							
 						</div>
 					{% endif %}
 						
