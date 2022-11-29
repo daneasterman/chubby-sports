@@ -1,17 +1,28 @@
 import requests
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers, get_current_est_datetime
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers, get_est_datetime
 # from custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_soccer_scorers
 from pprint import pprint
 import json
 
-def get_soccer_games(LEAGUE_CODE):
-	full_est_now, trunc_est_now = get_current_est_datetime()	
-	LEAGUE_ENDPOINT = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates=20221125"	
-	soccer_raw = requests.get(LEAGUE_ENDPOINT).json()
+def get_soccer_games(LEAGUE_CODE, uri_date):
+	today_est_str, _, yesterday_est_str, _ = get_est_datetime()	
+	COMP_URL = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates={uri_date}"
+	soccer_raw = requests.get(COMP_URL).json()
 	events = soccer_raw['events']
 	
-	time_pretty, day_pretty, date_pretty = get_pretty_est(full_est_now)
-	soccer_clean = {"day": day_pretty, "date": date_pretty}
+	_, yest_day_pretty, yest_date_pretty = get_pretty_est(yesterday_est_str)
+	_, today_day_pretty, today_date_pretty = get_pretty_est(today_est_str)
+	
+	soccer_clean = {
+		"yesterday": {
+			"day": yest_day_pretty, 
+			"date": yest_date_pretty
+		},
+		"today": {
+			"day": today_day_pretty, 
+			"date": today_date_pretty			
+		}
+	}
 	
 	soccer_clean['games'] = []	
 	for e in events: 

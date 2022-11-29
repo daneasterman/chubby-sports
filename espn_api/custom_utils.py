@@ -1,16 +1,20 @@
-import requests
 from dateutil import parser, tz
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports"
 EST_TZ = tz.gettz('America/New_York')
 
-def get_current_est_datetime(): 	
-	utc_now = datetime.now(tz=timezone.utc)
-	est_now = utc_now.astimezone(EST_TZ)
-	full_est_now = str(utc_now.astimezone(EST_TZ))
-	trunc_est_now = est_now.strftime("%Y%m%d")	
-	return full_est_now, trunc_est_now
+def get_est_datetime(): 	
+	today_utc = datetime.now(tz=timezone.utc)
+	today_est_datetime = today_utc.astimezone(EST_TZ)
+	today_est_str = str(today_utc.astimezone(EST_TZ))
+	today_trunc_est_str = today_est_datetime.strftime("%Y%m%d")
+	
+	yesterday_est_datetime = today_est_datetime - timedelta(days=1)
+	yesterday_est_str = str(yesterday_est_datetime)
+	yesterday_trunc_est_str = yesterday_est_datetime.strftime("%Y%m%d")
+	
+	return today_est_str, today_trunc_est_str, yesterday_est_str, yesterday_trunc_est_str
 
 def get_pretty_est(raw_datestring):
 	utc_obj = parser.parse(raw_datestring)			

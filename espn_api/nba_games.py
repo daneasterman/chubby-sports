@@ -1,19 +1,19 @@
 import requests
 from dateutil import parser, tz
 from datetime import datetime, timezone
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime, make_wiki_link
+from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_est_datetime, make_wiki_link
 # from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime, make_wiki_link
 from pprint import pprint
 import json
 
 def get_nba_games():
-	full_est_now, trunc_est_now = get_current_est_datetime()	
-	# NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={trunc_est_now}"
-	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates=20221126"
+	today_est_str, today_trunc_est_str, _ = get_est_datetime()		
+	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={today_trunc_est_str}"
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
-	time_pretty, day_pretty, date_pretty = get_pretty_est(full_est_now)		
+	time_pretty, day_pretty, date_pretty = get_pretty_est(today_est_str) 
+
 	nba_clean = {"day": day_pretty, "date": date_pretty}
 	
 	nba_clean['games'] = []

@@ -1,9 +1,12 @@
 import os
 from pprint import pprint
+from datetime import datetime, timezone
 from flask import Flask, render_template
 from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
 from espn_api.soccer_games import get_soccer_games
+from espn_api.custom_utils import get_est_datetime
+
 
 from pprint import pprint
 
@@ -24,8 +27,14 @@ def nba():
 @app.route("/worldcup")
 def worldcup():
 	WORLDCUP_CODE = "fifa.world"
-	info = get_soccer_games(WORLDCUP_CODE)
-	return render_template("soccer_games.html", info=info)
+	_, today_trunc_est_str, _, yest_trunc_est_str = get_est_datetime()	
+	yest_games = get_soccer_games(WORLDCUP_CODE, yest_trunc_est_str)
+	today_games = get_soccer_games(WORLDCUP_CODE, today_trunc_est_str)
+
+	return render_template(
+		"soccer/worldcup/games.html", 
+		yest_info=yest_games, 
+		today_info=today_games)
 
 if __name__ == "__main__":
 	app.run()
