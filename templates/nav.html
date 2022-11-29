@@ -1,5 +1,5 @@
 <style>
-	nav { margin-bottom: 1rem; }
+	nav { margin-bottom: 2rem; }
 	
 	.nav_wrapper {
 		line-height: 1;
@@ -17,26 +17,9 @@
 		flex-direction: column; 
 		align-items: center; 
 	}
-	.twitter_wrapper { display: flex; align-items: center; margin-bottom: 1rem; }
+	.twitter_wrapper { display: flex; align-items: center; margin-bottom: 1rem; }	
 
-	.sport_button {
-		margin-bottom: 1rem;
-		background-color: white;	
-		border-radius: 4px;	
-		/* One shade darker than purple trim: */
-		color: #5D16A5;	
-		border: 3px solid;
-		padding-top: 0.75rem;
-		padding-bottom: 0.75rem;
-	}
-	.sport_button i { margin-right: 0.25rem; }
-	.sport_button:hover, .sport_button:active {
-		background-color: #5D16A5;
-		color: white
-	}
-
-	@media screen and (min-width: 860px) {
-		.sport_button { margin-bottom: 0 }
+	@media screen and (min-width: 860px) {		
 		.nav_wrapper {
 			flex-direction: row;  
 			justify-content: space-between; 
@@ -75,18 +58,6 @@
 						<i class="fab fa-twitter"></i>
 					</a>
 				</div>
-				
-				{% if request.path == "/" %}
-					<a style="margin-right: 1rem" class="sport_button" href="/nba">
-						<i class="fas fa-basketball-ball"></i>
-						NBA
-					</a>
-				{% elif request.path == "/nba" %}
-					<a style="margin-right: 1rem" class="sport_button" href="/">
-						<i class="fas fa-football-ball"></i>
-						NFL
-					</a>
-				{% endif %}	
 
 			<a class="buy_coffee_button" 
 					href="https://www.buymeacoffee.com/chubbyhooper" target="_blank">				

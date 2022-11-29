@@ -7,7 +7,7 @@ from pprint import pprint
 import json
 
 def get_nba_games():
-	today_est_str, today_trunc_est_str, _ = get_est_datetime()		
+	today_est_str, today_trunc_est_str, _, _ = get_est_datetime()
 	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={today_trunc_est_str}"
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']

@@ -34,6 +34,8 @@ section {
   section { padding-bottom: 1rem 5rem; }
 }
 
+
+
 /***** PAGE TEMPLATE STYLES ******/
 
 div.listings_wrapper {
@@ -94,7 +96,7 @@ h2.section_subtitle, .small_subtitle {
 .small_subtitle { font-size: 1.5rem; }
 
 .reveal_all, .reveal_specific, 
-.buy_coffee_button, .sport_button {	
+.buy_coffee_button {	
 	background-color: #762FBE;
 	font-size: 1.1rem;
 	color: white;
