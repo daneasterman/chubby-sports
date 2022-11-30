@@ -32,7 +32,7 @@ $(".reveal_specific").click(function () {
 });
 
 // Soccer version for "Show Scorers" instead of "Show Leaders" button:
-$(".reveal_specific").click(function () {
+$(".reveal_scorer").click(function () {
 	const leaderButton = $(this);
 	const gameFlex = $(this).parents(".soccer_flex");
 	const specificPlayerFlex = $(gameFlex).next(".player_wrapper");

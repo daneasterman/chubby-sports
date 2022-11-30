@@ -96,7 +96,7 @@ h2.section_subtitle, .small_subtitle {
 .small_subtitle { font-size: 1.5rem; }
 
 .reveal_all, .reveal_specific, 
-.buy_coffee_button {	
+.buy_coffee_button, .reveal_scorer {	
 	background-color: #762FBE;
 	font-size: 1.1rem;
 	color: white;
@@ -115,7 +115,8 @@ h2.section_subtitle, .small_subtitle {
 
 .reveal_all:hover, .reveal_all:active,
 .reveal_specific:hover, .reveal_specific:active,
-.buy_coffee_button:hover, buy_coffee_button:active {
+.buy_coffee_button:hover, buy_coffee_button:active,
+.reveal_scorer:hover, .reveal_scorer:active {
 	background-color: #9049D8;
 	cursor: pointer;
 }
