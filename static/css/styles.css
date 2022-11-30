@@ -166,12 +166,15 @@ h2.section_subtitle, .small_subtitle {
 	align-items: center;
 }
 
-.team_column {	
+.team_column, .wc_team_column {	
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
 	padding: 2rem 0.5rem 0 0.5rem;
 	max-width: 150px;
+}
+.wc_team_column {
+	padding-top: 3rem
 }
 
 .team_logo {
