@@ -6,7 +6,7 @@ from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
 from espn_api.soccer_games import get_soccer_games
 from espn_api.custom_utils import get_est_datetime
-
+from flask_talisman import Talisman
 
 from pprint import pprint
 
@@ -35,6 +35,12 @@ def worldcup():
 		"soccer/worldcup/games.html", 
 		yest_info=yest_games, 
 		today_info=today_games)
+		
+
+if os.getenv("PROD_APP_SETTINGS"):
+	Talisman(app, content_security_policy=None)
+else:
+	pass
 
 if __name__ == "__main__":
 	app.run()
