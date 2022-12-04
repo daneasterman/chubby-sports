@@ -17,12 +17,12 @@ app.config.from_object(env_config)
 @app.route("/")
 def nfl():
 	info = get_nfl_games()
-	return render_template("games.html", info=info)
+	return render_template("games.html", info=info, title="NFL Leaders")
 
 @app.route("/nba")
 def nba():
-	info = get_nba_games()	
-	return render_template("games.html", info=info)
+	info = get_nba_games()
+	return render_template("games.html", info=info, title="NBA Leaders")
 
 @app.route("/worldcup")
 def worldcup():
@@ -34,8 +34,9 @@ def worldcup():
 	return render_template(
 		"soccer/worldcup/games.html", 
 		yest_info=yest_games, 
-		today_info=today_games)
-		
+		today_info=today_games,
+		title="World Cup Scorers")
+
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)
