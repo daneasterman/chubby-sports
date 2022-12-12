@@ -27,14 +27,12 @@ def nba():
 @app.route("/worldcup")
 def worldcup():
 	WORLDCUP_CODE = "fifa.world"
-	_, today_trunc_est_str, _, yest_trunc_est_str = get_est_datetime()	
-	yest_games = get_soccer_games(WORLDCUP_CODE, yest_trunc_est_str)
-	today_games = get_soccer_games(WORLDCUP_CODE, today_trunc_est_str)
-
+	date_range = "20221212-20221214"
+	games = get_soccer_games(WORLDCUP_CODE, date_range)
+	
 	return render_template(
 		"soccer/worldcup/games.html", 
-		yest_info=yest_games, 
-		today_info=today_games,
+		info=games,
 		title="World Cup Scorers")
 
 

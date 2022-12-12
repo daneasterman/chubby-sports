@@ -1,5 +1,5 @@
 <div class="listings_wrapper" id="listings">
-	{% for g in today_info.games %}
+	{% for g in info.games %}
 		<div class="game_wrapper">				
 			<div class="soccer_flex">
 					<div class="team_row">
@@ -14,18 +14,12 @@
 						</div>					
 				
 					<div class="game_details">
-						<p style="font-weight: 600;" >{{ g.time }} EST</p>
-						<p class="purple_trim">{{ g.stadium }},</p>
-						<p class="purple_trim" style="margin-bottom: 2rem">
-							{{ g.city }}
-						</p>
+						<p style="font-weight: 600">{{ g.day }},</p>
+							<p>{{ g.date }}</p>
+							<p class="purple_trim">{{ g.stadium }},</p>
+							<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
 					{% if g.scorers.goals or g.scorers.penalties %}
-						<a class="reveal_scorer">Show Scorers &darr;</a>
-					{% else %}
-						<p style="text-align: center;">
-							No scorers found so far.
-							<br>Refresh for updates.
-						</p>
+						<a class="reveal_scorer">Show Scorers &darr;</a>					
 					{% endif %}
 					</div>					
 					
