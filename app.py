@@ -27,7 +27,7 @@ def nba():
 @app.route("/worldcup")
 def worldcup():
 	WORLDCUP_CODE = "fifa.world"
-	date_range = "20221210-20221216"
+	date_range = "20221213-20221216"
 	games = get_soccer_games(WORLDCUP_CODE, date_range)
 	
 	return render_template(
