@@ -18,7 +18,7 @@ def get_soccer_games(LEAGUE_CODE, uri_date):
 			away_team = comp["competitors"][1]
 			time_pretty, day_pretty, date_pretty = get_pretty_est(comp["date"])		
 			details = comp.get("details")
-			goals, penalties = get_soccer_scorers(details)		
+			goals, penalties = get_soccer_scorers(details)			
 
 			game = {
 				"home_team": {

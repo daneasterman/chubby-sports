@@ -21,7 +21,7 @@
 					{% if g.scorers.goals or g.scorers.penalties %}
 						<a class="reveal_scorer">Show Scorers &darr;</a>					
 					{% endif %}
-					</div>					
+					</div>
 					
 				<div class="team_row">
 					<p class="score">{{ g.away_team.score }}</p>
@@ -36,8 +36,8 @@
 		</div>
 
 		{% with g=g %}
-		{% include "leaders/soccer_scorers.html"%}
-	{% endwith %}	
+			{% include "leaders/soccer_scorers.html"%}
+		{% endwith %}	
 
 	</div>
 	{% endfor %}

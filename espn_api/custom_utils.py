@@ -52,5 +52,5 @@ def get_soccer_scorers(details):
 				"position": deet["athletesInvolved"][0]["position"],
 				"goal_type": deet["type"]["text"],
 				"wiki_link": make_wiki_link(player_name)
-			})
+			})	
 	return goal_scorers, penalty_scorers			
