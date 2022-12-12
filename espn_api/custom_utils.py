@@ -10,11 +10,7 @@ def get_est_datetime():
 	today_est_str = str(today_utc.astimezone(EST_TZ))
 	today_trunc_est_str = today_est_datetime.strftime("%Y%m%d")
 	
-	yesterday_est_datetime = today_est_datetime - timedelta(days=1)
-	yesterday_est_str = str(yesterday_est_datetime)
-	yesterday_trunc_est_str = yesterday_est_datetime.strftime("%Y%m%d")
-	
-	return today_est_str, today_trunc_est_str, yesterday_est_str, yesterday_trunc_est_str
+	return today_est_str, today_trunc_est_str
 
 def get_pretty_est(raw_datestring):
 	utc_obj = parser.parse(raw_datestring)			
