@@ -17,12 +17,12 @@ app.config.from_object(env_config)
 @app.route("/")
 def nfl():
 	info = get_nfl_games()
-	return render_template("games.html", info=info, title="NFL Leaders")
+	return render_template("globals/games.html", info=info, title="NFL Leaders")
 
 @app.route("/nba")
 def nba():
 	info = get_nba_games()
-	return render_template("games.html", info=info, title="NBA Leaders")
+	return render_template("globals/games.html", info=info, title="NBA Leaders")
 
 @app.route("/worldcup")
 def worldcup():
@@ -31,7 +31,7 @@ def worldcup():
 	games = get_soccer_games(WORLDCUP_CODE, date_range)
 	
 	return render_template(
-		"soccer/worldcup/games.html", 
+		"/soccer/worldcup/base.html", 
 		info=games,
 		title="World Cup Scorers")
 

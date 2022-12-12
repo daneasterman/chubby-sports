@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  {% include 'globals/head.html' %}
+  <body> 
+      {% include 'globals/nav.html' %}
+      {% include 'globals/top_buttons.html' %}
+			{% block content %}{% endblock %}
+			{% include 'globals/footer.html' %}
+      {% include 'globals/js.html' %}
+  </body>
+</html>
