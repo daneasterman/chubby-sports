@@ -1,9 +1,10 @@
 <div class="listings_wrapper" id="listings">
 	{% for g in info.games %}
 		<div class="game_wrapper">				
-			<div class="soccer_flex">
+			<div class="game_flex">
 					<div class="team_row">
-						<div class="wc_team_column">								
+						<div class="team_column">
+								<p class="home_away">Home</p>
 								<img class="team_logo"
 										src="{{ g.home_team.logo }}"
 										alt="team logo" />
@@ -11,21 +12,20 @@
 								<p class="team_title purple_trim">{{ g.home_team.record }}</p>
 							</div>
 							<p class="score">{{ g.home_team.score }}</p>
-						</div>					
+						</div>			
 				
 					<div class="game_details">
 						<p style="font-weight: 600">{{ g.day }},</p>
-							<p>{{ g.date }}</p>
-							<p class="purple_trim">{{ g.stadium }},</p>
-							<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
-					{% if g.scorers.goals or g.scorers.penalties %}
-						<a class="reveal_scorer">Show Scorers &darr;</a>					
-					{% endif %}
+						<p>{{ g.date }}</p>
+						<p class="purple_trim">{{ g.stadium }},</p>
+						<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
+						<a class="reveal_specific">Show Leaders &darr;</a>
 					</div>
 					
 				<div class="team_row">
 					<p class="score">{{ g.away_team.score }}</p>
-					<div class="wc_team_column">							
+					<div class="team_column">
+							<p class="home_away">Away</p>
 							<img class="team_logo" 
 									src="{{ g.away_team.logo }}"
 									alt="team logo" />
@@ -35,9 +35,7 @@
 				</div>
 		</div>
 
-		{% with g=g %}
-			{% include "leaders/soccer.html"%}
-		{% endwith %}	
+		{% with g=g %}{% include "leaders/nfl.html"%}{% endwith %}
 
 	</div>
 	{% endfor %}
