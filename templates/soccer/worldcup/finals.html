@@ -1,4 +1,10 @@
-<div class="listings_wrapper" id="listings">
+<div class="hero_flex">
+	<div class="hero_item">
+		<h2 class="small_subtitle">The Final:</h2>
+	</div>
+</div>
+{% with info=info %}{% include "globals/empty_checker.html" %}{% endwith %}
+<div class="listings_wrapper" id="listings">	
 	{% for g in info.games %}
 		<div class="game_wrapper">				
 			<div class="soccer_flex">
@@ -36,7 +42,7 @@
 		</div>
 
 		{% with g=g %}
-			{% include "leaders/soccer.html"%}
+			{% include "soccer/worldcup/scorers.html"%}
 		{% endwith %}	
 
 	</div>

@@ -25,9 +25,13 @@ def nba():
 @app.route("/worldcup")
 def worldcup():
 	WORLDCUP_CODE = "fifa.world"
-	date_range = "20221213-20221216"	
-	info = get_soccer_games(WORLDCUP_CODE, date_range)	
-	return render_template("/soccer/worldcup/base.html", info=info, title="World Cup Scorers")
+	semis = get_soccer_games(WORLDCUP_CODE, "20221213-20221216")	
+	finals = get_soccer_games(WORLDCUP_CODE, "20221218")
+	return render_template("/soccer/worldcup/base.html",
+												semis=semis,
+												finals=finals,
+												title="World Cup Scorers"
+											)
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)

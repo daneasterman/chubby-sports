@@ -3,11 +3,11 @@
 
 <section>	
 
-	{% with info=info %}{% include "soccer/worldcup/hero.html" %}{% endwith %}
+	{% with info=info %}{% include "soccer/worldcup/hero.html" %}{% endwith %}	
 
-	{% with info=info %}{% include "globals/empty_checker.html" %}{% endwith %}
+	{% with info=finals %}{% include "soccer/worldcup/finals.html" %}{% endwith %}
 
-	{% with info=info %}{% include "soccer/worldcup/games.html" %}{% endwith %}	
+	{% with info=semis %}{% include "soccer/worldcup/semis.html" %}{% endwith %}
 
 </section>
 {% endblock %}
