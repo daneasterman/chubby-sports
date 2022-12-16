@@ -1,10 +1,8 @@
 import os
-from datetime import datetime, timezone
 from flask import Flask, render_template
 from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
 from espn_api.soccer_games import get_soccer_games
-from espn_api.custom_utils import get_est_datetime
 from flask_talisman import Talisman
 from pprint import pprint
 
@@ -40,13 +38,6 @@ def laliga():
 												info=info, 
 												title="La Liga Scorers")
 
-@app.route("/epl")
-def epl():
-	EPL_CODE = "eng.1"
-	info = get_soccer_games(EPL_CODE)
-	return render_template("soccer/epl/base.html", 
-												info=info, 
-												title="Premier League Scorers")
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)
