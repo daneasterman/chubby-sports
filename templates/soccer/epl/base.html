@@ -1,0 +1,11 @@
+{% extends 'globals/base.html' %}
+{% block content %}
+
+<section>	
+
+	{% with info=info %}{% include "soccer/epl/hero.html" %}{% endwith %}	
+
+	{% with info=info %}{% include "soccer/epl/games.html" %}{% endwith %}
+
+</section>
+{% endblock %}

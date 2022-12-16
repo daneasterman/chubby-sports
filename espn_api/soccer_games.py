@@ -4,7 +4,7 @@ from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers
 from pprint import pprint
 import json
 
-def get_soccer_games(LEAGUE_CODE, uri_date):	
+def get_soccer_games(LEAGUE_CODE, uri_date=""):	
 	COMP_URL = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates={uri_date}"
 	soccer_raw = requests.get(COMP_URL).json()
 	events = soccer_raw['events']	

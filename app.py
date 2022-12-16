@@ -30,8 +30,23 @@ def worldcup():
 	return render_template("/soccer/worldcup/base.html",
 												semis=semis,
 												finals=finals,
-												title="World Cup Scorers"
-											)
+												title="World Cup Scorers")
+
+@app.route("/laliga")
+def laliga():
+	LALIGA_CODE = "esp.1"
+	info = get_soccer_games(LALIGA_CODE)
+	return render_template("soccer/laliga/base.html", 
+												info=info, 
+												title="La Liga Scorers")
+
+@app.route("/epl")
+def epl():
+	EPL_CODE = "eng.1"
+	info = get_soccer_games(EPL_CODE)
+	return render_template("soccer/epl/base.html", 
+												info=info, 
+												title="Premier League Scorers")
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)
