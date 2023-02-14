@@ -1,8 +1,6 @@
 import requests
 from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers
 # from custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_soccer_scorers
-from pprint import pprint
-import json
 
 def get_soccer_games(LEAGUE_CODE, uri_date=""):	
 	COMP_URL = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates={uri_date}"
@@ -10,9 +8,9 @@ def get_soccer_games(LEAGUE_CODE, uri_date=""):
 	events = soccer_raw['events']	
 	
 	soccer_clean = {}
-	soccer_clean['games'] = []	
+	soccer_clean['games'] = []
 	for e in events: 
-		competitions = e["competitions"]		
+		competitions = e["competitions"]
 		for comp in competitions:
 			home_team = comp["competitors"][0]
 			away_team = comp["competitors"][1]
@@ -43,10 +41,11 @@ def get_soccer_games(LEAGUE_CODE, uri_date=""):
 			}
 			soccer_clean['games'].append(game)
 
-	# breakpoint()
+	
 	# print("len**", len(laliga_clean["games"]))
 	# with open('json/laliga/v3.json', 'w') as outfile:
 	# 	json.dump(laliga_clean, outfile)
+	# breakpoint()
 	return soccer_clean
 
 # get_laliga_games()

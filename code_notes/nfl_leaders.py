@@ -1,8 +1,6 @@
 import requests
 from espn_api.custom_utils import BASE_ESPN, get_team_name, make_wiki_link
 # from custom_utils import BASE_ESPN, get_team_name, make_wiki_link
-from pprint import pprint
-import json
 
 NFL_SCORES = f"{BASE_ESPN}/football/nfl/scoreboard"
 NFL_TEAMS_URL = f"{BASE_ESPN}/football/nfl/teams"
@@ -12,7 +10,7 @@ def generate_leaders():
 	events = nfl_data['events']
 	passers = []
 	rushers = []
-	receivers = []	
+	receivers = []
 	for e in events:
 		competitions = e["competitions"]		
 		for c in competitions:

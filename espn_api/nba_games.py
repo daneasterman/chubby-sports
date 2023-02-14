@@ -3,8 +3,6 @@ from dateutil import parser, tz
 from datetime import datetime, timezone
 from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_est_datetime, make_wiki_link
 # from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime, make_wiki_link
-from pprint import pprint
-import json
 
 def get_nba_games():
 	today_est_str, today_trunc_est_str = get_est_datetime()
