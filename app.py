@@ -38,6 +38,7 @@ def laliga():
 												info=info, 
 												title="La Liga Scorers")
 
+# Add EPL HERE, code: "eng.1"
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)
