@@ -2,22 +2,23 @@ from dateutil import parser, tz
 from datetime import datetime, timezone, timedelta
 
 BASE_ESPN = "https://site.api.espn.com/apis/site/v2/sports"
-EST_TZ = tz.gettz('America/New_York')
+# CUSTOM_TZ = tz.gettz('America/New_York')
+CUSTOM_TZ = tz.gettz('Europe/London')
 
 def get_est_datetime(): 	
 	today_utc = datetime.now(tz=timezone.utc)
-	today_est_datetime = today_utc.astimezone(EST_TZ)
-	today_est_str = str(today_utc.astimezone(EST_TZ))
-	today_trunc_est_str = today_est_datetime.strftime("%Y%m%d")
+	today_custom_datetime = today_utc.astimezone(CUSTOM_TZ)
+	today_custom_str = str(today_utc.astimezone(CUSTOM_TZ))
+	today_trunc_custom_str = today_custom_datetime.strftime("%Y%m%d")
 	
-	return today_est_str, today_trunc_est_str
+	return today_custom_str, today_trunc_custom_str
 
-def get_pretty_est(raw_datestring):
+def get_pretty_custom(raw_datestring):
 	utc_obj = parser.parse(raw_datestring)			
-	usa_eastern_datetime = utc_obj.astimezone(EST_TZ)
-	time_pretty = usa_eastern_datetime.strftime("%-H:%M")
-	day_pretty = usa_eastern_datetime.strftime("%A")
-	date_pretty = usa_eastern_datetime.strftime("%B %d %Y")
+	custom_datetime = utc_obj.astimezone(CUSTOM_TZ)
+	time_pretty = custom_datetime.strftime("%-H:%M")
+	day_pretty = custom_datetime.strftime("%A")
+	date_pretty = custom_datetime.strftime("%B %d %Y")
 	return time_pretty, day_pretty, date_pretty
 
 def make_wiki_link(player_name):

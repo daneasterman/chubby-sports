@@ -1,16 +1,16 @@
 import requests
 from dateutil import parser, tz
 from datetime import datetime, timezone
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_est_datetime, make_wiki_link
-# from custom_utils import BASE_ESPN, get_pretty_est, get_current_est_datetime, make_wiki_link
+from espn_api.custom_utils import *
+# from custom_utils import *
 
 def get_nba_games():
-	today_est_str, today_trunc_est_str = get_est_datetime()
-	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={today_trunc_est_str}"
+	today_custom_str, today_trunc_custom_str = get_est_datetime()
+	NBA_URL = f"{BASE_ESPN}/basketball/nba/scoreboard?dates={today_trunc_custom_str}"
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
-	time_pretty, day_pretty, date_pretty = get_pretty_est(today_est_str) 
+	_, day_pretty, date_pretty = get_pretty_custom(today_custom_str) 
 
 	nba_clean = {"day": day_pretty, "date": date_pretty}
 	
@@ -20,7 +20,7 @@ def get_nba_games():
 		for c in competitions:
 			home_team = c["competitors"][0]
 			away_team = c["competitors"][1]
-			time_pretty, day_pretty, date_pretty = get_pretty_est(c["date"])		
+			time_pretty, _, _ = get_pretty_custom(c["date"])
 
 			home_leaders = home_team["leaders"]
 			away_leaders = away_team["leaders"]

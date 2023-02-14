@@ -1,6 +1,6 @@
 <div class="hero_flex">
 	<div class="hero_item">
-		<h2 class="small_subtitle">Latest Games:</h2>
+		<h2 class="small_subtitle">Today's Games:</h2>
 	</div>
 </div>
 {% with info=info %}{% include "globals/empty_checker.html" %}{% endwith %}
@@ -19,7 +19,7 @@
 							<p class="score">{{ g.home_team.score }}</p>
 						</div>					
 				
-					<div class="game_details">
+					<div style="margin-top: 2rem" class="game_details">
 						<p style="font-weight: 600">{{ g.day }},</p>
 							<p>{{ g.date }}</p>
 							<p class="purple_trim">{{ g.stadium }},</p>

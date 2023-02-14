@@ -1,6 +1,6 @@
 import requests
-from espn_api.custom_utils import BASE_ESPN, get_pretty_est, get_soccer_scorers
-# from custom_utils import BASE_ESPN, get_pretty_est, make_wiki_link, get_soccer_scorers
+from espn_api.custom_utils import *
+# from custom_utils import *
 
 def get_soccer_games(LEAGUE_CODE, uri_date=""):	
 	COMP_URL = f"{BASE_ESPN}/soccer/{LEAGUE_CODE}/scoreboard?dates={uri_date}"
@@ -14,7 +14,7 @@ def get_soccer_games(LEAGUE_CODE, uri_date=""):
 		for comp in competitions:
 			home_team = comp["competitors"][0]
 			away_team = comp["competitors"][1]
-			time_pretty, day_pretty, date_pretty = get_pretty_est(comp["date"])		
+			time_pretty, day_pretty, date_pretty = get_pretty_custom(comp["date"])		
 			details = comp.get("details")
 			goals, penalties = get_soccer_scorers(details)			
 
