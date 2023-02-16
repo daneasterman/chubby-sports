@@ -1,8 +1,10 @@
 import requests
+import json
 from dateutil import parser, tz
 from datetime import datetime, timezone
 from espn_api.custom_utils import *
 # from custom_utils import *
+from pprint import pprint
 
 def get_nba_games():
 	today_custom_str, today_trunc_custom_str = get_est_datetime()
@@ -10,8 +12,9 @@ def get_nba_games():
 	nba_raw = requests.get(NBA_URL).json()
 	events = nba_raw['events']
 	
-	_, day_pretty, date_pretty = get_pretty_custom(today_custom_str) 
-
+	LONDON = tz.gettz('Europe/London')
+	NEW_YORK = tz.gettz('America/New_York')		
+	_, day_pretty, date_pretty = get_pretty_custom(today_custom_str, LONDON)
 	nba_clean = {"day": day_pretty, "date": date_pretty}
 	
 	nba_clean['games'] = []
@@ -19,8 +22,7 @@ def get_nba_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]
-			time_pretty, _, _ = get_pretty_custom(c["date"])
+			away_team = c["competitors"][1]	
 
 			home_leaders = home_team["leaders"]
 			away_leaders = away_team["leaders"]
@@ -31,7 +33,11 @@ def get_nba_games():
 
 			away_points_leader = [a for a in away_leaders if a["name"] == 'pointsPerGame']			
 			away_assists_leader = [a for a in away_leaders if a["name"] == 'assistsPerGame']
-			away_rebounds_leader = [a for a in away_leaders if a["name"] == 'reboundsPerGame']			
+			away_rebounds_leader = [a for a in away_leaders if a["name"] == 'reboundsPerGame']
+			
+			
+			uk_pretty_time, _, _ = get_pretty_custom(c["date"], LONDON)
+			est_pretty_time, _, _ = get_pretty_custom(c["date"], NEW_YORK)		
 
 			game = {
 					"home_team": {
@@ -74,14 +80,15 @@ def get_nba_games():
 							}
 						},
 						},
-					"time": time_pretty,
+					"uk_time": uk_pretty_time,
+					"est_time": est_pretty_time,					
 					"stadium": c["venue"]["fullName"],
 					"city": c["venue"]["address"]["city"]
 			}
 			nba_clean['games'].append(game)
 
-	# with open('json/nba_games/all_leaders_v2.json', 'w') as outfile:
-	# 	json.dump(nba_clean, outfile)
+	# with open('test_v1.json', 'w') as outfile:
+	# 	json.dump(nba_clean, outfile, indent=2)
 	# breakpoint()
 	return nba_clean
 

@@ -34,9 +34,20 @@ def worldcup():
 def laliga():
 	LALIGA_CODE = "esp.1"
 	info = get_soccer_games(LALIGA_CODE)
+	breakpoint()
 	return render_template("soccer/laliga/base.html", 
 												info=info, 
 												title="La Liga Scorers")
+
+# Weekly Datetime logic:
+# from datetime import datetime, timedelta
+
+# current_date_time = datetime.now()
+# start_of_week = date_obj - timedelta(days=date_obj.weekday())  # Monday
+# end_of_week = start_of_week + timedelta(days=6)  # Sunday
+# print(start_of_week)
+# print(end_of_week)
+
 
 # Add EPL HERE, code: "eng.1"
 
