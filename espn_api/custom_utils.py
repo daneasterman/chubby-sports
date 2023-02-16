@@ -28,7 +28,6 @@ def get_week_range():
 	end_week_str = end_week_obj.strftime("%Y%m%d")
 	return start_week_str, end_week_str
 
-
 def make_wiki_link(player_name):
 	BASE = "https://en.wikipedia.org/wiki/"
 	subpath = player_name.replace(" ", "_")

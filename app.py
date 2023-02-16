@@ -40,12 +40,6 @@ def laliga():
 												info=info, 
 												title="La Liga Scorers")
 
-
-
-# print(start_of_week)
-# print(end_of_week)
-
-
 # Add EPL HERE, code: "eng.1"
 
 if os.getenv("PROD_APP_SETTINGS"):
