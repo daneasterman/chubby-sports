@@ -15,7 +15,7 @@ def get_est_datetime():
 def get_pretty_custom(raw_datestring, timezone):
 	utc_obj = parser.parse(raw_datestring)
 	custom_datetime = utc_obj.astimezone(timezone)
-	time_pretty = custom_datetime.strftime("%-H:%M")
+	time_pretty = custom_datetime.strftime("%-I:%M%p")
 	day_pretty = custom_datetime.strftime("%A")
 	date_pretty = custom_datetime.strftime("%B %d %Y")
 	return time_pretty, day_pretty, date_pretty

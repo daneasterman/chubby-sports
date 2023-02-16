@@ -35,7 +35,7 @@ def worldcup():
 def laliga():
 	start_week_str, end_week_str = get_week_range()
 	LALIGA_CODE = "esp.1"
-	info = get_soccer_games(LALIGA_CODE, f"{start_week_str}-{end_week_str}")	
+	info = get_soccer_games(LALIGA_CODE, f"{start_week_str}-{end_week_str}")
 	return render_template("soccer/laliga/base.html", 
 												info=info, 
 												title="La Liga Scorers")
