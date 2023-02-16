@@ -14,7 +14,7 @@ def get_nba_games():
 	
 	LONDON = tz.gettz('Europe/London')
 	NEW_YORK = tz.gettz('America/New_York')		
-	_, day_pretty, date_pretty = get_pretty_custom(today_custom_str, LONDON)
+	_, day_pretty, date_pretty = get_pretty_custom(today_custom_str, LONDON)	
 	nba_clean = {"day": day_pretty, "date": date_pretty}
 	
 	nba_clean['games'] = []

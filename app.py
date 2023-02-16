@@ -3,6 +3,7 @@ from flask import Flask, render_template
 from espn_api.nfl_games import get_nfl_games
 from espn_api.nba_games import get_nba_games
 from espn_api.soccer_games import get_soccer_games
+from espn_api.custom_utils import get_week_range
 from flask_talisman import Talisman
 from pprint import pprint
 
@@ -32,18 +33,15 @@ def worldcup():
 
 @app.route("/laliga")
 def laliga():
+	start_week_str, end_week_str = get_week_range()
 	LALIGA_CODE = "esp.1"
-	info = get_soccer_games(LALIGA_CODE)	
+	info = get_soccer_games(LALIGA_CODE, f"{start_week_str}-{end_week_str}")	
 	return render_template("soccer/laliga/base.html", 
 												info=info, 
 												title="La Liga Scorers")
 
-# Weekly Datetime logic:
-# from datetime import datetime, timedelta
 
-# current_date_time = datetime.now()
-# start_of_week = date_obj - timedelta(days=date_obj.weekday())  # Monday
-# end_of_week = start_of_week + timedelta(days=6)  # Sunday
+
 # print(start_of_week)
 # print(end_of_week)
 
