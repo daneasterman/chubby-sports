@@ -15,8 +15,9 @@ def get_nfl_games():
 		competitions = e["competitions"]
 		for c in competitions:
 			home_team = c["competitors"][0]
-			away_team = c["competitors"][1]			
-			time_pretty, day_pretty, date_pretty = get_pretty_custom(c["date"])
+			away_team = c["competitors"][1]
+			LONDON = tz.gettz('Europe/London')	
+			time_pretty, day_pretty, date_pretty = get_pretty_custom(c["date"], LONDON)
 			
 			leaders = c.get("leaders")
 			passing_leader = [l for l in leaders if l["name"] == 'passingYards']

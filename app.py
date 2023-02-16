@@ -33,8 +33,7 @@ def worldcup():
 @app.route("/laliga")
 def laliga():
 	LALIGA_CODE = "esp.1"
-	info = get_soccer_games(LALIGA_CODE)
-	breakpoint()
+	info = get_soccer_games(LALIGA_CODE)	
 	return render_template("soccer/laliga/base.html", 
 												info=info, 
 												title="La Liga Scorers")

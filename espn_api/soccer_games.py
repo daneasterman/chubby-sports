@@ -13,10 +13,11 @@ def get_soccer_games(LEAGUE_CODE, uri_date=""):
 		competitions = e["competitions"]
 		for comp in competitions:
 			home_team = comp["competitors"][0]
-			away_team = comp["competitors"][1]
-			time_pretty, day_pretty, date_pretty = get_pretty_custom(comp["date"])		
+			away_team = comp["competitors"][1]					
 			details = comp.get("details")
-			goals, penalties = get_soccer_scorers(details)			
+			goals, penalties = get_soccer_scorers(details)
+			LONDON = tz.gettz('Europe/London')
+			time_pretty, day_pretty, date_pretty = get_pretty_custom(comp["date"], LONDON)
 
 			game = {
 				"home_team": {
