@@ -40,7 +40,14 @@ def laliga():
 												info=info, 
 												title="La Liga Scorers")
 
-# Add EPL HERE, code: "eng.1"
+@app.route("/epl")
+def epl():
+	start_week_str, end_week_str = get_week_range()
+	EPL_CODE = "eng.1"
+	info = get_soccer_games(EPL_CODE, f"{start_week_str}-{end_week_str}")
+	return render_template("soccer/epl/base.html", 
+												info=info, 
+												title="English Premier League Scorers")
 
 if os.getenv("PROD_APP_SETTINGS"):
 	Talisman(app, content_security_policy=None)
