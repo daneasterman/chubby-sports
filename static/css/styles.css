@@ -146,6 +146,7 @@ h2.section_subtitle, .small_subtitle {
 
 .score { font-size: 2.5rem }
 
+/* Uses soccer_flex class here for jquery slide logic */
 .game_flex, .soccer_flex {
 	display: flex;	
 	justify-content: center;	
