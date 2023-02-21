@@ -34,8 +34,6 @@ section {
   section { padding-bottom: 1rem 5rem; }
 }
 
-
-
 /***** PAGE TEMPLATE STYLES ******/
 
 div.listings_wrapper {
@@ -132,19 +130,7 @@ h2.section_subtitle, .small_subtitle {
 	margin-bottom: 2.25rem;	
 }
 
-.home_away { position: relative; }
-
-.game_details {	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 1.1rem;
-	margin-top: 1.5rem;
-}
-
-.home_away { margin-bottom: 0.5rem; }
-
-.score { font-size: 2.5rem }
+.home_away { position: relative; margin-bottom: 0.5rem; }
 
 /* Uses soccer_flex class here for jquery slide logic */
 .game_flex, .soccer_flex {
@@ -160,20 +146,41 @@ h2.section_subtitle, .small_subtitle {
 		flex-direction: row;
 	}
 }
-
-.team_row {
+.home_team_row {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
 }
+.home_team_row .score { order: 1 }
+
+.game_details {	
+	/* Media Query on this order: */
+	order: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.1rem;
+	margin-top: 1.5rem;
+}
+.away_team_row {
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+}
+.score { font-size: 2.5rem }
+
+
+/* insert media query here */
+
 
 .team_column, .wc_team_column {	
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
 	padding: 2rem 0.5rem 0 0.5rem;
-	max-width: 150px;
+	max-width: 150px;	
 }
+
 .wc_team_column {
 	padding-top: 3rem
 }

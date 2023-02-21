@@ -2,7 +2,7 @@
 	{% for g in info.games %}
 		<div class="game_wrapper">				
 			<div class="game_flex">
-					<div class="team_row">
+					<div class="home_team_row">
 						<div class="team_column">
 								<p class="home_away">Home</p>
 								<img class="team_logo"
@@ -12,7 +12,7 @@
 								<p class="team_title purple_trim">{{ g.home_team.record }}</p>
 							</div>
 							<p class="score">{{ g.home_team.score }}</p>
-						</div>			
+						</div>
 				
 					<div class="game_details">
 						<p style="font-weight: 600">{{ g.day }},</p>
@@ -22,7 +22,7 @@
 						<a class="reveal_specific">Show Leaders &darr;</a>
 					</div>
 					
-				<div class="team_row">
+				<div class="away_team_row">
 					<p class="score">{{ g.away_team.score }}</p>
 					<div class="team_column">
 							<p class="home_away">Away</p>
