@@ -28,15 +28,14 @@ div.listings_wrapper {
 		flex-direction: row;
 	}
 }
+
 .home_team_row {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
 }
-.home_team_row .score { order: 1 }
-
-.game_details {	
-	/* Media Query on this order: */
+.home_team_row .team_column { order: 2 }
+.game_details {		
 	order: 3;
 	display: flex;
 	flex-direction: column;
@@ -50,10 +49,12 @@ div.listings_wrapper {
 	align-items: center;
 }
 .score { font-size: 2.5rem }
-
-
-/* insert media query here */
-
+@media screen and (min-width: 768px) {
+	.home_team_row .team_column { order: 0 }
+	.game_details {	
+		order: 0
+	}
+}
 
 .team_column, .wc_team_column {	
 	display: flex;
