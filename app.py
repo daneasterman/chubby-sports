@@ -13,10 +13,10 @@ env_config = os.getenv("PROD_APP_SETTINGS", "config.DevelopmentConfig")
 app.config.from_object(env_config)
 
 css_bundle = Bundle('css/sections/globals.css', 
-										'css/sections/page.css', 
+										'css/sections/page.css',
 										'css/sections/game.css',
 										'css/sections/player.css',
-									filters='cssmin', output='css/styles.min.css')
+										filters='cssmin', output='css/styles.min.css')
 
 assets = Environment(app)
 assets.register('main_styles.css', css_bundle)
