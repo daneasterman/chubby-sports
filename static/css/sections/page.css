@@ -79,3 +79,7 @@ h2.section_subtitle, .small_subtitle {
 }
 
 .buy_coffee_icon { width: 18px; margin-right: 8px; }
+
+@media screen and (min-width: 768px) {
+	.reveal_scorer { margin-top: 1.5rem }
+}
