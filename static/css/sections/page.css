@@ -60,6 +60,7 @@ h2.section_subtitle, .small_subtitle {
 	padding: 10px 1.5rem 10px 1.5rem;
 	border-radius: 4px;
 	border: 0;
+	text-align: center;
 }
 .reveal_all { margin-bottom: 3rem; }
 

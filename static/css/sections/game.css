@@ -69,13 +69,11 @@ div.listings_wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
-	padding: 2rem 0.5rem 0 0.5rem;
+	padding: 1.5rem 0.5rem 0 0.5rem;
 	max-width: 150px;	
 }
 
-.wc_team_column {
-	padding-top: 3rem
-}
+.wc_team_column { padding-top: 3rem }
 
 .team_logo {
 	max-width: 75px;
