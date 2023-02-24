@@ -12,7 +12,7 @@ div.listings_wrapper {
 	margin-bottom: 2.25rem;	
 }
 
-.home_away { position: relative; margin-bottom: 0.5rem; }
+.home_away_txt { position: relative; margin-bottom: 0.5rem; }
 
 /* Uses soccer_flex class here for jquery slide logic */
 .game_flex, .soccer_flex {
@@ -29,32 +29,41 @@ div.listings_wrapper {
 	}
 }
 
-.home_team_row {
+.home_team_row, .away_team_row {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
 }
 .home_team_row .team_column { order: 2 }
-.game_details {		
+
+.game_details_column {
+	display: flex;
+	flex-direction: column;
 	order: 3;
+	margin-top: 1.5rem;
+}
+
+.desktop_game_details, .mobile_game_details {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.1rem;
-	margin-top: 1.5rem;
+	
+	text-align: center;
 }
-.away_team_row {
-	display: flex;
-	flex-direction: row;	
-	align-items: center;
-}
-.score { font-size: 2.5rem }
-@media screen and (min-width: 768px) {
+.desktop_game_details { display: none; }
+.mobile_game_details { margin-top: 1.5rem; }
+
+@media screen and (min-width: 768px) {	
+	.game_details_column { order: 0; }
+	.mobile_game_details { display: none; }
+	.desktop_game_details { display: flex; }	
 	.home_team_row .team_column { order: 0 }
-	.game_details {	
-		order: 0
-	}
 }
+
+.purple_trim { color: #762FBE }
+
+.score { font-size: 2.5rem }
 
 .team_column, .wc_team_column {	
 	display: flex;
