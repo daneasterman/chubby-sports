@@ -34,7 +34,8 @@ div.listings_wrapper {
 	flex-direction: row;	
 	align-items: center;
 }
-.home_team_row .team_column { order: 2 }
+.home_team_row .team_column,
+.home_team_row .wc_team_column { order: 2 }
 
 .game_details_column {
 	display: flex;
@@ -57,8 +58,9 @@ div.listings_wrapper {
 @media screen and (min-width: 768px) {	
 	.game_details_column { order: 0; }
 	.mobile_game_details { display: none; }
-	.desktop_game_details { display: flex; }	
-	.home_team_row .team_column { order: 0 }
+	.desktop_game_details { display: flex; }		
+	.home_team_row .team_column,
+	.home_team_row .wc_team_column { order: 0 }
 }
 
 .purple_trim { color: #762FBE }
