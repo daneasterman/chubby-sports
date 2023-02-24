@@ -5,11 +5,21 @@ from espn_api.nba_games import get_nba_games
 from espn_api.soccer_games import get_soccer_games
 from espn_api.custom_utils import get_week_range
 from flask_talisman import Talisman
+from flask_assets import Bundle, Environment
 from pprint import pprint
 
 app = Flask(__name__)
 env_config = os.getenv("PROD_APP_SETTINGS", "config.DevelopmentConfig")
 app.config.from_object(env_config)
+
+css_bundle = Bundle('css/sections/globals.css', 
+										'css/sections/page.css',
+										'css/sections/game.css',
+										'css/sections/player.css',
+										filters='cssmin', output='css/styles.min.css')
+
+assets = Environment(app)
+assets.register('main_styles.css', css_bundle)
 
 @app.route("/")
 def nfl():

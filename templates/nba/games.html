@@ -2,9 +2,17 @@
 	{% for g in info.games %}
 		<div class="game_wrapper">				
 			<div class="game_flex">
-					<div class="team_row">
+
+				<div class="mobile_game_details">
+					<p style="font-weight: 600;">
+						{{ g.est_time }} EST / {{ g.uk_time }} UK
+					</p>
+					<p class="purple_trim">{{ g.stadium }},</p>
+				</div>
+					
+				<div class="home_team_row">
 						<div class="team_column">
-								<p class="home_away">Home</p>
+								<p class="home_away_txt">Home</p>
 								<img class="team_logo"
 										src="{{ g.home_team.logo }}"
 										alt="team logo" />
@@ -14,19 +22,21 @@
 							<p class="score">{{ g.home_team.score }}</p>
 						</div>
 				
-						<div class="game_details">
-							<p style="font-weight: 600;">{{ g.est_time }} EST / {{ g.uk_time }} UK </p>
-							<p class="purple_trim">{{ g.stadium }},</p>
-							<p class="purple_trim" style="margin-bottom: 2rem">
-								{{ g.city }}
-							</p>	
-							<a  class="reveal_specific">Show Leaders &darr;</a>							
+						<div class="game_details_column">
+							<div class="desktop_game_details">
+								<p style="font-weight: 600;">
+									{{ g.est_time }} EST / {{ g.uk_time }} UK
+								</p>
+								<p class="purple_trim">{{ g.stadium }},</p>
+								<p class="purple_trim" style="margin-bottom: 2rem">{{ g.city }}</p>
+							</div>								
+							<a class="reveal_specific">Show Leaders &darr;</a>
 						</div>
 					
-				<div class="team_row">
+				<div class="away_team_row">
 					<p class="score">{{ g.away_team.score }}</p>
 					<div class="team_column">
-							<p class="home_away">Away</p>
+							<p class="home_away_txt">Away</p>
 							<img class="team_logo" 
 									src="{{ g.away_team.logo }}"
 									alt="team logo" />
