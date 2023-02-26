@@ -1,4 +1,6 @@
-## Chubby Sports - Sports Data Aggregator. Currently live here: [chubbysports.co](https://chubbysports.co)
+## Chubby Sports
+
+Sports Data Aggregator built with Flask and Python, live here: [chubbysports.co](https://chubbysports.co)
 
 <img width="941" alt="Screenshot 2023-02-26 at 12 54 41" src="https://user-images.githubusercontent.com/4712052/221411795-9f28f3f0-99fe-43c8-88db-a15b195936b9.png">
 
